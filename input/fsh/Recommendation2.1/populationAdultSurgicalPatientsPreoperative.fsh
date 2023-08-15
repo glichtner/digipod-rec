@@ -12,7 +12,6 @@ Description: "Adult patients before undergoing a surgical intervention of any ty
 * characteristic[+].definitionByCombination
   * code = #all-of
   * characteristic[+]
-    * linkId = "age"
     * definitionByTypeAndValue
       * type = $sct#424144002 "Current chronological age (observable entity)"
       * valueRange

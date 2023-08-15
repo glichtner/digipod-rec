@@ -12,7 +12,6 @@ Description: "Adult patients being 70 years old or older, before undergoing a su
 * characteristic[+].definitionByCombination
   * code = #all-of
   * characteristic[+]
-    * linkId = "age"
     * definitionByTypeAndValue
       * type = $sct#424144002 "Current chronological age (observable entity)"
       * valueRange

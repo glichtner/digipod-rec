@@ -66,6 +66,8 @@ Alias: $cs-title-type = http://hl7.org/fhir/title-type
 Alias: $cs-artifact-url-classifier = http://hl7.org/fhir/artifact-url-classifier
 
 Alias: $cs-fhir-types = https://hl7.org/fhir/valueset-request-resource-types.html
+
+Alias: $cs-fhir-concept-map-relationship = http://hl7.org/fhir/concept-map-relationship
 // Alias: $cs-ceosys = CEOsysCodeSystem
 
 Alias: $cs-citation-artifact-classifier = http://terminology.hl7.org/CodeSystem/citation-artifact-classifier

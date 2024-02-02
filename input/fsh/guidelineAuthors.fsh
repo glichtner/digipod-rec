@@ -7,6 +7,31 @@ Usage: #definition
 * name.prefix[+] = "Univ.-Prof."
 * name.prefix[+] = "Dr."
 
+Instance: PractitionerRoleClaudiaSpies
+InstanceOf: PractitionerRole
+Usage: #definition
+* practitioner = Reference(ClaudiaSpies)
+* organization = Reference(OrganizationClaudiaSpies)
+* contact.telecom[+].use = #work
+* contact.telecom[=].system = #phone
+* contact.telecom[=].value = "+49 (0) 30 450 531 012"
+* contact.telecom[+].use = #work
+* contact.telecom[=].system = #fax
+* contact.telecom[=].value = "+49 (0) 30 450 531 911"
+* contact.telecom[+].use = #work
+* contact.telecom[=].system = #email
+* contact.telecom[=].value = "claudia.spies@charite.de"
+
+Instance: OrganizationClaudiaSpies
+InstanceOf: Organization
+Usage: #definition
+* name = "Charité-Universitätsmedizin Berlin, Corporate Member of Freie Universität Berlin, and Humboldt Universität zu Berlin, Department of Anesthesiology and Intensive Care Medicine, Campus Charité Mitte and Campus Virchow Klinikum"
+* contact.address.use = #work
+* contact.address.text = "Augustenburger Platz 1" 
+* contact.address.postalCode = "10117"
+* contact.address.city = "Berlin"
+* contact.address.country = "Germany"
+
 Instance: CesarAldecoa
 InstanceOf: Practitioner
 Usage: #definition

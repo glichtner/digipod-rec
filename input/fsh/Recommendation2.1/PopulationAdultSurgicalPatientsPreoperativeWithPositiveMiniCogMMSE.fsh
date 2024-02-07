@@ -1,14 +1,14 @@
-Instance: PopAdultSurgicalPatientsPreoperativeGeneral
+Instance: PopAdultSurgicalPatientsPreoperativeWithPositiveMiniCogNeedMMSE
 InstanceOf: recommendation-eligibility-criteria
 Usage: #definition
-Title: "Population: General Adult Surgical Patients Preoperative"
-Description: "Adult patients before undergoing an elective surgical intervention of any type independently of the type of anesthesia"
+Title: "Population: Adult Surgical Patients Preoperative with Positive Mini-cog Test Score that need a Mini-Mental State Examination"
+Description: "Adult patients with a positive Mini-cog test score that need a Mini-Mental State Examination before undergoing an elective surgical intervention of any type independently of the type of anesthesia"
 //* insert canonical-url(covid19-inpatient-therapy, population/ventilated-covid19-patients-fio2-point3)
 * status = #draft
 * version = "0.2.0"
 * date = "2024-02"
-* name = "PopAdultSurgicalPatientsPreoperative"
-* description = "Population for guideline 2.1 from https://pubmed.ncbi.nlm.nih.gov/37599617/: Adults patients, preoperative"
+* name = "PopAdultSurgicalPatientsPreoperativeWithPositiveMiniCogNeedMMSE"
+* description = "Population for guideline 2.1 from https://pubmed.ncbi.nlm.nih.gov/37599617/: Adults patients, preoperative, that had a positive Mini-cog test score and need an evaluation using a MMSE"
 * characteristic[+].definitionByCombination
   * code = #all-of
   * characteristic[+]
@@ -43,6 +43,16 @@ Description: "Adult patients before undergoing an elective surgical intervention
           * type = $sct#272125009 "Priorities (qualifier value)"
           * valueCodeableConcept = $sct#88694003 "Immediate (qualifier value)"
   * characteristic[=].exclude = false
+  * characteristic[assessmentScale][+]
+    * definitionByTypeAndValue
+      * type = $sct#713408000 "Mini-Cog brief cognitive screening test score (observable entity)"
+      * valueRange.low.value = 3
+  * characteristic[assessmentScale][=].exclude = false
+  * characteristic[procedure][+]
+    * definitionByTypeAndValue
+      * type = $sct#71388002 "Procedure (procedure)"
+      * valueCodeableConcept = $sct#446971008 "Assessment using mini-mental state examination (procedure)"
+  * characteristic[procedure][=].exclude = false
 * characteristic[=].exclude = false
 * characteristic[=].timeFromEvent
   * description = "preoperative"

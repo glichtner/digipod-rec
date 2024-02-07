@@ -5,8 +5,8 @@ Title: "Recommendation 2.1: Preoperative Risk Factors"
 Description: "Recommendation number 2.1 from Guideline '2021-Update of the European Society of Anaesthesiology and Intensive Care Medicine (ESAIC) evidence-based and consensus-based guideline on postoperative delirium in
 adult patients'"
 * status = #draft
-* version = "0.1.0"
-* date = "2023-03-28"
+* version = "0.2.0"
+* date = "2024-02"
 * name = "Recommendation2.1RiskFactors"
 * title = "Recommendation 2.1: Preoperative Risk Factors"
 * citedArtifact

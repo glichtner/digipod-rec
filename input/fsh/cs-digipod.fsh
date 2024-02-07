@@ -12,6 +12,10 @@ Description: "Concepts required in recommendations that are not defined elsewher
 * #004 "N2 innerhalb 1-6 h"
 * #005 "N1 innerhalb 1 h"
 * #006 "N0 sofort"
+* #007 "Date of surgical procedure"
+* #008 "Assessment using Charlson Comorbidity Index"
+* #009 "Assessment using Montreal Cognitive Assessment (MoCA)"
+* #010 "Warning"
 
 Instance: DIGIPODtoSNOMEDCT
 InstanceOf: ConceptMap

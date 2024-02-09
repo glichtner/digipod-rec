@@ -8,10 +8,10 @@ Description: "Adult patients with a positive Mini-cog test score that need a Min
 * version = "0.2.0"
 * date = "2024-02"
 * name = "PopAdultSurgicalPatientsPreoperativeWithPositiveMiniCogNeedMMSE"
-* description = "Population for guideline 2.1 from https://pubmed.ncbi.nlm.nih.gov/37599617/: Adults patients, preoperative, that had a positive Mini-cog test score and need an evaluation using a MMSE"
-* characteristic[+].definitionByCombination
+* description = "Population for guideline 2.1 from https://pubmed.ncbi.nlm.nih.gov/37599617/: Adult patients, preoperative, that had a positive Mini-cog test score and need an evaluation using a MMSE"
+* characteristic[0].definitionByCombination
   * code = #all-of
-  * characteristic[+]
+  * characteristic[0]
     * definitionByTypeAndValue
       * type = $sct#424144002 "Current chronological age (observable entity)" // alternatively #age from http://terminology.hl7.org/CodeSystem/usage-context-type
       * valueRange
@@ -25,36 +25,36 @@ Description: "Adult patients with a positive Mini-cog test score that need a Min
         //  * unit = "years"
         //  * system = "http://unitsofmeasure.org"
         //  * code = #a
-  * characteristic[=].exclude = false
-  * characteristic[procedure][+]
+  * characteristic[0].exclude = false
+  * characteristic[procedure][1]
     * definitionByTypeAndValue
       * type = $sct#71388002 "Procedure (procedure)"
       * valueCodeableConcept = $sct#387713003 "Surgical procedure (procedure)"
-  * characteristic[procedure][=].exclude = false
-  * characteristic[+]
+  * characteristic[procedure][1].exclude = false
+  * characteristic[2]
     * definitionByCombination
       * code = #any-of
-      * characteristic[+]
+      * characteristic[0]
         * definitionByTypeAndValue
           * type = $sct#272125009 "Priorities (qualifier value)"
           * valueCodeableConcept = $sct#103390000 "Elective (qualifier value)"
-      * characteristic[+]
+      * characteristic[1]
         * definitionByTypeAndValue
           * type = $sct#272125009 "Priorities (qualifier value)"
           * valueCodeableConcept = $sct#88694003 "Immediate (qualifier value)"
-  * characteristic[=].exclude = false
-  * characteristic[assessmentScale][+]
+  * characteristic[2].exclude = false
+  * characteristic[3]
     * definitionByTypeAndValue
       * type = $sct#713408000 "Mini-Cog brief cognitive screening test score (observable entity)"
       * valueRange.low.value = 3
-  * characteristic[assessmentScale][=].exclude = false
-  * characteristic[procedure][+]
+  * characteristic[3].exclude = false
+  * characteristic[procedure][4]
     * definitionByTypeAndValue
       * type = $sct#71388002 "Procedure (procedure)"
       * valueCodeableConcept = $sct#446971008 "Assessment using mini-mental state examination (procedure)"
-  * characteristic[procedure][=].exclude = false
-* characteristic[=].exclude = false
-* characteristic[=].timeFromEvent
+  * characteristic[procedure][4].exclude = false
+* characteristic[0].exclude = false
+* characteristic[0].timeFromEvent
   * description = "preoperative"
   * eventCodeableConcept = $cs-digipod#007 "Date of surgical procedure" //$sct#439272007 "Date of procedure (observable entity)" //$sct#387713003 "Surgical procedure (procedure)"
   * range

@@ -7,14 +7,14 @@ adult patients'"
 * status = #draft
 * version = "0.2.0"
 * date = "2024-02"
-* name = "Recommendation2.1RiskFactors"
+* name = "Recommendation2_1RiskFactors"
 * title = "Recommendation 2.1: Preoperative Risk Factors"
 * citedArtifact
   * identifier.value = "2021-esaic-postopdelirium-rec2.1"
   * currentState = $cs-cited-artifact-status-type#submitted "Submitted"
   * version.value = "manuscript-draft"
   * title
-    * type = $cs-title-type#primary "Primary"
+    * type = $cs-title-type#primary "Primary title"
     * language = #en
     * text = "Recommendation 2.1"
   * part[+]

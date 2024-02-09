@@ -7,14 +7,14 @@ adult patients'"
 * status = #draft
 * version = "0.1.0"
 * date = "2023-03-28"
-* name = "Recommendation6.2PharmacologicalTreatmentOfPODAndPODOutcomes"
+* name = "Recommendation6_2PharmacologicalTreatmentOfPODAndPODOutcomes"
 * title = "Recommendation 6.2: Pharmacological Treatment of POD and POD Outcomes - Benzodiazepines as treatment"
 * citedArtifact
   * identifier.value = "2021-esaic-postopdelirium-rec6.2"
   * currentState = $cs-cited-artifact-status-type#submitted "Submitted"
   * version.value = "manuscript-draft"
   * title
-    * type = $cs-title-type#primary "Primary"
+    * type = $cs-title-type#primary "Primary title"
     * language = #en
     * text = "Recommendation 6.2"
   * part[+]

@@ -7,14 +7,14 @@ adult patients'"
 * status = #draft
 * version = "0.1.0"
 * date = "2023-03-28"
-* name = "Recommendation3.1PrevMeasuresIEffectsOfDrugsOnPODPrevention"
+* name = "Recommendation3_1PrevMeasuresIEffectsOfDrugsOnPODPrevention"
 * title = "Recommendation 3.1: Preventive Measures I (Effects of Drugs on POD prevention) - Drugs as prophylactic measure to reduce the incidence of POD"
 * citedArtifact
   * identifier.value = "2021-esaic-postopdelirium-rec3.1"
   * currentState = $cs-cited-artifact-status-type#submitted "Submitted"
   * version.value = "manuscript-draft"
   * title
-    * type = $cs-title-type#primary "Primary"
+    * type = $cs-title-type#primary "Primary title"
     * language = #en
     * text = "Recommendation 3.1"
   * part[+]

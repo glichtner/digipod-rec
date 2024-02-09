@@ -26,6 +26,7 @@ Alias: $icd10-gm = http://fhir.de/CodeSystem/dimdi/icd-10-gm
 
 //Alias: $ceosys = https://www.ceosys.de
 
+Alias: $cs-narrative-status = https://hl7.org/fhir/codesystem-narrative-status.html
 Alias: $cs-action-reason-code = http://hl7.org/fhir/action-reason-code
 Alias: $cs-action-required-behavior = http://hl7.org/fhir/R5/codesystem-action-required-behavior.html
 Alias: $cs-evidence-variable-event = http://hl7.org/fhir/evidence-variable-event

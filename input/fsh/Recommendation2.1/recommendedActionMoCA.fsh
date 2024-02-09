@@ -13,4 +13,4 @@ Description: "Recommended Action for Adult Surgical Patients Preoperative if Min
 * experimental = true
 * kind = $cs-fhir-types#Task "Task"
 * description = "Recommended Action for Adult Surgical Patients Preoperative if Mini-cog test score is equal to or higher than 3, check risk factor Montreal Cognitive Assessment (MoCA) score"
-* code = $cs-digipod#009 "Assessment using Montreal Cognitive Assessment (MoCA)" // $sct#1255891005 "Montreal Cognitive Assessment version 8.1 score (observable entity)"
+* code = $cs-digipod#010 "Assessment using Montreal Cognitive Assessment (MoCA)" // $sct#1255891005 "Montreal Cognitive Assessment version 8.1 score (observable entity)"

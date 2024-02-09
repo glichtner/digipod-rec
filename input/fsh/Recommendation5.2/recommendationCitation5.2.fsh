@@ -7,14 +7,14 @@ adult patients'"
 * status = #draft
 * version = "0.1.0"
 * date = "2023-03-28"
-* name = "Recommendation5.2Neuromonitoring"
+* name = "Recommendation5_2Neuromonitoring"
 * title = "Recommendation 5.2: Neuromonitoring - Multi-parameter, intraoperative EEG monitoring during anesthesia"
 * citedArtifact
   * identifier.value = "2021-esaic-postopdelirium-rec5.2"
   * currentState = $cs-cited-artifact-status-type#submitted "Submitted"
   * version.value = "manuscript-draft"
   * title
-    * type = $cs-title-type#primary "Primary"
+    * type = $cs-title-type#primary "Primary title"
     * language = #en
     * text = "Recommendation 5.2"
   * part[+]

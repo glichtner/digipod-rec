@@ -11,6 +11,6 @@ Description: "Recommended Action for Adult Surgical Patients Preoperative if Min
 * version = "0.2.0"
 * date = "2024-02"
 * experimental = true
-* kind = $cs-fhir-types#CommnicationRequest "CommnicationRequest"
+* kind = $cs-fhir-types#CommunicationRequest "CommunicationRequest"
 * description = "Recommended Action for Adult Surgical Patients Preoperative if Mini-cog test score is equal to or higher than 3 that need MMSE, provide warning for license fees"
 * code.text = "Provide warning about license fees for Mini-Mental State Examination"

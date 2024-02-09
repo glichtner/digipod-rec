@@ -14,8 +14,11 @@ Description: "Concepts required in recommendations that are not defined elsewher
 * #006 "N0 sofort"
 * #007 "Date of surgical procedure"
 * #008 "Assessment using Charlson Comorbidity Index"
-* #009 "Assessment using Montreal Cognitive Assessment (MoCA)"
-* #010 "Warning"
+* #009 "Result of Charlson Comorbidity Index"
+* #010 "Assessment using Montreal Cognitive Assessment (MoCA)"
+//* #011 "Result of Montreal Cognitive Assessment (MoCA)"
+* #011 "Warning"
+* #012 "Result of Addenbrooke cognitive examination revised"
 
 Instance: DIGIPODtoSNOMEDCT
 InstanceOf: ConceptMap
@@ -28,7 +31,7 @@ Description: "Concept map from concepts defined in DIGIPOD to SNOMED CT"
 * publisher = "Charité Universitätsmedizin Berlin"
 
 * group[+].source = $cs-digipod
-* group[=].target = "http://snomed.info/sct"
+* group[=].target = "http://snomed.info/sct/900000000000207008"
 * group[=].element[+].code = #001
 * group[=].element[=].display = "N5 elektiv"
 * group[=].element[=].target[+].code = #103390000

@@ -7,14 +7,14 @@ adult patients'"
 * status = #draft
 * version = "0.1.0"
 * date = "2023-03-28"
-* name = "Recommendation4.3PrevMeasuresIINonPharmacologicalInterventions"
+* name = "Recommendation4_3PrevMeasuresIINonPharmacologicalInterventions"
 * title = "Recommendation 4.3: Preventive Measures II (Non Pharmacological Interventions) - Multi-component non-pharmacological interventions in all patients at risk for POD"
 * citedArtifact
   * identifier.value = "2021-esaic-postopdelirium-rec4.3"
   * currentState = $cs-cited-artifact-status-type#submitted "Submitted"
   * version.value = "manuscript-draft"
   * title
-    * type = $cs-title-type#primary "Primary"
+    * type = $cs-title-type#primary "Primary title"
     * language = #en
     * text = "Recommendation 4.3"
   * part[+]

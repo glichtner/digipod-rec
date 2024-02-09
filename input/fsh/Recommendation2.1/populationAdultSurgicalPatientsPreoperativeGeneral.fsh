@@ -8,10 +8,10 @@ Description: "Adult patients before undergoing an elective surgical intervention
 * version = "0.2.0"
 * date = "2024-02"
 * name = "PopAdultSurgicalPatientsPreoperative"
-* description = "Population for guideline 2.1 from https://pubmed.ncbi.nlm.nih.gov/37599617/: Adults patients, preoperative"
+* description = "Population for guideline 2.1 from https://pubmed.ncbi.nlm.nih.gov/37599617/: Adult patients, preoperative"
 * characteristic[+].definitionByCombination
   * code = #all-of
-  * characteristic[+]
+  * characteristic[0]
     * definitionByTypeAndValue
       * type = $sct#424144002 "Current chronological age (observable entity)" // alternatively #age from http://terminology.hl7.org/CodeSystem/usage-context-type
       * valueRange
@@ -26,19 +26,19 @@ Description: "Adult patients before undergoing an elective surgical intervention
         //  * system = "http://unitsofmeasure.org"
         //  * code = #a
   * characteristic[=].exclude = false
-  * characteristic[procedure][+]
+  * characteristic[procedure][1]
     * definitionByTypeAndValue
       * type = $sct#71388002 "Procedure (procedure)"
       * valueCodeableConcept = $sct#387713003 "Surgical procedure (procedure)"
   * characteristic[procedure][=].exclude = false
-  * characteristic[+]
+  * characteristic[2]
     * definitionByCombination
       * code = #any-of
-      * characteristic[+]
+      * characteristic[0]
         * definitionByTypeAndValue
           * type = $sct#272125009 "Priorities (qualifier value)"
           * valueCodeableConcept = $sct#103390000 "Elective (qualifier value)"
-      * characteristic[+]
+      * characteristic[1]
         * definitionByTypeAndValue
           * type = $sct#272125009 "Priorities (qualifier value)"
           * valueCodeableConcept = $sct#88694003 "Immediate (qualifier value)"

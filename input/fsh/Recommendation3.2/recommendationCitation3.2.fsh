@@ -7,14 +7,14 @@ adult patients'"
 * status = #draft
 * version = "0.1.0"
 * date = "2023-03-28"
-* name = "Recommendation3.2PrevMeasuresIEffectsOfDrugsOnPODPrevention"
+* name = "Recommendation3_2PrevMeasuresIEffectsOfDrugsOnPODPrevention"
 * title = "Recommendation 3.2: Preventive Measures I (Effects of Drugs on POD prevention) - Preventive dexmedetomidine administration intra- or postoperative"
 * citedArtifact
   * identifier.value = "2021-esaic-postopdelirium-rec3.2"
   * currentState = $cs-cited-artifact-status-type#submitted "Submitted"
   * version.value = "manuscript-draft"
   * title
-    * type = $cs-title-type#primary "Primary"
+    * type = $cs-title-type#primary "Primary title"
     * language = #en
     * text = "Recommendation 3.2"
   * part[+]

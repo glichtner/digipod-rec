@@ -1,22 +1,24 @@
 Instance: ClinicalPracticeGuidelineESAICOnPostOpDeliriumInAdultPatients
 InstanceOf: guideline-citation
 Usage: #example
-Title: "2021-Update of the European Society of Anaesthesiology and Intensive Care Medicine (ESAIC) evidence-based and consensus-based guideline on postoperative delirium in adult patients"
+Title: "Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients"
 Description: "Evidence-based and consensus-based guideline on postoperative delirium in adult patients, updated by the European Society of Anaesthesiology and Intensive Care Medicine (ESAIC) in 2021"
-* status = #draft
-* date = "2023-03-28"
+* status = #active
+* date = "2023-08-30"
 * name = "ClinicalPracticeGuidelineESAICOnPostoperativeDeliriumInAdultPatients"
-* title = "2021-Update of the European Society of Anaesthesiology and Intensive Care Medicine (ESAIC) evidence-based and consensus-based guideline on postoperative delirium in adult patients"
+* title = "Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients"
 * citedArtifact
-  * identifier.value = "2021-esaic-postopdelirium"
-  * version.value = "manuscript draft"
+  * identifier.value = "37599617"
+  * identifier.system = "https://pubmed.ncbi.nlm.nih.gov"
+  * version.value = "1.0"
   * title
     * type = $cs-title-type#official "Official title"
-    * text = "2021-Update of the European Society of Anaesthesiology and Intensive Care Medicine (ESAIC) evidence-based and consensus-based guideline on postoperative delirium in adult patients"
-  * currentState = $cs-cited-artifact-status-type#under-review "Under review"
+    * text = "Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients"
+  * currentState = $cs-cited-artifact-status-type#published-final-form "Published final form"
   * webLocation
-    * classifier = $cs-artifact-url-classifier#webpage "Webpage"
-    * url = "www.esaic.org" // made up
+    * classifier = $cs-artifact-url-classifier#full-text "Full-Text"
+    * url = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10763721/"
+  * abstract.text = "Postoperative delirium (POD) remains a common, dangerous and resource-consuming adverse event but is often preventable. The whole peri-operative team can play a key role in its management. This update to the 2017 ESAIC Guideline on the prevention of POD is evidence-based and consensus-based and considers the literature between 01 April 2015, and 28 February 2022. The search terms of the broad literature search were identical to those used in the first version of the guideline published in 2017. POD was defined in accordance with the DSM-5 criteria. POD had to be measured with a validated POD screening tool, at least once per day for at least 3 days starting in the recovery room or postanaesthesia care unit on the day of surgery or, at latest, on postoperative day 1. Recent literature confirmed the pathogenic role of surgery-induced inflammation, and this concept reinforces the positive role of multicomponent strategies aimed to reduce the surgical stress response. Although some putative precipitating risk factors are not modifiable (length of surgery, surgical site), others (such as depth of anaesthesia, appropriate analgesia and haemodynamic stability) are under the control of the anaesthesiologists. Multicomponent preoperative, intra-operative and postoperative preventive measures showed potential to reduce the incidence and duration of POD, confirming the pivotal role of a comprehensive and team-based approach to improve patients’ clinical and functional status."
   * contributorship
     * entry[+]
       * contributor = Reference(CesarAldecoa)

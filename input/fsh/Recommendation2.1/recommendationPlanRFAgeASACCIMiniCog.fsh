@@ -14,6 +14,7 @@ Description: "Recommended Plan for Adult Surgical Patients Preoperative, check r
 * description = "Recommended Plan for Adult Surgical Patients Preoperative, check risk factors age, American Society of Anesthesiology Physical status score (ASA), Charlson Comorbidity Index (CCI) and Mini-cog test score (Mini-cog)"
 * subjectCanonical = Canonical(PopAdultSurgicalPatientsPreoperativeGeneral)
 * extension[partOf].valueCanonical = Canonical(RecCollCheckRFAdultSurgicalPatientsPreoperative)
+* extension[combinationMethod].extension[method].valueCodeableConcept = $cs-action-combination-method#all
 * action[assessment][+]
   * definitionCanonical = Canonical(RecActionAdultSurgicalPatientsPreoperativeCheckRFAge)
   * code = $sct#386053000 "Evaluation procedure (procedure)"

@@ -5,14 +5,14 @@ Title: "Recommendation 6.2: Pharmacological Treatment of POD and POD Outcomes - 
 Description: "Recommendation number 6.2 from Guideline '2021-Update of the European Society of Anaesthesiology and Intensive Care Medicine (ESAIC) evidence-based and consensus-based guideline on postoperative delirium in
 adult patients'"
 * status = #draft
-* version = "0.1.0"
-* date = "2023-03-28"
+* version = "0.2.0"
+* date = "2024-02"
 * name = "Recommendation6_2PharmacologicalTreatmentOfPODAndPODOutcomes"
 * title = "Recommendation 6.2: Pharmacological Treatment of POD and POD Outcomes - Benzodiazepines as treatment"
 * citedArtifact
-  * identifier.value = "2021-esaic-postopdelirium-rec6.2"
-  * currentState = $cs-cited-artifact-status-type#submitted "Submitted"
-  * version.value = "manuscript-draft"
+  * identifier.value = "37599617-rec6.2"
+  * currentState = $cs-cited-artifact-status-type#published-final-form "Published final form"
+  * version.value = "1.0"
   * title
     * type = $cs-title-type#primary "Primary title"
     * language = #en

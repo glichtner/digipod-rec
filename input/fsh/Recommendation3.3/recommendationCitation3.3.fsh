@@ -5,17 +5,17 @@ Title: "Recommendation 3.3: Preventive Measures I (Effects of Drugs on POD preve
 Description: "Recommendation number 3.3 from Guideline '2021-Update of the European Society of Anaesthesiology and Intensive Care Medicine (ESAIC) evidence-based and consensus-based guideline on postoperative delirium in
 adult patients'"
 * status = #draft
-* version = "0.1.0"
-* date = "2023-03-28"
+* version = "0.2.0"
+* date = "2024-02"
 * name = "Recommendation3_3PrevMeasuresIEffectsOfDrugsOnPODPrevention"
 * title = "Recommendation 3.3: Preventive Measures I (Effects of Drugs on POD prevention) - Type of surgery or anesthesia to reduce the incidence of POD"
 * citedArtifact
-  * identifier.value = "2021-esaic-postopdelirium-rec3.3"
-  * currentState = $cs-cited-artifact-status-type#submitted "Submitted"
-  * version.value = "manuscript-draft"
+  * identifier.value = "37599617-rec3.3"
+  * currentState = $cs-cited-artifact-status-type#published-final-form "Published final form"
+  * version.value = "1.0"
   * title
     * type = $cs-title-type#primary "Primary title"
-    * language = #en
+    * language = $all-languages#en
     * text = "Recommendation 3.3"
   * part[+]
     * type = $cs-cited-artifact-part-type#paragraphs "paragraphs"

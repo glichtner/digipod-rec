@@ -10,12 +10,12 @@ adult patients'"
 * name = "Recommendation2_1RiskFactors"
 * title = "Recommendation 2.1: Preoperative Risk Factors"
 * citedArtifact
-  * identifier.value = "2021-esaic-postopdelirium-rec2.1"
-  * currentState = $cs-cited-artifact-status-type#submitted "Submitted"
-  * version.value = "manuscript-draft"
+  * identifier.value = "37599617-rec2.1"
+  * currentState = $cs-cited-artifact-status-type#published-final-form "Published final form"
+  * version.value = "1.0"
   * title
     * type = $cs-title-type#primary "Primary title"
-    * language = #en
+    * language = $all-languages#en
     * text = "Recommendation 2.1"
   * part[+]
     * type = $cs-cited-artifact-part-type#paragraphs "paragraphs"

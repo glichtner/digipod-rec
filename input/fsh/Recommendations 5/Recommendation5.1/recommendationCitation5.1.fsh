@@ -1,25 +1,25 @@
-Instance: Recommendation5.2Neuromonitoring
+Instance: Recommendation5.1Neuromonitoring
 InstanceOf: recommendation-citation
 Usage: #example
-Title: "Recommendation 5.2: Neuromonitoring - Multi-parameter, intraoperative EEG monitoring during anesthesia"
-Description: "Recommendation number 5.2 from Guideline '2021-Update of the European Society of Anaesthesiology and Intensive Care Medicine (ESAIC) evidence-based and consensus-based guideline on postoperative delirium in
+Title: "Recommendation 5.1: Neuromonitoring - EEG monitoring depth of anesthesia guidance"
+Description: "Recommendation number 5.1 from Guideline '2021-Update of the European Society of Anaesthesiology and Intensive Care Medicine (ESAIC) evidence-based and consensus-based guideline on postoperative delirium in
 adult patients'"
 * status = #draft
-* version = "0.1.0"
-* date = "2023-03-28"
-* name = "Recommendation5_2Neuromonitoring"
-* title = "Recommendation 5.2: Neuromonitoring - Multi-parameter, intraoperative EEG monitoring during anesthesia"
+* version = "0.2.0"
+* date = "2024-02"
+* name = "Recommendation5_1Neuromonitoring"
+* title = "Recommendation 5.1: Neuromonitoring - EEG monitoring depth of anesthesia guidance"
 * citedArtifact
-  * identifier.value = "2021-esaic-postopdelirium-rec5.2"
-  * currentState = $cs-cited-artifact-status-type#submitted "Submitted"
-  * version.value = "manuscript-draft"
+  * identifier.value = "37599617-rec5.1"
+  * currentState = $cs-cited-artifact-status-type#published-final-form "Published final form"
+  * version.value = "1.0"
   * title
     * type = $cs-title-type#primary "Primary title"
-    * language = #en
-    * text = "Recommendation 5.2"
+    * language = $all-languages#en
+    * text = "Recommendation 5.1"
   * part[+]
     * type = $cs-cited-artifact-part-type#paragraphs "paragraphs"
-    * value = "We suggest multi-parameter, intraoperative EEG monitoring (Burst suppression, DSA) during anaesthesia to decrease the risk of POD."
+    * value = "We suggest Index-based EEG monitoring depth of anaesthesia guidance to decrease the risk of POD."
   * relatesTo
     * type = $cs-related-artifact-type#contained-in "Contained-in"
     * resource = Canonical(ClinicalPracticeGuidelineESAICOnPostOpDeliriumInAdultPatients) // canonical of the citation of the entire guideline

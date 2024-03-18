@@ -17,6 +17,7 @@ Alias: $mesh = url:oid:2.16.840.1.113883.6.177
 Alias: $cochrane-pico = http://data.cochrane.org/ontologies/pico/
 Alias: $cochrane-core = http://data.cochrane.org/ontologies/core/
 Alias: $cochrane-ld = https://data.cochrane.org/concepts/
+Alias: $all-languages = urn:ietf:bcp:47
 
 // German code systems
 Alias: $ops = http://fhir.de/CodeSystem/bfarm/ops
@@ -25,6 +26,8 @@ Alias: $icd10-gm = http://fhir.de/CodeSystem/dimdi/icd-10-gm
 
 
 //Alias: $ceosys = https://www.ceosys.de
+Alias: $combinationMethod = https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method
+Alias: $cs-action-combination-method = https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method
 
 Alias: $cs-narrative-status = https://hl7.org/fhir/codesystem-narrative-status.html
 Alias: $cs-action-reason-code = http://hl7.org/fhir/action-reason-code

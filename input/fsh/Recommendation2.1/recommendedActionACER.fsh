@@ -1,4 +1,4 @@
-Instance: RecActionAdultSurgicalPatientsPreoperativeCheckRFACE-R
+Instance: RecActionAdultSurgicalPatientsPreoperativeCheckRFACER
 InstanceOf: recommendation-action
 Usage: #definition
 Title: "Recommended Action for Population: Adult Surgical Patients Preoperative with Positive Mini-cog Test Score, check risk factor Addenbrooke's Cognitive Examination revised score"

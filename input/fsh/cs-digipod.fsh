@@ -19,6 +19,10 @@ Description: "Concepts required in recommendations that are not defined elsewher
 //* #011 "Result of Montreal Cognitive Assessment (MoCA)"
 * #011 "Warning"
 * #012 "Result of Addenbrooke cognitive examination revised"
+* #013 "Index-based Electroencephalogram monitoring depth of anaesthesia guidance"
+* #014 "Monitoring burst suppression patterns" 
+* #015 "Encephalographic density spectral array"
+//* #016 "Multiparameter EEG monitoring"
 
 Instance: DIGIPODtoSNOMEDCT
 InstanceOf: ConceptMap

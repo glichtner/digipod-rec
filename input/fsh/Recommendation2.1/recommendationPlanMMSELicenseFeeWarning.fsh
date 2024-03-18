@@ -1,7 +1,7 @@
 Instance: RecPlanProvideLicenseFeeWarningForMMSE
 InstanceOf: recommendation-plan
 Usage: #definition
-Title: "Population: Adult Surgical Patients Preoperative with Positive Mini-cog Test Score that need a Mini-Mental State Examination, provide warning because of MMSE license fees"
+Title: "Recommended Plan for Population: Adult Surgical Patients Preoperative with Positive Mini-cog Test Score that need a Mini-Mental State Examination, provide warning because of MMSE license fees"
 Description: "Recommended Plan for Adult Surgical Patients Preoperative with Positive Mini-cog Test Score that need a Mini-Mental State Examination, provide warning because of MMSE license fees"
 * insert publisher-experimental-version(0.1.0)
 //* insert canonical-url(covid19-inpatient-therapy, intervention-plan/abdominal-positioning-ARDS-plan)
@@ -14,7 +14,8 @@ Description: "Recommended Plan for Adult Surgical Patients Preoperative with Pos
 * description = "Recommended Plan for Adult Surgical Patients Preoperative with Positive Mini-cog Test Score that need a Mini-Mental State Examination, provide warning because of MMSE license fees"
 * subjectCanonical = Canonical(PopAdultSurgicalPatientsPreoperativeWithPositiveMiniCogNeedMMSE)
 * extension[partOf].valueCanonical = Canonical(RecCollCheckRFAdultSurgicalPatientsPreoperative)
-* action[+]
+* extension[combinationMethod].extension[method].valueCodeableConcept = $cs-action-combination-method#all
+* action[0]
   * definitionCanonical = Canonical(RecActionAdultSurgicalPatientsPreoperativeNeedMMSEFeeWarning)
   * code.coding = $cs-digipod#011 "Warning"
   * code.text = "Provide warning about license fees for Mini-Mental State Examination"

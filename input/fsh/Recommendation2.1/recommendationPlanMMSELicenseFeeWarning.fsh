@@ -15,7 +15,7 @@ Description: "Recommended Plan for Adult Surgical Patients Preoperative with Pos
 * subjectCanonical = Canonical(PopAdultSurgicalPatientsPreoperativeWithPositiveMiniCogNeedMMSE)
 * extension[partOf].valueCanonical = Canonical(RecCollCheckRFAdultSurgicalPatientsPreoperative)
 * extension[combinationMethod].extension[method].valueCodeableConcept = $cs-action-combination-method#all
-* action[other][+]
+* action[other]
   * definitionCanonical = Canonical(RecActionAdultSurgicalPatientsPreoperativeNeedMMSEFeeWarning)
   * code.coding = $cs-digipod#011 "Warning"
   * code.text = "Provide warning about license fees for Mini-Mental State Examination"

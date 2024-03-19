@@ -2,8 +2,7 @@ Instance: Recommendation3.3PrevMeasuresIEffectsOfDrugsOnPODPrevention
 InstanceOf: recommendation-citation
 Usage: #example
 Title: "Recommendation 3.3: Preventive Measures I (Effects of Drugs on POD prevention) - Type of surgery or anesthesia to reduce the incidence of POD"
-Description: "Recommendation number 3.3 from Guideline '2021-Update of the European Society of Anaesthesiology and Intensive Care Medicine (ESAIC) evidence-based and consensus-based guideline on postoperative delirium in
-adult patients'"
+Description: "Recommendation number 3.3 from Guideline 'Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients'"
 * status = #draft
 * version = "0.2.0"
 * date = "2024-02"

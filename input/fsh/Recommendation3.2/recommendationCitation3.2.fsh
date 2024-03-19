@@ -2,8 +2,7 @@ Instance: Recommendation3.2PrevMeasuresIEffectsOfDrugsOnPODPrevention
 InstanceOf: recommendation-citation
 Usage: #example
 Title: "Recommendation 3.2: Preventive Measures I (Effects of Drugs on POD prevention) - Preventive dexmedetomidine administration intra- or postoperative"
-Description: "Recommendation number 3.2 from Guideline '2021-Update of the European Society of Anaesthesiology and Intensive Care Medicine (ESAIC) evidence-based and consensus-based guideline on postoperative delirium in
-adult patients'"
+Description: "Recommendation number 3.2 from Guideline 'Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients'"
 * status = #draft
 * version = "0.2.0"
 * date = "2024-02"

@@ -2,8 +2,7 @@ Instance: Recommendation2.1RiskFactors
 InstanceOf: recommendation-citation
 Usage: #example
 Title: "Recommendation 2.1: Preoperative Risk Factors"
-Description: "Recommendation number 2.1 from Guideline '2021-Update of the European Society of Anaesthesiology and Intensive Care Medicine (ESAIC) evidence-based and consensus-based guideline on postoperative delirium in
-adult patients'"
+Description: "Recommendation number 2.1 from Guideline 'Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients'"
 * status = #draft
 * version = "0.2.0"
 * date = "2024-02"

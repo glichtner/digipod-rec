@@ -2,8 +2,7 @@ Instance: Recommendation6.2PharmacologicalTreatmentOfPODAndPODOutcomes
 InstanceOf: recommendation-citation
 Usage: #example
 Title: "Recommendation 6.2: Pharmacological Treatment of POD and POD Outcomes - Benzodiazepines as treatment"
-Description: "Recommendation number 6.2 from Guideline '2021-Update of the European Society of Anaesthesiology and Intensive Care Medicine (ESAIC) evidence-based and consensus-based guideline on postoperative delirium in
-adult patients'"
+Description: "Recommendation number 6.2 from Guideline 'Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients'"
 * status = #draft
 * version = "0.2.0"
 * date = "2024-02"

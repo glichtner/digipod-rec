@@ -2,8 +2,7 @@ Instance: Recommendation5.1Neuromonitoring
 InstanceOf: recommendation-citation
 Usage: #example
 Title: "Recommendation 5.1: Neuromonitoring - EEG monitoring depth of anesthesia guidance"
-Description: "Recommendation number 5.1 from Guideline '2021-Update of the European Society of Anaesthesiology and Intensive Care Medicine (ESAIC) evidence-based and consensus-based guideline on postoperative delirium in
-adult patients'"
+Description: "Recommendation number 5.1 from Guideline 'Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients'"
 * status = #draft
 * version = "0.2.0"
 * date = "2024-02"

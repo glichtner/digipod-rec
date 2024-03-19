@@ -2,8 +2,7 @@ Instance: Recommendation4.3PrevMeasuresIINonPharmacologicalInterventions
 InstanceOf: recommendation-citation
 Usage: #example
 Title: "Recommendation 4.3: Preventive Measures II (Non Pharmacological Interventions) - Multi-component non-pharmacological interventions in all patients at risk for POD"
-Description: "Recommendation number 4.3 from Guideline '2021-Update of the European Society of Anaesthesiology and Intensive Care Medicine (ESAIC) evidence-based and consensus-based guideline on postoperative delirium in
-adult patients'"
+Description: "Recommendation number 4.3 from Guideline 'Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients'"
 * status = #draft
 * version = "0.2.0"
 * date = "2024-02"

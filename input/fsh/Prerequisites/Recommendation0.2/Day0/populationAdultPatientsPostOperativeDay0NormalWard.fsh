@@ -26,16 +26,16 @@ Description: "Adult patients after undergoing an elective surgical intervention 
         //  * system = "http://unitsofmeasure.org"
         //  * code = #a
   * characteristic[=].exclude = false
-  * characteristic[procedure][1]
+  * characteristic[procedure][0]
     * definitionByTypeAndValue
       * type = $sct#71388002 "Procedure (procedure)"
       * valueCodeableConcept = $sct#387713003 "Surgical procedure (procedure)"
   * characteristic[procedure][=].exclude = false
-  * characteristic[episodeOfCare][2]
+  * characteristic[episodeOfCare][0]
     * definitionByTypeAndValue // definitionByCombination falls "Recovery Room"/"Aufwachraum" hinzugefügt werden sollte
       //* code = #any-of falls definitionByCombination falls "Recovery Room"/"Aufwachraum" hinzugefügt werden sollte
       * type = $loinc#78030-4 "Episode of care Type"
-      * valueCodeableConcept = $cs-fhir-episode-of-care-type#normalstationaer "Normalstationär"
+      * valueCodeableConcept = #normalstationaer "Normalstationär"
   * characteristic[episodeOfCare][=].exclude = false
 //  * characteristic[3]
 //    * definitionByCombination

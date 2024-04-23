@@ -26,22 +26,22 @@ Description: "Adult patients before undergoing an elective surgical intervention
         //  * system = "http://unitsofmeasure.org"
         //  * code = #a
   * characteristic[=].exclude = false
-  * characteristic[procedure][1]
+  * characteristic[procedure][0]
     * definitionByTypeAndValue
       * type = $sct#71388002 "Procedure (procedure)"
       * valueCodeableConcept = $sct#387713003 "Surgical procedure (procedure)"
   * characteristic[procedure][=].exclude = false
-  * characteristic[episodeOfCare][2]
+  * characteristic[episodeOfCare][0]
     * definitionByCombination
       * code = #any-of
       * characteristic[+]
         * definitionByTypeAndValue
           * type = $loinc#78030-4 "Episode of care Type"
-          * valueCodeableConcept = $cs-fhir-episode-of-care-type#vorstationaer "Vorstationär"
+          * valueCodeableConcept = #vorstationaer "Vorstationär"
       * characteristic[+]
         * definitionByTypeAndValue
           * type = $loinc#78030-4 "Episode of care Type"
-          * valueCodeableConcept = $cs-fhir-episode-of-care-type#normalstationaer "Normalstationär"
+          * valueCodeableConcept = #normalstationaer "Normalstationär"
   * characteristic[episodeOfCare][=].exclude = false
 //  * characteristic[3]
 //    * definitionByCombination

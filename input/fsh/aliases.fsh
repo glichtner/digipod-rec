@@ -4,7 +4,9 @@
 // International code systems
 Alias: $loinc = http://loinc.org
 Alias: $sct = http://snomed.info/sct
-Alias: $sct-us = http://snomed.info/sct/731000124108
+Alias: $sct-int = http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240201
+Alias: $sct-us = http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20230901
+Alias: $sct-uk = http://snomed.info/sct|http://snomed.info/sct/83821000000107/version/20230412
 Alias: $ucum = http://unitsofmeasure.org
 Alias: $atc = http://www.whocc.no/atc
 Alias: $icd9 = http://hl7.org/fhir/sid/icd-9-cm
@@ -30,7 +32,7 @@ Alias: $icd10-gm = http://fhir.de/CodeSystem/dimdi/icd-10-gm
 Alias: $combinationMethod = https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method
 Alias: $cs-action-combination-method = https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method
 Alias: $cs-fhir-episode-of-care-type = http://fhir.de/CodeSystem/kontaktart-de
-//Alias: $cs-fhir-episode-of-care-type = https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-episode-of-care-type
+Alias: $vs-fhir-episode-of-care-type = https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-episode-of-care-type
 
 Alias: $cs-narrative-status = https://hl7.org/fhir/codesystem-narrative-status.html
 Alias: $cs-action-reason-code = http://hl7.org/fhir/action-reason-code

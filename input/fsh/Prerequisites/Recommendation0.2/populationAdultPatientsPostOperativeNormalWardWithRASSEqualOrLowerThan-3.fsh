@@ -26,12 +26,12 @@ Description: "Adult patients after undergoing an elective surgical intervention 
         //  * system = "http://unitsofmeasure.org"
         //  * code = #a
   * characteristic[=].exclude = false
-  * characteristic[procedure][1]
+  * characteristic[procedure][0]
     * definitionByTypeAndValue
       * type = $sct#71388002 "Procedure (procedure)"
       * valueCodeableConcept = $sct#387713003 "Surgical procedure (procedure)"
   * characteristic[procedure][=].exclude = false
-  * characteristic[episodeOfCare][2]
+  * characteristic[episodeOfCare][0]
     * definitionByTypeAndValue
       * type = $loinc#78030-4 "Episode of care Type"
       * valueCodeableConcept = $cs-fhir-episode-of-care-type#normalstationaer "Normalstationär"
@@ -48,7 +48,7 @@ Description: "Adult patients after undergoing an elective surgical intervention 
 //          * type = $sct#272125009 "Priorities (qualifier value)"
 //          * valueCodeableConcept = $sct#88694003 "Immediate (qualifier value)"
 //  * characteristic[=].exclude = false
-  * characteristic[assessmentScale][3]
+  * characteristic[assessmentScale][0]
     * definitionByTypeAndValue
       * type = $sct-us#457441000124102 "Richmond Agitation-Sedation Scale (assessment scale)"
       * valueQuantity

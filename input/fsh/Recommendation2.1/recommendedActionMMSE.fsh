@@ -13,5 +13,5 @@ Description: "Recommended Action for Adult Surgical Patients Preoperatively if M
 * experimental = true
 * kind = $cs-fhir-request-resource-types#ServiceRequest "ServiceRequest"
 * description = "Recommended Action for Adult Surgical Patients Preoperatively if Mini-cog test score is equal to or higher than 3, check risk factor Mini-Mental State Examination Score if Mini-cog test score is equal to or higher than 3."
-* code = $sct#447316007 " Mini-mental state examination score (observable entity)" // $sct#446971008 "Assessment using mini-mental state examination (procedure)"
+* code = $sct#447316007 "Mini-mental state examination score (observable entity)" // $sct#446971008 "Assessment using mini-mental state examination (procedure)"
 * timingTiming.repeat.count = 1

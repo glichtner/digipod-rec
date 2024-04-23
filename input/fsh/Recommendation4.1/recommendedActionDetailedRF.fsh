@@ -168,7 +168,7 @@ Description: "Recommended Action for Adult Surgical Patients Preoperatively, 70 
 * experimental = true
 * kind = $cs-fhir-request-resource-types#ServiceRequest "ServiceRequest"
 * description = "Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for cognitive deficits as risk factors for postoperative delirium (POD)"
-* code = $sct#1100881000168104 "Assessment of cognitive function (procedure)"
+* code = $sct-int#1100881000168104 "Assessment of cognitive function (procedure)"
 
 Instance: RecActionOlderAdultPatientsPreoperativelyCheckDementiaRF //covers 'Dementia'
 InstanceOf: recommendation-action

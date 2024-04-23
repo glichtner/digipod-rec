@@ -13,5 +13,5 @@ Description: "Recommended Action for Adult Surgical Patients Preoperatively, che
 * experimental = true
 * kind = $cs-fhir-request-resource-types#ServiceRequest "ServiceRequest"
 * description = "Recommended Action for Adult Surgical Patients Preoperatively, check risk factor Mini-cog test score."
-* code = $sct#713408000 " Mini-Cog brief cognitive screening test score (observable entity)" // $sct#713773009 "Assessment using Mini-cog brief cognitive screening test (procedure)"
+* code = $sct#713408000 "Mini-Cog brief cognitive screening test score (observable entity)" // $sct#713773009 "Assessment using Mini-cog brief cognitive screening test (procedure)"
 * timingTiming.repeat.count = 1

@@ -1,4 +1,6 @@
 // Author: Gregor Lichtner @glichtner
+// Updated for DIGIPOD: Sophie Klopfenstein @klsophie
+
 // International code systems
 Alias: $loinc = http://loinc.org
 Alias: $sct = http://snomed.info/sct
@@ -7,10 +9,15 @@ Alias: $atc = http://www.whocc.no/atc
 Alias: $icd9 = http://hl7.org/fhir/sid/icd-9-cm
 Alias: $icd10 = http://hl7.org/fhir/sid/icd-10
 Alias: $icd10-cm = http://hl7.org/fhir/sid/icd-10-cm
+Alias: $icd11 = url:oid:2.16.840.1.113883.6.347
 Alias: $rxnorm = http://www.nlm.nih.gov/research/umls/rxnorm
+Alias: $nci = http://ncimeta.nci.nih.gov
+Alias: $umls = http://terminology.hl7.org/CodeSystem/umls
+Alias: $mesh = url:oid:2.16.840.1.113883.6.177
 Alias: $cochrane-pico = http://data.cochrane.org/ontologies/pico/
 Alias: $cochrane-core = http://data.cochrane.org/ontologies/core/
 Alias: $cochrane-ld = https://data.cochrane.org/concepts/
+Alias: $all-languages = urn:ietf:bcp:47
 
 // German code systems
 Alias: $ops = http://fhir.de/CodeSystem/bfarm/ops
@@ -18,8 +25,15 @@ Alias: $atcde = http://fhir.de/CodeSystem/bfarm/atc
 Alias: $icd10-gm = http://fhir.de/CodeSystem/dimdi/icd-10-gm
 
 
-Alias: $ceosys = https://www.ceosys.de
+//Alias: $ceosys = https://www.ceosys.de
+Alias: $combinationMethod = https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method
+Alias: $cs-action-combination-method = https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method
 
+Alias: $cs-narrative-status = https://hl7.org/fhir/codesystem-narrative-status.html
+Alias: $cs-action-reason-code = http://hl7.org/fhir/action-reason-code
+Alias: $cs-action-required-behavior = http://hl7.org/fhir/R5/codesystem-action-required-behavior.html
+Alias: $cs-evidence-variable-event = http://hl7.org/fhir/evidence-variable-event
+Alias: $cs-goal-category = http://terminology.hl7.org/CodeSystem/goal-category
 Alias: $cs-focus-characteristic = http://terminology.hl7.org/CodeSystem/focus-characteristic-code
 Alias: $vs-focus-characteristic = http://hl7.org/fhir/ValueSet/focus-characteristic-code
 Alias: $cs-variable-role = http://terminology.hl7.org/CodeSystem/variable-role
@@ -51,14 +65,21 @@ Alias: $cs-guideline-stage-classification = cs-guideline-stage-classification
 Alias: $cs-clinical-importance = cs-clinical-importance
 
 Alias: $cs-cited-artifact-classification-type = http://terminology.hl7.org/CodeSystem/cited-artifact-classification-type
-Alias: $cs-cited-artifact-status-type = http://terminology.hl7.org/CodeSystem/cited-artifact-status-type
+Alias: $cs-cited-artifact-status-type = http://hl7.org/fhir/cited-artifact-status-type
+Alias: $cs-cited-artifact-part-type = http://hl7.org/fhir/cited-artifact-part-type
 Alias: $cs-related-artifact-type = http://hl7.org/fhir/related-artifact-type
-Alias: $cs-ceosys = CEOsysCodeSystem
+Alias: $cs-title-type = http://hl7.org/fhir/title-type
+Alias: $cs-artifact-url-classifier = http://hl7.org/fhir/artifact-url-classifier
+
+Alias: $cs-fhir-types = https://hl7.org/fhir/valueset-request-resource-types.html
+
+Alias: $cs-fhir-concept-map-relationship = http://hl7.org/fhir/concept-map-relationship
+// Alias: $cs-ceosys = CEOsysCodeSystem
 
 Alias: $cs-citation-artifact-classifier = http://terminology.hl7.org/CodeSystem/citation-artifact-classifier
 
 Alias: $vs-snomed-procedures = http://hl7.org/fhir/ValueSet/procedure-code
 Alias: $cs-gts-timing = http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation
 
-Alias: $cs-codex-celida = https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/CodeSystem/codex-celida
+//Alias: $cs-codex-celida = https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/CodeSystem/codex-celida
 Alias: $cs-common-process = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process

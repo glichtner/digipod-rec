@@ -18,11 +18,11 @@ Description: "Recommendation number 2.1 from Guideline 'Update of the European S
     * text = "Recommendation 2.1"
   * part[+]
     * type = $cs-cited-artifact-part-type#paragraphs "paragraphs"
-    * value = "We recommend evaluating the following preoperative risk factors for POD:
+    * value = """We recommend evaluating the following preoperative risk factors for POD:
         (1) Older age
         (2) American Society of Anesthesiology Physical status score > 2
         (3) Charlson Comorbidity Index ≥ 2
-        (4) Mini Mental State Examination score < 25 points"
+        (4) Mini Mental State Examination score < 25 points"""
   * relatesTo
     * type = $cs-related-artifact-type#contained-in "Contained-in"
     * resource = Canonical(ClinicalPracticeGuidelineESAICOnPostOpDeliriumInAdultPatients) // canonical of the citation of the entire guideline

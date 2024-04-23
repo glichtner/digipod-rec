@@ -4,7 +4,7 @@
 Instance: RecCollIntraoperativeMultiparameterEEG
 InstanceOf: recommendation
 Usage: #definition
-Title: "Recommendation Collection: Use multiparameter EEG monitoring in Adult Surgical Patients Intraoperative"
+Title: "Recommendation Collection: Use multiparameter EEG monitoring in Adult Surgical Patients Intraoperatively"
 Description: "Recommendation collection for adult patients during a surgical intervention: Use multiparameter electroencephalographic (EEG) monitoring focusing on burst suppression activity and including the density spectral array (DSA)."
 * name = "RecCollIntraoperativeMultiparameterEEG"
 * version = "0.2.0"

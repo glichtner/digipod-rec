@@ -4,7 +4,7 @@
 Instance: RecCollIntraoperativeEEGMonitoringDepth
 InstanceOf: recommendation
 Usage: #definition
-Title: "Recommendation Collection: Use Index-based EEG monitoring depth of anaesthesia guidance in Adult Surgical Patients Intraoperative"
+Title: "Recommendation Collection: Use Index-based EEG monitoring depth of anaesthesia guidance in Adult Surgical Patients Intraoperatively"
 Description: "Recommendation collection for adult patients during a surgical intervention: Use Index-based EEG monitoring depth of anaesthesia guidance"
 * name = "RecCollIntraoperativeEEGMonitoringDepth"
 * version = "0.2.0"

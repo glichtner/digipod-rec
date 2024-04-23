@@ -4,6 +4,7 @@
 // International code systems
 Alias: $loinc = http://loinc.org
 Alias: $sct = http://snomed.info/sct
+Alias: $sct-us = http://snomed.info/sct/731000124108
 Alias: $ucum = http://unitsofmeasure.org
 Alias: $atc = http://www.whocc.no/atc
 Alias: $icd9 = http://hl7.org/fhir/sid/icd-9-cm
@@ -28,6 +29,8 @@ Alias: $icd10-gm = http://fhir.de/CodeSystem/dimdi/icd-10-gm
 //Alias: $ceosys = https://www.ceosys.de
 Alias: $combinationMethod = https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method
 Alias: $cs-action-combination-method = https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method
+Alias: $cs-fhir-episode-of-care-type = http://fhir.de/CodeSystem/kontaktart-de
+//Alias: $cs-fhir-episode-of-care-type = https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ValueSet/vs-episode-of-care-type
 
 Alias: $cs-narrative-status = https://hl7.org/fhir/codesystem-narrative-status.html
 Alias: $cs-action-reason-code = http://hl7.org/fhir/action-reason-code
@@ -71,9 +74,14 @@ Alias: $cs-related-artifact-type = http://hl7.org/fhir/related-artifact-type
 Alias: $cs-title-type = http://hl7.org/fhir/title-type
 Alias: $cs-artifact-url-classifier = http://hl7.org/fhir/artifact-url-classifier
 
-Alias: $cs-fhir-types = https://hl7.org/fhir/valueset-request-resource-types.html
+Alias: $cs-fhir-request-resource-types = https://hl7.org/fhir/valueset-request-resource-types.html
+Alias: $cs-fhir-types = http://hl7.org/fhir/fhir-types
 
 Alias: $cs-fhir-concept-map-relationship = http://hl7.org/fhir/concept-map-relationship
+Alias: $vs-fhir-concept-map-equivalence = http://hl7.org/fhir/ValueSet/concept-map-equivalence
+
+Alias: $cs-fhir-event-timing = http://hl7.org/fhir/event-timing
+
 // Alias: $cs-ceosys = CEOsysCodeSystem
 
 Alias: $cs-citation-artifact-classifier = http://terminology.hl7.org/CodeSystem/citation-artifact-classifier

@@ -37,11 +37,11 @@ Description: "Adult patients before undergoing an elective surgical intervention
       * characteristic[+]
         * definitionByTypeAndValue
           * type = $loinc#78030-4 "Episode of care Type"
-          * valueCodeableConcept = #vorstationaer "Vorstationär"
+          * valueCodeableConcept = $cs-fhir-episode-of-care-type#vorstationaer "Vorstationär"
       * characteristic[+]
         * definitionByTypeAndValue
           * type = $loinc#78030-4 "Episode of care Type"
-          * valueCodeableConcept = #normalstationaer "Normalstationär"
+          * valueCodeableConcept = $cs-fhir-episode-of-care-type#normalstationaer "Normalstationär"
   * characteristic[episodeOfCare][=].exclude = false
 //  * characteristic[3]
 //    * definitionByCombination

@@ -35,7 +35,7 @@ Description: "Adult patients after undergoing an elective surgical intervention 
     * definitionByTypeAndValue // definitionByCombination falls "Recovery Room"/"Aufwachraum" hinzugefügt werden sollte
       //* code = #any-of falls definitionByCombination falls "Recovery Room"/"Aufwachraum" hinzugefügt werden sollte
       * type = $loinc#78030-4 "Episode of care Type"
-      * valueCodeableConcept = #intensivstationaer "Intensivstationär"
+      * valueCodeableConcept = $cs-fhir-episode-of-care-type#intensivstationaer "Intensivstationär"
   * characteristic[episodeOfCare][=].exclude = false
 //  * characteristic[3]
 //    * definitionByCombination

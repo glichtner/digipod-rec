@@ -91,23 +91,23 @@ Description: "Concept map from concepts defined in DIGIPOD to standardized vocab
 * group[=].element[=].display = "Day shift"
 * group[=].element[=].target[+].code = $loinc#LA14948-6
 * group[=].element[=].target[=].display = "Day shift (approx. 7am- 3pm)"
-* group[=].element[=].target[=].relationship = $cs-fhir-concept-map-relationship#relationship "Related to"
+* group[=].element[=].target[=].relationship = $cs-fhir-concept-map-relationship#related-to "Related to"
 * group[=].element[=].target[+].code = $cs-fhir-event-timing#MORN
 * group[=].element[=].target[=].display = "Morning"
-* group[=].element[=].target[=].relationship = $cs-fhir-concept-map-relationship#relationship "Related to"
+* group[=].element[=].target[=].relationship = $cs-fhir-concept-map-relationship#related-to "Related to"
 * group[=].element[+].code = #026
 * group[=].element[=].display = "Evening shift"
 * group[=].element[=].target[+].code = $loinc#LA14949-4
 * group[=].element[=].target[=].display = "Evening shift (approx. 3pm- 11pm)"
-* group[=].element[=].target[=].relationship = $cs-fhir-concept-map-relationship#relationship "Related to"
+* group[=].element[=].target[=].relationship = $cs-fhir-concept-map-relationship#related-to "Related to"
 * group[=].element[=].target[+].code = $cs-fhir-event-timing#AFT
 * group[=].element[=].target[=].display = "Afternoon"
-* group[=].element[=].target[=].relationship = $cs-fhir-concept-map-relationship#relationship "Related to"
+* group[=].element[=].target[=].relationship = $cs-fhir-concept-map-relationship#related-to "Related to"
 * group[=].element[+].code = #027
 * group[=].element[=].display = "Night shift"
 * group[=].element[=].target[+].code = $loinc#LA14950-2
 * group[=].element[=].target[=].display = "Night shift (approx. 11pm- 7am)"
-* group[=].element[=].target[=].relationship = $cs-fhir-concept-map-relationship#relationship "Related to"
+* group[=].element[=].target[=].relationship = $cs-fhir-concept-map-relationship#related-to "Related to"
 * group[=].element[=].target[+].code = $cs-fhir-event-timing#NIGHT
 * group[=].element[=].target[=].display = "Night"
-* group[=].element[=].target[=].relationship = $cs-fhir-concept-map-relationship#relationship "Related to"
+* group[=].element[=].target[=].relationship = $cs-fhir-concept-map-relationship#related-to "Related to"

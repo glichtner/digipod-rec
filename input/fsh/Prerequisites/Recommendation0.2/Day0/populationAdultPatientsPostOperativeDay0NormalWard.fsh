@@ -11,7 +11,7 @@ Description: "Adult patients after undergoing an elective surgical intervention 
 * description = "Population for guideline 0.2 from https://pubmed.ncbi.nlm.nih.gov/37599617/: Adult patients, postoperatively, on the day of the surgical intervention, on normal ward or in the recovery room"
 * characteristic[+].definitionByCombination
   * code = #all-of
-  * characteristic[+]
+  * characteristic[0]
     * definitionByTypeAndValue
       * type = $sct#424144002 "Current chronological age (observable entity)" // alternatively #age from http://terminology.hl7.org/CodeSystem/usage-context-type
       * valueRange
@@ -31,7 +31,7 @@ Description: "Adult patients after undergoing an elective surgical intervention 
       * type = $sct#71388002 "Procedure (procedure)"
       * valueCodeableConcept = $sct#387713003 "Surgical procedure (procedure)"
   * characteristic[procedure][=].exclude = false
-  * characteristic[episodeOfCare][0]
+  * characteristic[episodeOfCare][+]
     * definitionByTypeAndValue // definitionByCombination falls "Recovery Room"/"Aufwachraum" hinzugefügt werden sollte
       //* code = #any-of falls definitionByCombination falls "Recovery Room"/"Aufwachraum" hinzugefügt werden sollte
       * type = $loinc#78030-4 "Episode of care Type"

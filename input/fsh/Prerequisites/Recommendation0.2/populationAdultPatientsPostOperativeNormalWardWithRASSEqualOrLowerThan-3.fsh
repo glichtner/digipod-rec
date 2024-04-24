@@ -26,12 +26,12 @@ Description: "Adult patients after undergoing an elective surgical intervention 
         //  * system = "http://unitsofmeasure.org"
         //  * code = #a
   * characteristic[=].exclude = false
-  * characteristic[procedure][0]
+  * characteristic[procedure][1]
     * definitionByTypeAndValue
       * type = $sct#71388002 "Procedure (procedure)"
       * valueCodeableConcept = $sct#387713003 "Surgical procedure (procedure)"
   * characteristic[procedure][=].exclude = false
-  * characteristic[episodeOfCare][0]
+  * characteristic[episodeOfCare][+]
     * definitionByTypeAndValue
       * type = $loinc#78030-4 "Episode of care Type"
       * valueCodeableConcept = $cs-fhir-episode-of-care-type#normalstationaer "Normalstationär"

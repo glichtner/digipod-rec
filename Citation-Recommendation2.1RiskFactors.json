@@ -1,0 +1,119 @@
+{
+  "resourceType" : "Citation",
+  "id" : "Recommendation2.1RiskFactors",
+  "meta" : {
+    "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-citation"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Citation</b><a name=\"Recommendation2.1RiskFactors\"> </a><a name=\"hcRecommendation2.1RiskFactors\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceCitation &quot;Recommendation2.1RiskFactors&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"file:///github/workspace/output/StructureDefinition-recommendation-citation.html\">Recommendation Citation</a></p></div><p><b>version</b>: 0.2.0</p><p><b>name</b>: Recommendation2_1RiskFactors</p><p><b>title</b>: Recommendation 2.1: Preoperative Risk Factors</p><p><b>status</b>: draft</p><p><b>date</b>: 2024-02</p><blockquote><p><b>citedArtifact</b></p><p><b>identifier</b>: 37599617-rec2.1</p><h3>Versions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value</b></td></tr><tr><td style=\"display: none\">*</td><td>1.0</td></tr></table><p><b>currentState</b>: Published final form <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R5/codesystem-cited-artifact-status-type.html\">Cited Artifact Status Type</a>#published-final-form)</span></p><h3>Titles</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Language</b></td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Primary title <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R5/codesystem-title-type.html\">Title Type</a>#primary)</span></td><td>English <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-ietf3066.html\">Tags for the Identification of Languages</a>#en)</span></td><td>Recommendation 2.1</td></tr></table><h3>Parts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value</b></td></tr><tr><td style=\"display: none\">*</td><td>paragraphs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R5/codesystem-cited-artifact-part-type.html\">Cited Artifact Part Type</a>#paragraphs)</span></td><td>We recommend evaluating the following preoperative risk factors for POD:\n        (1) Older age\n        (2) American Society of Anesthesiology Physical status score &gt; 2\n        (3) Charlson Comorbidity Index ≥ 2\n        (4) Mini Mental State Examination score &lt; 25 points</td></tr></table><h3>RelatesTos</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Resource</b></td></tr><tr><td style=\"display: none\">*</td><td>contained-in</td><td><a href=\"Citation-ClinicalPracticeGuidelineESAICOnPostOpDeliriumInAdultPatients.html\">Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients</a></td></tr></table><h3>Classifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Classifier</b></td></tr><tr><td style=\"display: none\">*</td><td>Publication Type <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R5/codesystem-cited-artifact-classification-type.html\">Cited Artifact Classification Type</a>#publication-type)</span></td><td>Clinical practice guideline recommendation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"file:///github/workspace/output/CodeSystem-ceosys-code-system.html\">CEOsys Code System</a>#guideline-recommendation)</span></td></tr></table><blockquote><p><b>contributorship</b></p><blockquote><p><b>entry</b></p><p><b>contributor</b>: <a href=\"Practitioner-FedericoBilotta.html\">Practitioner/FedericoBilotta</a> &quot; BILOTTA&quot;</p><p><b>affiliation</b>: <span>: Department of Anesthesiology, Critical Care and Pain Medicine, 'Sapienza' University of Rome, Rome, Italy</span></p></blockquote><blockquote><p><b>entry</b></p><p><b>contributor</b>: <a href=\"Practitioner-AliForookhi.html\">Practitioner/AliForookhi</a> &quot; FOROOKHI&quot;</p><p><b>affiliation</b>: <span>: Department of Anesthesiology, Critical Care and Pain Medicine, 'Sapienza' University of Rome, Rome, Italy</span></p></blockquote><blockquote><p><b>entry</b></p><p><b>contributor</b>: <a href=\"Practitioner-HenrikKehlet.html\">Practitioner/HenrikKehlet</a> &quot; KEHLET&quot;</p><p><b>affiliation</b>: <span>: Section of Surgical Pathophysiology, Copenhagen University Hospital, Rigshospitalet, Copenhagen, Denmark</span></p></blockquote><blockquote><p><b>entry</b></p><p><b>contributor</b>: <a href=\"Practitioner-LiorMevorach.html\">Practitioner/LiorMevorach</a> &quot; MEVORACH&quot;</p><p><b>affiliation</b>: <span>: Department of Anesthesiology, Critical Care and Pain Medicine, 'Sapienza' University of Rome, Rome, Italy</span></p></blockquote><blockquote><p><b>entry</b></p><p><b>contributor</b>: <a href=\"Practitioner-StefanoRomagnoli.html\">Practitioner/StefanoRomagnoli</a> &quot; ROMAGNOLI&quot;</p><p><b>affiliation</b>: <span>: Department of Health Science, Section of Anesthesiology, University of Florence; Department of Anaesthesia and Critical Care, Azienda Ospedaliero-Universitaria Careggi, Florence, Italy</span></p></blockquote></blockquote></blockquote></div>"
+  },
+  "version" : "0.2.0",
+  "name" : "Recommendation2_1RiskFactors",
+  "title" : "Recommendation 2.1: Preoperative Risk Factors",
+  "status" : "draft",
+  "date" : "2024-02",
+  "citedArtifact" : {
+    "identifier" : [{
+      "value" : "37599617-rec2.1"
+    }],
+    "version" : {
+      "value" : "1.0"
+    },
+    "currentState" : [{
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/cited-artifact-status-type",
+        "code" : "published-final-form",
+        "display" : "Published final form"
+      }]
+    }],
+    "title" : [{
+      "type" : [{
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/title-type",
+          "code" : "primary",
+          "display" : "Primary title"
+        }]
+      }],
+      "language" : {
+        "coding" : [{
+          "system" : "urn:ietf:bcp:47",
+          "code" : "en"
+        }]
+      },
+      "text" : "Recommendation 2.1"
+    }],
+    "part" : {
+      "type" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/cited-artifact-part-type",
+          "code" : "paragraphs",
+          "display" : "paragraphs"
+        }]
+      },
+      "value" : "We recommend evaluating the following preoperative risk factors for POD:\n        (1) Older age\n        (2) American Society of Anesthesiology Physical status score > 2\n        (3) Charlson Comorbidity Index ≥ 2\n        (4) Mini Mental State Examination score < 25 points"
+    },
+    "relatesTo" : [{
+      "type" : "contained-in",
+      "resource" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Citation/ClinicalPracticeGuidelineESAICOnPostOpDeliriumInAdultPatients"
+    }],
+    "classification" : [{
+      "type" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/cited-artifact-classification-type",
+          "code" : "publication-type",
+          "display" : "Publication Type"
+        }]
+      },
+      "classifier" : [{
+        "coding" : [{
+          "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system",
+          "code" : "guideline-recommendation",
+          "display" : "Clinical practice guideline recommendation"
+        }]
+      }]
+    }],
+    "contributorship" : {
+      "entry" : [{
+        "contributor" : {
+          "reference" : "Practitioner/FedericoBilotta"
+        },
+        "affiliation" : [{
+          "display" : "Department of Anesthesiology, Critical Care and Pain Medicine, 'Sapienza' University of Rome, Rome, Italy"
+        }]
+      },
+      {
+        "contributor" : {
+          "reference" : "Practitioner/AliForookhi"
+        },
+        "affiliation" : [{
+          "display" : "Department of Anesthesiology, Critical Care and Pain Medicine, 'Sapienza' University of Rome, Rome, Italy"
+        }]
+      },
+      {
+        "contributor" : {
+          "reference" : "Practitioner/HenrikKehlet"
+        },
+        "affiliation" : [{
+          "display" : "Section of Surgical Pathophysiology, Copenhagen University Hospital, Rigshospitalet, Copenhagen, Denmark"
+        }]
+      },
+      {
+        "contributor" : {
+          "reference" : "Practitioner/LiorMevorach"
+        },
+        "affiliation" : [{
+          "display" : "Department of Anesthesiology, Critical Care and Pain Medicine, 'Sapienza' University of Rome, Rome, Italy"
+        }]
+      },
+      {
+        "contributor" : {
+          "reference" : "Practitioner/StefanoRomagnoli"
+        },
+        "affiliation" : [{
+          "display" : "Department of Health Science, Section of Anesthesiology, University of Florence; Department of Anaesthesia and Critical Care, Azienda Ospedaliero-Universitaria Careggi, Florence, Italy"
+        }]
+      }]
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "FatimaYuerek",
+  "text" : {
+    "status" : "additional",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Resource representing Fatima Yürek</div>"
+  },
+  "name" : [{
+    "family" : "Yürek",
+    "given" : ["Fatima"]
+  }]
+}

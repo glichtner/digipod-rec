@@ -1,0 +1,47 @@
+{
+  "resourceType" : "ActivityDefinition",
+  "id" : "RecActionAdultSurgicalPatientsPreoperativelyCheckRFMMSE",
+  "meta" : {
+    "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/assessment-action"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ActivityDefinition</b><a name=\"RecActionAdultSurgicalPatientsPreoperativelyCheckRFMMSE\"> </a><a name=\"hcRecActionAdultSurgicalPatientsPreoperativelyCheckRFMMSE\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceActivityDefinition &quot;RecActionAdultSurgicalPatientsPreoperativelyCheckRFMMSE&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"file:///github/workspace/output/StructureDefinition-assessment-action.html\">Assessment Action</a></p></div><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>url</b>: <code>https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultSurgicalPatientsPreoperativelyCheckRFMMSE</code></p><p><b>version</b>: 0.2.0</p><p><b>name</b>: RecActionAdultSurgicalPatientsPreoperativelyCheckRFMMSE</p><p><b>title</b>: Recommended Action for Population: Adult Surgical Patients Preoperatively, check risk factor Mini-Mental State Examination Score if Mini-cog test score is equal to or higher than 3. Please note that MMSE is not free of charge (license fees)</p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>subject</b>: Patient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R5/codesystem-fhir-types.html\">All FHIR Types</a>#Patient)</span></p><p><b>date</b>: 2024-02</p><p><b>publisher</b>: DIGIPOD</p><p><b>description</b>: Recommended Action for Adult Surgical Patients Preoperatively if Mini-cog test score is equal to or higher than 3, check risk factor Mini-Mental State Examination Score if Mini-cog test score is equal to or higher than 3.</p><p><b>kind</b>: ServiceRequest</p><p><b>code</b>: Mini-mental state examination score (observable entity) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOWMED CT</a>#447316007)</span></p><p><b>timing</b>: Count 1  times, Once</p></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "computable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueCode" : "structured"
+  }],
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultSurgicalPatientsPreoperativelyCheckRFMMSE",
+  "version" : "0.2.0",
+  "name" : "RecActionAdultSurgicalPatientsPreoperativelyCheckRFMMSE",
+  "title" : "Recommended Action for Population: Adult Surgical Patients Preoperatively, check risk factor Mini-Mental State Examination Score if Mini-cog test score is equal to or higher than 3. Please note that MMSE is not free of charge (license fees)",
+  "status" : "draft",
+  "experimental" : true,
+  "subjectCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/fhir-types",
+      "code" : "Patient"
+    }]
+  },
+  "date" : "2024-02",
+  "publisher" : "DIGIPOD",
+  "description" : "Recommended Action for Adult Surgical Patients Preoperatively if Mini-cog test score is equal to or higher than 3, check risk factor Mini-Mental State Examination Score if Mini-cog test score is equal to or higher than 3.",
+  "kind" : "ServiceRequest",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "447316007",
+      "display" : "Mini-mental state examination score (observable entity)"
+    }]
+  },
+  "timingTiming" : {
+    "repeat" : {
+      "count" : 1
+    }
+  }
+}

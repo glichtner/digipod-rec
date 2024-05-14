@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PlanDefinition xmlns="http://hl7.org/fhir">
+  <id value="RecCollDeliriumScreeningOnSurgeryDayEveningShift"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: PlanDefinition</b><a name="RecCollDeliriumScreeningOnSurgeryDayEveningShift"> </a><a name="hcRecCollDeliriumScreeningOnSurgeryDayEveningShift"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourcePlanDefinition &quot;RecCollDeliriumScreeningOnSurgeryDayEveningShift&quot; </p><p style="margin-bottom: 0px">Profile: <a href="file:///github/workspace/output/StructureDefinition-recommendation.html">Recommendation</a></p></div><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><blockquote><p><b>Action Combination Method</b></p><blockquote><p><b>url</b></p><code>method</code></blockquote><p><b>value</b>: Exactly <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="file:///github/workspace/output/CodeSystem-cs-action-combination-method.html">Action Combination Method</a>#exactly)</span></p><blockquote><p><b>url</b></p><code>threshold</code></blockquote><p><b>value</b>: 1</p></blockquote><p><b>url</b>: <code>https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecCollDeliriumScreeningOnSurgeryDayEveningShift</code></p><p><b>version</b>: 0.2.0</p><p><b>name</b>: RecCollDeliriumScreeningOnSurgeryDayEveningShift</p><p><b>title</b>: Recommendation Collection: Perform Delirium Screening in Adult Surgical Patients Postoperatively on surgery day during the evening shift</p><p><b>type</b>: Workflow Definition <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.5.0/CodeSystem-plan-definition-type.html">PlanDefinitionType</a>#workflow-definition)</span></p><p><b>status</b>: draft</p><p><b>date</b>: 2024-02</p><p><b>publisher</b>: European Society of Anaesthesiology and Intensive Care Medicine (ESAIC)</p><p><b>description</b>: Recommendation collection for adult patients that had a surgical intervention: Perform delirium screening on surgery day during the evening shift.</p><blockquote><p><b>action</b></p><p><b>title</b>: RecPlanPostoperativeDeliriumScreeningOnSurgeryDayNWEveningShift</p><p><b>description</b>: Perform Delirium Screening in Adult Surgical Patients, Postoperatively, on a Normal Ward, on Surgery Day During the Evening Shift.</p><p><b>code</b>: Guideline-based Care <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/uv/cpg/STU1/CodeSystem-cpg-common-process.html">CPG Common Process</a>#guideline-based-care)</span></p><p><b>selectionBehavior</b>: one-or-more</p><p><b>definition</b>: <a href="PlanDefinition-RecPlanPostoperativeDeliriumScreeningOnSurgeryDayNWEveningShift.html">Recommended Plan for Population: Adult Surgical Patients Postoperatively on a Normal Ward, Perform Delirium Screening during the evening shift</a></p></blockquote><blockquote><p><b>action</b></p><p><b>title</b>: RecPlanPostoperativeDeliriumScreeningOnSurgeryDayICUEveningShift</p><p><b>description</b>: Perform Delirium Screening in Adult Surgical Patients, Postoperatively, on an Intensive Care unit, on Surgery Day During the Evening Shift.</p><p><b>code</b>: Guideline-based Care <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/uv/cpg/STU1/CodeSystem-cpg-common-process.html">CPG Common Process</a>#guideline-based-care)</span></p><p><b>selectionBehavior</b>: one-or-more</p><p><b>definition</b>: <a href="PlanDefinition-RecPlanPostoperativeDeliriumScreeningOnSurgeryDayICUEveningShift.html">Recommended Plan for Population: Adult Surgical Patients Postoperatively on an Intensive Care Unit, Perform Delirium Screening during the evening shift</a></p></blockquote></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <extension url="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method">
+    <extension url="method">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"/>
+          <code value="exactly"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="threshold">
+      <valuePositiveInt value="1"/>
+    </extension>
+  </extension>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecCollDeliriumScreeningOnSurgeryDayEveningShift"/>
+  <version value="0.2.0"/>
+  <name value="RecCollDeliriumScreeningOnSurgeryDayEveningShift"/>
+  <title value="Recommendation Collection: Perform Delirium Screening in Adult Surgical Patients Postoperatively on surgery day during the evening shift"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+      <code value="workflow-definition"/>
+    </coding>
+  </type>
+  <status value="draft"/>
+  <date value="2024-02"/>
+  <publisher value="European Society of Anaesthesiology and Intensive Care Medicine (ESAIC)"/>
+  <description value="Recommendation collection for adult patients that had a surgical intervention: Perform delirium screening on surgery day during the evening shift."/>
+  <action>
+    <title value="RecPlanPostoperativeDeliriumScreeningOnSurgeryDayNWEveningShift"/>
+    <description value="Perform Delirium Screening in Adult Surgical Patients, Postoperatively, on a Normal Ward, on Surgery Day During the Evening Shift."/>
+    <code>
+      <coding>
+        <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"/>
+        <code value="guideline-based-care"/>
+      </coding>
+    </code>
+    <selectionBehavior value="one-or-more"/>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecPlanPostoperativeDeliriumScreeningOnSurgeryDayNWEveningShift"/>
+  </action>
+  <action>
+    <title value="RecPlanPostoperativeDeliriumScreeningOnSurgeryDayICUEveningShift"/>
+    <description value="Perform Delirium Screening in Adult Surgical Patients, Postoperatively, on an Intensive Care unit, on Surgery Day During the Evening Shift."/>
+    <code>
+      <coding>
+        <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"/>
+        <code value="guideline-based-care"/>
+      </coding>
+    </code>
+    <selectionBehavior value="one-or-more"/>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecPlanPostoperativeDeliriumScreeningOnSurgeryDayICUEveningShift"/>
+  </action>
+</PlanDefinition>

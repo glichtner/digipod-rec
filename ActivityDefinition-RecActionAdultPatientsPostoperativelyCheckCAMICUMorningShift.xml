@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ActivityDefinition xmlns="http://hl7.org/fhir">
+  <id value="RecActionAdultPatientsPostoperativelyCheckCAMICUMorningShift"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/assessment-action"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: ActivityDefinition</b><a name="RecActionAdultPatientsPostoperativelyCheckCAMICUMorningShift"> </a><a name="hcRecActionAdultPatientsPostoperativelyCheckCAMICUMorningShift"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceActivityDefinition &quot;RecActionAdultPatientsPostoperativelyCheckCAMICUMorningShift&quot; </p><p style="margin-bottom: 0px">Profile: <a href="file:///github/workspace/output/StructureDefinition-assessment-action.html">Assessment Action</a></p></div><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>url</b>: <code>https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckCAMICUMorningShift</code></p><p><b>version</b>: 0.2.0</p><p><b>name</b>: RecActionAdultPatientsPostoperativelyCheckCAMICUMorningShift</p><p><b>title</b>: Recommended Action for Population: Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Confusion Assessment Method for the Intesive Care Unit (CAM-ICU) score during the morning shift</p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>subject</b>: Patient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/R5/codesystem-fhir-types.html">All FHIR Types</a>#Patient)</span></p><p><b>date</b>: 2024-04</p><p><b>publisher</b>: DIGIPOD</p><p><b>description</b>: Recommended Action for Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Confusion Assessment Method for the Intesive Care Unit (CAM-ICU) score during the morning shift.</p><p><b>kind</b>: ServiceRequest</p><p><b>code</b>: Confusion Assessment Method for the Intensive Care Unit score <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-digipod.html">DIGIPOD</a>#022)</span></p><p><b>timing</b>: Count 1  times, , ?ngen-6?</p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckCAMICUMorningShift"/>
+  <version value="0.2.0"/>
+  <name value="RecActionAdultPatientsPostoperativelyCheckCAMICUMorningShift"/>
+  <title value="Recommended Action for Population: Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Confusion Assessment Method for the Intesive Care Unit (CAM-ICU) score during the morning shift"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <subjectCodeableConcept>
+    <coding>
+      <system value="http://hl7.org/fhir/fhir-types"/>
+      <code value="Patient"/>
+    </coding>
+  </subjectCodeableConcept>
+  <date value="2024-04"/>
+  <publisher value="DIGIPOD"/>
+  <description value="Recommended Action for Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Confusion Assessment Method for the Intesive Care Unit (CAM-ICU) score during the morning shift."/>
+  <kind value="ServiceRequest"/>
+  <code>
+    <coding>
+      <system value="https://www.charite.de/fhir/digipod/CodeSystem/digipod"/>
+      <code value="022"/>
+      <display value="Confusion Assessment Method for the Intensive Care Unit score"/>
+    </coding>
+  </code>
+  <timingTiming>
+    <repeat>
+      <count value="1"/>
+      <when value="MORN"/>
+    </repeat>
+  </timingTiming>
+</ActivityDefinition>

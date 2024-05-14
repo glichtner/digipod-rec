@@ -1,0 +1,12 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "ConcezioneTommasino",
+  "text" : {
+    "status" : "additional",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Resource representing Concezione Tommasino</div>"
+  },
+  "name" : [{
+    "family" : "Tommasino",
+    "given" : ["Concezione"]
+  }]
+}

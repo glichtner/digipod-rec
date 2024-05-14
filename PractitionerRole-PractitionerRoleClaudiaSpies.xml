@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PractitionerRole xmlns="http://hl7.org/fhir">
+  <id value="PractitionerRoleClaudiaSpies"/>
+  <text>
+    <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">Resource representing the contact data and affiliation of Prof. Dr. Claudia Spies</div>
+  </text>
+  <practitioner>
+    <reference value="Practitioner/ClaudiaSpies"/>
+  </practitioner>
+  <organization>
+    <reference value="Organization/OrganizationCharite"/>
+  </organization>
+  <contact>
+    <telecom>
+      <system value="phone"/>
+      <value value="+49 (0) 30 450 531 012"/>
+      <use value="work"/>
+    </telecom>
+    <telecom>
+      <system value="fax"/>
+      <value value="+49 (0) 30 450 531 911"/>
+      <use value="work"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="claudia.spies@charite.de"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+</PractitionerRole>

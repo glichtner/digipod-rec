@@ -1,0 +1,12 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "RobertSanders",
+  "text" : {
+    "status" : "additional",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Resource representing Robert Sanders</div>"
+  },
+  "name" : [{
+    "family" : "Sanders",
+    "given" : ["Robert"]
+  }]
+}

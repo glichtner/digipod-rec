@@ -1,0 +1,12 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "KatiImmonen",
+  "text" : {
+    "status" : "additional",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Resource representing Kati Immonen</div>"
+  },
+  "name" : [{
+    "family" : "Immonen",
+    "given" : ["Kati"]
+  }]
+}

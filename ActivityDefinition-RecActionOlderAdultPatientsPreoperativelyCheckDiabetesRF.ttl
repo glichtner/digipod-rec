@@ -1,0 +1,56 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckDiabetesRF> a fhir:ActivityDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "RecActionOlderAdultPatientsPreoperativelyCheckDiabetesRF"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-action"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-action>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ActivityDefinition</b><a name=\"RecActionOlderAdultPatientsPreoperativelyCheckDiabetesRF\"> </a><a name=\"hcRecActionOlderAdultPatientsPreoperativelyCheckDiabetesRF\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceActivityDefinition &quot;RecActionOlderAdultPatientsPreoperativelyCheckDiabetesRF&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"file:///github/workspace/output/StructureDefinition-recommendation-action.html\">Recommendation Action</a></p></div><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>url</b>: <code>https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckDiabetesRF</code></p><p><b>version</b>: 0.2.0</p><p><b>name</b>: RecActionOlderAdultPatientsPreoperativelyCheckDiabetesRF</p><p><b>title</b>: Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for diabetes as risk factor for POD</p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>subject</b>: Patient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R5/codesystem-fhir-types.html\">All FHIR Types</a>#Patient)</span></p><p><b>date</b>: 2024-02</p><p><b>publisher</b>: DIGIPOD</p><p><b>description</b>: Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for diabetes as risk factor for postoperative delirium (POD)</p><p><b>kind</b>: ServiceRequest</p><p><b>code</b>: Cardiovascular examination and evaluation (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOWMED CT</a>#43038000)</span></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "computable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "structured" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckDiabetesRF"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:name [ fhir:v "RecActionOlderAdultPatientsPreoperativelyCheckDiabetesRF"] ; # 
+  fhir:title [ fhir:v "Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for diabetes as risk factor for POD"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:subject [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/fhir-types"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Patient" ]
+     ] )
+  ] ; # 
+  fhir:date [ fhir:v "2024-02"^^xsd:gYearMonth] ; # 
+  fhir:publisher [ fhir:v "DIGIPOD"] ; # 
+  fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for diabetes as risk factor for postoperative delirium (POD)"] ; # 
+  fhir:kind [ fhir:v "ServiceRequest"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:43038000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "43038000" ] ;
+       fhir:display [ fhir:v "Cardiovascular examination and evaluation (procedure)" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

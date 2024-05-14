@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PlanDefinition xmlns="http://hl7.org/fhir">
+  <id value="RecPlanPostoperativeDeliriumScreeningOnSurgeryDayNWNightShift"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: PlanDefinition</b><a name="RecPlanPostoperativeDeliriumScreeningOnSurgeryDayNWNightShift"> </a><a name="hcRecPlanPostoperativeDeliriumScreeningOnSurgeryDayNWNightShift"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourcePlanDefinition &quot;RecPlanPostoperativeDeliriumScreeningOnSurgeryDayNWNightShift&quot; </p><p style="margin-bottom: 0px">Profile: <a href="file:///github/workspace/output/StructureDefinition-recommendation-plan.html">Recommendation Plan</a></p></div><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>partOf</b>: <a href="PlanDefinition-RecCollDeliriumScreeningOnSurgeryDayNightShift.html">Recommendation Collection: Perform Delirium Screening in Adult Surgical Patients Postoperatively on surgery day during the night shift</a></p><blockquote><p><b>Action Combination Method</b></p><blockquote><p><b>url</b></p><code>method</code></blockquote><p><b>value</b>: At Least <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="file:///github/workspace/output/CodeSystem-cs-action-combination-method.html">Action Combination Method</a>#at-least)</span></p><blockquote><p><b>url</b></p><code>threshold</code></blockquote><p><b>value</b>: 1</p></blockquote><p><b>url</b>: <code>https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecPlanPostoperativeDeliriumScreeningOnSurgeryDayNWNightShift</code></p><p><b>version</b>: 0.2.0</p><p><b>name</b>: RecPlanPostoperativeDeliriumScreeningOnSurgeryDayNWNightShift</p><p><b>title</b>: Recommended Plan for Population: Adult Surgical Patients Postoperatively on a Normal Ward, Perform Delirium Screening during the night shift</p><p><b>type</b>: ECA Rule <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.5.0/CodeSystem-plan-definition-type.html">PlanDefinitionType</a>#eca-rule)</span></p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>subject</b>: <a href="EvidenceVariable-PopAdultPatientsPostoperativelyGeneralOnSurgeryDayNormalWard.html">Population: General Adult Surgical Patients Postoperatively on the Surgery Day on Normal Ward or in the Recovery Room</a></p><p><b>date</b>: 2024-04</p><p><b>publisher</b>: DIGIPOD</p><p><b>description</b>: Recommended Plan for Adult Surgical Patients Postoperatively on a Normal Ward, Perform Delirium Screening during the night shift.</p><blockquote><p><b>action</b></p><p><b>code</b>: Evaluation procedure (procedure) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOWMED CT</a>#386053000)</span></p><p><b>reason</b>: Quality measure <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/R5/codesystem-action-reason-code.html">Action Reason Code</a>#quality-measure)</span></p><p><b>requiredBehavior</b>: could</p><p><b>definition</b>: <a href="ActivityDefinition-RecActionAdultPatientsPostoperativelyCheck3DCAMNightShift.html">Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check 3-minute Diagnostic Interview for CAM-defined Delirium (3D-CAM) score during the night shift</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: Evaluation procedure (procedure) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOWMED CT</a>#386053000)</span></p><p><b>reason</b>: Quality measure <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/R5/codesystem-action-reason-code.html">Action Reason Code</a>#quality-measure)</span></p><p><b>requiredBehavior</b>: could</p><p><b>definition</b>: <a href="ActivityDefinition-RecActionAdultPatientsPostoperativelyCheckAT4NightShift.html">Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check AT4 score during the night shift</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: Evaluation procedure (procedure) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOWMED CT</a>#386053000)</span></p><p><b>reason</b>: Quality measure <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/R5/codesystem-action-reason-code.html">Action Reason Code</a>#quality-measure)</span></p><p><b>requiredBehavior</b>: could</p><p><b>definition</b>: <a href="ActivityDefinition-RecActionAdultPatientsPostoperativelyCheckCAMNightShift.html">Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check Confusion Assessment Method (CAM) score during the night shift</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: Evaluation procedure (procedure) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOWMED CT</a>#386053000)</span></p><p><b>reason</b>: Quality measure <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/R5/codesystem-action-reason-code.html">Action Reason Code</a>#quality-measure)</span></p><p><b>requiredBehavior</b>: could</p><p><b>definition</b>: <a href="ActivityDefinition-RecActionAdultPatientsPostoperativelyCheckDOSNightShift.html">Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check Delirium Observation Scale (DOS) score during the night shift</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: Evaluation procedure (procedure) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOWMED CT</a>#386053000)</span></p><p><b>reason</b>: Quality measure <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/R5/codesystem-action-reason-code.html">Action Reason Code</a>#quality-measure)</span></p><p><b>requiredBehavior</b>: could</p><p><b>definition</b>: <a href="ActivityDefinition-RecActionAdultPatientsPostoperativelyCheckDRSNightShift.html">Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check Delirium Rating Scale (DRS) score during the night shift</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: Evaluation procedure (procedure) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOWMED CT</a>#386053000)</span></p><p><b>reason</b>: Quality measure <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/R5/codesystem-action-reason-code.html">Action Reason Code</a>#quality-measure)</span></p><p><b>requiredBehavior</b>: could</p><p><b>definition</b>: <a href="ActivityDefinition-RecActionAdultPatientsPostperativelyCheckNUDESCNightShift.html">Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check Nursing Delirium Screening Scale (NU-DESC) score during the night shift</a></p></blockquote></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-partOf">
+    <valueCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecCollDeliriumScreeningOnSurgeryDayNightShift"/>
+  </extension>
+  <extension url="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method">
+    <extension url="method">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"/>
+          <code value="at-least"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="threshold">
+      <valuePositiveInt value="1"/>
+    </extension>
+  </extension>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecPlanPostoperativeDeliriumScreeningOnSurgeryDayNWNightShift"/>
+  <version value="0.2.0"/>
+  <name value="RecPlanPostoperativeDeliriumScreeningOnSurgeryDayNWNightShift"/>
+  <title value="Recommended Plan for Population: Adult Surgical Patients Postoperatively on a Normal Ward, Perform Delirium Screening during the night shift"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+      <code value="eca-rule"/>
+    </coding>
+  </type>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <subjectCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/EvidenceVariable/PopAdultPatientsPostoperativelyGeneralOnSurgeryDayNormalWard"/>
+  <date value="2024-04"/>
+  <publisher value="DIGIPOD"/>
+  <description value="Recommended Plan for Adult Surgical Patients Postoperatively on a Normal Ward, Perform Delirium Screening during the night shift."/>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="386053000"/>
+        <display value="Evaluation procedure (procedure)"/>
+      </coding>
+    </code>
+    <reason>
+      <coding>
+        <system value="http://hl7.org/fhir/action-reason-code"/>
+        <code value="quality-measure"/>
+        <display value="Quality measure"/>
+      </coding>
+    </reason>
+    <requiredBehavior value="could"/>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPostoperativelyCheck3DCAMNightShift"/>
+  </action>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="386053000"/>
+        <display value="Evaluation procedure (procedure)"/>
+      </coding>
+    </code>
+    <reason>
+      <coding>
+        <system value="http://hl7.org/fhir/action-reason-code"/>
+        <code value="quality-measure"/>
+        <display value="Quality measure"/>
+      </coding>
+    </reason>
+    <requiredBehavior value="could"/>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckAT4NightShift"/>
+  </action>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="386053000"/>
+        <display value="Evaluation procedure (procedure)"/>
+      </coding>
+    </code>
+    <reason>
+      <coding>
+        <system value="http://hl7.org/fhir/action-reason-code"/>
+        <code value="quality-measure"/>
+        <display value="Quality measure"/>
+      </coding>
+    </reason>
+    <requiredBehavior value="could"/>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckCAMNightShift"/>
+  </action>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="386053000"/>
+        <display value="Evaluation procedure (procedure)"/>
+      </coding>
+    </code>
+    <reason>
+      <coding>
+        <system value="http://hl7.org/fhir/action-reason-code"/>
+        <code value="quality-measure"/>
+        <display value="Quality measure"/>
+      </coding>
+    </reason>
+    <requiredBehavior value="could"/>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckDOSNightShift"/>
+  </action>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="386053000"/>
+        <display value="Evaluation procedure (procedure)"/>
+      </coding>
+    </code>
+    <reason>
+      <coding>
+        <system value="http://hl7.org/fhir/action-reason-code"/>
+        <code value="quality-measure"/>
+        <display value="Quality measure"/>
+      </coding>
+    </reason>
+    <requiredBehavior value="could"/>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckDRSNightShift"/>
+  </action>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="386053000"/>
+        <display value="Evaluation procedure (procedure)"/>
+      </coding>
+    </code>
+    <reason>
+      <coding>
+        <system value="http://hl7.org/fhir/action-reason-code"/>
+        <code value="quality-measure"/>
+        <display value="Quality measure"/>
+      </coding>
+    </reason>
+    <requiredBehavior value="could"/>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPostperativelyCheckNUDESCNightShift"/>
+  </action>
+</PlanDefinition>

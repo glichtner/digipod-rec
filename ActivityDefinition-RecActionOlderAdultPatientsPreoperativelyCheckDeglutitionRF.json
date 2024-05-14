@@ -1,0 +1,42 @@
+{
+  "resourceType" : "ActivityDefinition",
+  "id" : "RecActionOlderAdultPatientsPreoperativelyCheckDeglutitionRF",
+  "meta" : {
+    "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-action"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ActivityDefinition</b><a name=\"RecActionOlderAdultPatientsPreoperativelyCheckDeglutitionRF\"> </a><a name=\"hcRecActionOlderAdultPatientsPreoperativelyCheckDeglutitionRF\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceActivityDefinition &quot;RecActionOlderAdultPatientsPreoperativelyCheckDeglutitionRF&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"file:///github/workspace/output/StructureDefinition-recommendation-action.html\">Recommendation Action</a></p></div><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>url</b>: <code>https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckDeglutitionRF</code></p><p><b>version</b>: 0.2.0</p><p><b>name</b>: RecActionOlderAdultPatientsPreoperativelyCheckDeglutitionRF</p><p><b>title</b>: Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for deglutition disorders as risk factors for POD</p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>subject</b>: Patient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R5/codesystem-fhir-types.html\">All FHIR Types</a>#Patient)</span></p><p><b>date</b>: 2024-02</p><p><b>publisher</b>: DIGIPOD</p><p><b>description</b>: Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for deglutition disorders as risk factors for postoperative delirium (POD)</p><p><b>kind</b>: ServiceRequest</p><p><b>code</b>: Evaluation of oral and pharyngeal swallowing function (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOWMED CT</a>#440363007)</span></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "computable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueCode" : "structured"
+  }],
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckDeglutitionRF",
+  "version" : "0.2.0",
+  "name" : "RecActionOlderAdultPatientsPreoperativelyCheckDeglutitionRF",
+  "title" : "Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for deglutition disorders as risk factors for POD",
+  "status" : "draft",
+  "experimental" : true,
+  "subjectCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/fhir-types",
+      "code" : "Patient"
+    }]
+  },
+  "date" : "2024-02",
+  "publisher" : "DIGIPOD",
+  "description" : "Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for deglutition disorders as risk factors for postoperative delirium (POD)",
+  "kind" : "ServiceRequest",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "440363007",
+      "display" : "Evaluation of oral and pharyngeal swallowing function (procedure)"
+    }]
+  }
+}

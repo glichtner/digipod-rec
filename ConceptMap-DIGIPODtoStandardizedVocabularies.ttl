@@ -1,0 +1,123 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ConceptMap/DIGIPODtoStandardizedVocabularies> a fhir:ConceptMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DIGIPODtoStandardizedVocabularies"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Mapping from (not specified) to (not specified)</p><p>DRAFT. Published on 2024-05-14 12:39:53+0000 by Charité - Universitätsmedizin Berlin . </p><br/><p><b>Group 1 </b>Mapping from <a href=\"CodeSystem-digipod.html\">DIGIPOD</a> to <code>http://snomed.info/sct/900000000000207008</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>001 (N5 elektiv)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>103390000 (Elective (qualifier value))</td></tr><tr><td>002 (N4 innerhalb 12-24 h)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#source-is-broader-than-target\" title=\"source-is-broader-than-target\">is broader than</a></td><td>88694003 (Immediate (qualifier value))</td></tr><tr><td>003 (N3 innerhalb 6-12 h)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#source-is-broader-than-target\" title=\"source-is-broader-than-target\">is broader than</a></td><td>394849002 (High priority (qualifier value))</td></tr><tr><td>004 (N2 innerhalb 1-6 h)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#source-is-broader-than-target\" title=\"source-is-broader-than-target\">is broader than</a></td><td>25876001 (Emergency (qualifier value))</td></tr><tr><td>005 (N1 innerhalb 1 h)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#source-is-broader-than-target\" title=\"source-is-broader-than-target\">is broader than</a></td><td>103391001 (Urgency (qualifier value))</td></tr><tr><td>006 (N0 sofort)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#source-is-broader-than-target\" title=\"source-is-broader-than-target\">is broader than</a></td><td>88694003 (Immediate (qualifier value))</td></tr></table><hr/><p><b>Group 2 </b>Mapping from <a href=\"CodeSystem-digipod.html\">DIGIPOD</a> to <code>unspecified code system</code></p><table class=\"grid\"><tr><td colspan=\"2\"><b>Source Concept Details</b></td><td><b>Relationship</b></td><td colspan=\"2\"><b>Target Concept Details</b></td><td colspan=\"2\"><b>Properties</b></td></tr><tr><td colspan=\"2\"><b>Codes</b> from <a href=\"CodeSystem-digipod.html\" title=\"https://www.charite.de/fhir/digipod/CodeSystem/digipod\">DIGIPOD</a></td><td/><td colspan=\"2\"><b>Codes</b> from </td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">025</td><td style=\"border-left-width: 0px; border-bottom-style: none\">Day shift</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to\" title=\"related-to\">is related to</a></td><td style=\"border-right-width: 0px\">LA14948-6</td><td style=\"border-left-width: 0px\">Day shift (approx. 7am- 3pm)</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to\" title=\"related-to\">is related to</a></td><td style=\"border-right-width: 0px\">MORN</td><td style=\"border-left-width: 0px\">Morning</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">026</td><td style=\"border-left-width: 0px; border-bottom-style: none\">Evening shift</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to\" title=\"related-to\">is related to</a></td><td style=\"border-right-width: 0px\">LA14949-4</td><td style=\"border-left-width: 0px\">Evening shift (approx. 3pm- 11pm)</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to\" title=\"related-to\">is related to</a></td><td style=\"border-right-width: 0px\">AFT</td><td style=\"border-left-width: 0px\">Afternoon</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">027</td><td style=\"border-left-width: 0px; border-bottom-style: none\">Night shift</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to\" title=\"related-to\">is related to</a></td><td style=\"border-right-width: 0px\">LA14950-2</td><td style=\"border-left-width: 0px\">Night shift (approx. 11pm- 7am)</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to\" title=\"related-to\">is related to</a></td><td style=\"border-right-width: 0px\">NIGHT</td><td style=\"border-left-width: 0px\">Night</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://www.charite.de/fhir/digipod/ConceptMap/DIGIPODtoStandardizedVocabularies"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.1"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2024-05-14T12:39:53+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Charité - Universitätsmedizin Berlin"] ; # 
+  fhir:group ( [
+     fhir:source [
+       fhir:v "https://www.charite.de/fhir/digipod/CodeSystem/digipod"^^xsd:anyURI ;
+       fhir:link <https://www.charite.de/fhir/digipod/CodeSystem/digipod>
+     ] ;
+     fhir:target [
+       fhir:v "http://snomed.info/sct/900000000000207008"^^xsd:anyURI ;
+       fhir:link <http://snomed.info/sct/900000000000207008>
+     ] ;
+     fhir:element ( [
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "N5 elektiv" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "103390000" ] ;
+         fhir:display [ fhir:v "Elective (qualifier value)" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "002" ] ;
+       fhir:display [ fhir:v "N4 innerhalb 12-24 h" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "88694003" ] ;
+         fhir:display [ fhir:v "Immediate (qualifier value)" ] ;
+         fhir:relationship [ fhir:v "source-is-broader-than-target" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "003" ] ;
+       fhir:display [ fhir:v "N3 innerhalb 6-12 h" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "394849002" ] ;
+         fhir:display [ fhir:v "High priority (qualifier value)" ] ;
+         fhir:relationship [ fhir:v "source-is-broader-than-target" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "004" ] ;
+       fhir:display [ fhir:v "N2 innerhalb 1-6 h" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "25876001" ] ;
+         fhir:display [ fhir:v "Emergency (qualifier value)" ] ;
+         fhir:relationship [ fhir:v "source-is-broader-than-target" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "005" ] ;
+       fhir:display [ fhir:v "N1 innerhalb 1 h" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "103391001" ] ;
+         fhir:display [ fhir:v "Urgency (qualifier value)" ] ;
+         fhir:relationship [ fhir:v "source-is-broader-than-target" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "006" ] ;
+       fhir:display [ fhir:v "N0 sofort" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "88694003" ] ;
+         fhir:display [ fhir:v "Immediate (qualifier value)" ] ;
+         fhir:relationship [ fhir:v "source-is-broader-than-target" ]
+       ] )
+     ] )
+  ] [
+     fhir:source [
+       fhir:v "https://www.charite.de/fhir/digipod/CodeSystem/digipod"^^xsd:anyURI ;
+       fhir:link <https://www.charite.de/fhir/digipod/CodeSystem/digipod>
+     ] ;
+     fhir:element ( [
+       fhir:code [ fhir:v "025" ] ;
+       fhir:display [ fhir:v "Day shift" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "LA14948-6" ] ;
+         fhir:display [ fhir:v "Day shift (approx. 7am- 3pm)" ] ;
+         fhir:relationship [ fhir:v "related-to" ]
+       ] [
+         fhir:code [ fhir:v "MORN" ] ;
+         fhir:display [ fhir:v "Morning" ] ;
+         fhir:relationship [ fhir:v "related-to" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "026" ] ;
+       fhir:display [ fhir:v "Evening shift" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "LA14949-4" ] ;
+         fhir:display [ fhir:v "Evening shift (approx. 3pm- 11pm)" ] ;
+         fhir:relationship [ fhir:v "related-to" ]
+       ] [
+         fhir:code [ fhir:v "AFT" ] ;
+         fhir:display [ fhir:v "Afternoon" ] ;
+         fhir:relationship [ fhir:v "related-to" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "027" ] ;
+       fhir:display [ fhir:v "Night shift" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "LA14950-2" ] ;
+         fhir:display [ fhir:v "Night shift (approx. 11pm- 7am)" ] ;
+         fhir:relationship [ fhir:v "related-to" ]
+       ] [
+         fhir:code [ fhir:v "NIGHT" ] ;
+         fhir:display [ fhir:v "Night" ] ;
+         fhir:relationship [ fhir:v "related-to" ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

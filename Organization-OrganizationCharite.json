@@ -1,0 +1,18 @@
+{
+  "resourceType" : "Organization",
+  "id" : "OrganizationCharite",
+  "text" : {
+    "status" : "additional",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Resource representing the Organization Charité - Universitätsmedizin Berlin</div>"
+  },
+  "name" : "Charité-Universitätsmedizin Berlin, Corporate Member of Freie Universität Berlin, and Humboldt Universität zu Berlin, Department of Anesthesiology and Intensive Care Medicine, Campus Charité Mitte and Campus Virchow Klinikum",
+  "contact" : [{
+    "address" : {
+      "use" : "work",
+      "text" : "Augustenburger Platz 1",
+      "city" : "Berlin",
+      "postalCode" : "10117",
+      "country" : "Germany"
+    }
+  }]
+}

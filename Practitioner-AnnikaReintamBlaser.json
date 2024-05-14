@@ -1,0 +1,12 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "AnnikaReintamBlaser",
+  "text" : {
+    "status" : "additional",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Resource representing Anika Reintam Blaser</div>"
+  },
+  "name" : [{
+    "family" : "Reintam Blaser",
+    "given" : ["Annika"]
+  }]
+}

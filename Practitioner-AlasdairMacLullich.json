@@ -1,0 +1,12 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "AlasdairMacLullich",
+  "text" : {
+    "status" : "additional",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Resource representing Alasdai MacLullich</div>"
+  },
+  "name" : [{
+    "family" : "MacLullich",
+    "given" : ["Alasdair"]
+  }]
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PlanDefinition xmlns="http://hl7.org/fhir">
+  <id value="RecCollAdultSurgicalPatPreOrIntraOPNoSpecificBiomarker"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: PlanDefinition</b><a name="RecCollAdultSurgicalPatPreOrIntraOPNoSpecificBiomarker"> </a><a name="hcRecCollAdultSurgicalPatPreOrIntraOPNoSpecificBiomarker"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourcePlanDefinition &quot;RecCollAdultSurgicalPatPreOrIntraOPNoSpecificBiomarker&quot; </p><p style="margin-bottom: 0px">Profile: <a href="file:///github/workspace/output/StructureDefinition-recommendation.html">Recommendation</a></p></div><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><blockquote><p><b>Action Combination Method</b></p><blockquote><p><b>url</b></p><code>method</code></blockquote><p><b>value</b>: All <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="file:///github/workspace/output/CodeSystem-cs-action-combination-method.html">Action Combination Method</a>#all)</span></p></blockquote><p><b>url</b>: <code>https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecCollAdultSurgicalPatPreOrIntraOPNoSpecificBiomarker</code></p><p><b>version</b>: 0.2.0</p><p><b>name</b>: RecCollAdultSurgicalPatPreOrIntraOPNoSpecificBiomarker</p><p><b>title</b>: Recommendation Collection: Do no suggest using any single specific biomarker to identify patients at risk of POD in Adult Surgical Patients Pre- or Intraoperatively</p><p><b>type</b>: Workflow Definition <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.5.0/CodeSystem-plan-definition-type.html">PlanDefinitionType</a>#workflow-definition)</span></p><p><b>status</b>: draft</p><p><b>date</b>: 2024-04</p><p><b>publisher</b>: European Society of Anaesthesiology and Intensive Care Medicine (ESAIC)</p><p><b>description</b>: Recommendation collection for adult patients before or during a surgical intervention: Do no suggest using any single specific biomarker to identify patients at risk of postoperative delirium (POD).</p><h3>Actions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Title</b></td><td><b>Description</b></td><td><b>Code</b></td><td><b>SelectionBehavior</b></td><td><b>Definition[x]</b></td></tr><tr><td style="display: none">*</td><td>RecPlanShowRecommendationNoSpecificBiomarker</td><td>We do not suggest using any single specific biomarker to identify patients at risk of POD.</td><td>Guideline-based Care <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/uv/cpg/STU1/CodeSystem-cpg-common-process.html">CPG Common Process</a>#guideline-based-care)</span></td><td>one-or-more</td><td><a href="PlanDefinition-RecPlanShowRecommendationNoSpecificBiomarker.html">Recommended Plan for Population: Adult Surgical Patients Pre- or Intraoperatively, do not suggest using any single specific biomarker to identify patients at risk of POD</a></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <extension url="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method">
+    <extension url="method">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"/>
+          <code value="all"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </extension>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecCollAdultSurgicalPatPreOrIntraOPNoSpecificBiomarker"/>
+  <version value="0.2.0"/>
+  <name value="RecCollAdultSurgicalPatPreOrIntraOPNoSpecificBiomarker"/>
+  <title value="Recommendation Collection: Do no suggest using any single specific biomarker to identify patients at risk of POD in Adult Surgical Patients Pre- or Intraoperatively"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+      <code value="workflow-definition"/>
+    </coding>
+  </type>
+  <status value="draft"/>
+  <date value="2024-04"/>
+  <publisher value="European Society of Anaesthesiology and Intensive Care Medicine (ESAIC)"/>
+  <description value="Recommendation collection for adult patients before or during a surgical intervention: Do no suggest using any single specific biomarker to identify patients at risk of postoperative delirium (POD)."/>
+  <action>
+    <title value="RecPlanShowRecommendationNoSpecificBiomarker"/>
+    <description value="We do not suggest using any single specific biomarker to identify patients at risk of POD."/>
+    <code>
+      <coding>
+        <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"/>
+        <code value="guideline-based-care"/>
+      </coding>
+    </code>
+    <selectionBehavior value="one-or-more"/>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecPlanShowRecommendationNoSpecificBiomarker"/>
+  </action>
+</PlanDefinition>

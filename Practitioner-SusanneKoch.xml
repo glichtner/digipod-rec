@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="SusanneKoch"/>
+  <text>
+    <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">Resource representing Susanne Koch</div>
+  </text>
+  <name>
+    <family value="Koch"/>
+    <given value="Susanne"/>
+  </name>
+</Practitioner>

@@ -1,0 +1,2056 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="template.cpg-on-ebmonfhir.netzwerk-universitaetsmedizin.de"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>CPGonEBMonFHIRtemplate</h2><p>The official URL for this implementation guide is: </p><pre>https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ImplementationGuide/template.cpg-on-ebmonfhir.netzwerk-universitaetsmedizin.de</pre></div>
+  </text>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ImplementationGuide/template.cpg-on-ebmonfhir.netzwerk-universitaetsmedizin.de"/>
+  <version value="0.0.1-snapshot"/>
+  <name value="CPGonEBMonFHIRtemplate"/>
+  <title value="CPG-on-EBMonFHIR template"/>
+  <status value="draft"/>
+  <date value="2024-05-14T12:39:53+00:00"/>
+  <publisher value="Example"/>
+  <contact>
+    <name value="Example"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.example.com"/>
+    </telecom>
+  </contact>
+  <packageId value="template.cpg-on-ebmonfhir.netzwerk-universitaetsmedizin.de"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="5.0.0"/>
+  <dependsOn id="hl7tx">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+    </extension>
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r5"/>
+    <version value="5.5.0"/>
+  </dependsOn>
+  <dependsOn id="hl7ext">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
+    </extension>
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions.r5"/>
+    <version value="5.1.0"/>
+  </dependsOn>
+  <dependsOn id="de_netzwerk_universitaetsmedizin_ebm_cpg">
+    <uri value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ImplementationGuide/de.netzwerk-universitaetsmedizin.ebm-cpg"/>
+    <packageId value="de.netzwerk-universitaetsmedizin.ebm-cpg"/>
+    <version value="0.8.0-snapshot"/>
+  </dependsOn>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+      <valueCode value="hl7.fhir.uv.tools#0.1.0"/>
+    </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/AlasdairMacLullich"/>
+      </reference>
+      <name value="AlasdairMacLullich"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/AliForookhi"/>
+      </reference>
+      <name value="AliForookhi"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/AnikaMueller"/>
+      </reference>
+      <name value="AnikaMueller"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/AnnikaReintamBlaser"/>
+      </reference>
+      <name value="AnnikaReintamBlaser"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/AntonioCherubini"/>
+      </reference>
+      <name value="AntonioCherubini"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/ArjenSlooter"/>
+      </reference>
+      <name value="ArjenSlooter"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/BjoernWeiss"/>
+      </reference>
+      <name value="BjoernWeiss"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/BrunoNeuner"/>
+      </reference>
+      <name value="BrunoNeuner"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/CesarAldecoa"/>
+      </reference>
+      <name value="CesarAldecoa"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/ClaudiaSpies"/>
+      </reference>
+      <name value="ClaudiaSpies"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/ColmCunningham"/>
+      </reference>
+      <name value="ColmCunningham"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/ConcezioneTommasino"/>
+      </reference>
+      <name value="ConcezioneTommasino"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/digipod"/>
+      </reference>
+      <name value="DIGIPOD"/>
+      <description value="Concepts required in recommendations that are not defined elsewhere for the project DIGIPOD"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/DIGIPODtoStandardizedVocabularies"/>
+      </reference>
+      <name value="DIGIPOD to standardized vocabularies"/>
+      <description value="Concept map from concepts defined in DIGIPOD to standardized vocabularies"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/FatimaYuerek"/>
+      </reference>
+      <name value="FatimaYuerek"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/FedericoBilotta"/>
+      </reference>
+      <name value="FedericoBilotta"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/FinnRadtke"/>
+      </reference>
+      <name value="FinnRadtke"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/GabriellaBettelli"/>
+      </reference>
+      <name value="GabriellaBettelli"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/HenrikKehlet"/>
+      </reference>
+      <name value="HenrikKehlet"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/KatarzynaKotfis"/>
+      </reference>
+      <name value="KatarzynaKotfis"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/KatiImmonen"/>
+      </reference>
+      <name value="KatiImmonen"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/LiorMevorach"/>
+      </reference>
+      <name value="LiorMevorach"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/LisaVasiljewa"/>
+      </reference>
+      <name value="LisaVasiljewa"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/MariaSchubert"/>
+      </reference>
+      <name value="MariaSchubert"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/NicolaGitti"/>
+      </reference>
+      <name value="NicolaGitti"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/NicolaLatronico"/>
+      </reference>
+      <name value="NicolaLatronico"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/OrganizationCharite"/>
+      </reference>
+      <name value="OrganizationCharite"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/PaolaAceto"/>
+      </reference>
+      <name value="PaolaAceto"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="EvidenceVariable"/>
+      </extension>
+      <reference>
+        <reference value="EvidenceVariable/PopAdultPatientsAtRiskForPOD"/>
+      </reference>
+      <name value="Population: Adult Surgical Patients Preoperative at Risk for POD"/>
+      <description value="Adult patients before undergoing an elective surgical intervention of any type independently of the type of anesthesia and being at risk for postoperative delirium"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="EvidenceVariable"/>
+      </extension>
+      <reference>
+        <reference value="EvidenceVariable/PopAdultSurgicalPatientsPreoperativelyWithPositiveMiniCog"/>
+      </reference>
+      <name value="Population: Adult Surgical Patients Preoperatively with Positive Mini-cog Test Score"/>
+      <description value="Adult patients with a positive Mini-cog test score before undergoing an elective surgical intervention of any type independently of the type of anesthesia"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="EvidenceVariable"/>
+      </extension>
+      <reference>
+        <reference value="EvidenceVariable/PopAdultSurgicalPatPreoperativelyWithPositiveMiniCogNeedMMSE"/>
+      </reference>
+      <name value="Population: Adult Surgical Patients Preoperatively with Positive Mini-cog Test Score that need a Mini-Mental State Examination"/>
+      <description value="Adult patients with a positive Mini-cog test score that need a Mini-Mental State Examination before undergoing an elective surgical intervention of any type independently of the type of anesthesia"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="EvidenceVariable"/>
+      </extension>
+      <reference>
+        <reference value="EvidenceVariable/PopAdultPatientsIntraoperativelyGeneral"/>
+      </reference>
+      <name value="Population: General Adult Surgical Patients Intraoperatively"/>
+      <description value="Adult patients during an elective surgical intervention of any type independently of the type of anesthesia"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="EvidenceVariable"/>
+      </extension>
+      <reference>
+        <reference value="EvidenceVariable/PopAdultPatientsPostoperativelyOnNormalWardWithRASSEqualLower-3"/>
+      </reference>
+      <name value="Population: General Adult Surgical Patients Postoperatively On Normal Ward, With a RASS Equal Or Lower Than -3"/>
+      <description value="Adult patients after undergoing an elective surgical intervention of any type independently of the type of anesthesia, on normal ward, with a RASS of -3 or less."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="EvidenceVariable"/>
+      </extension>
+      <reference>
+        <reference value="EvidenceVariable/PopAdultPatientsPostoperativelyGeneralOnSurgeryDayICU"/>
+      </reference>
+      <name value="Population: General Adult Surgical Patients Postoperatively on the Surgery Day on an Intensive Care Unit"/>
+      <description value="Adult patients after undergoing an elective surgical intervention of any type independently of the type of anesthesia, on the day of the surgical intervention (from the time of completion of the procedure to midnight), on an intensive care unit."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="EvidenceVariable"/>
+      </extension>
+      <reference>
+        <reference value="EvidenceVariable/PopAdultPatientsPostoperativelyGeneralOnSurgeryDayNormalWard"/>
+      </reference>
+      <name value="Population: General Adult Surgical Patients Postoperatively on the Surgery Day on Normal Ward or in the Recovery Room"/>
+      <description value="Adult patients after undergoing an elective surgical intervention of any type independently of the type of anesthesia, on the day of the surgical intervention (from the time of completion of the procedure to midnight), in the recovery room or on normal ward."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="EvidenceVariable"/>
+      </extension>
+      <reference>
+        <reference value="EvidenceVariable/PopAdultPatientsPreAndIntraoperativelyGeneral"/>
+      </reference>
+      <name value="Population: General Adult Surgical Patients Pre- and Intraoperatively"/>
+      <description value="Adult patients before and/or during an elective surgical intervention of any type independently of the type of anesthesia"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="EvidenceVariable"/>
+      </extension>
+      <reference>
+        <reference value="EvidenceVariable/PopAdultSurgicalPatientsPreoperativelyGeneral"/>
+      </reference>
+      <name value="Population: General Adult Surgical Patients Preoperatively"/>
+      <description value="Adult patients before undergoing an elective surgical intervention of any type independently of the type of anesthesia"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="EvidenceVariable"/>
+      </extension>
+      <reference>
+        <reference value="EvidenceVariable/PopAdultPatientsPreoperativelyGeneralOnSurgeryDayAndBefore"/>
+      </reference>
+      <name value="Population: General Adult Surgical Patients Preoperatively on Surgery Day and Before"/>
+      <description value="Adult patients before undergoing an elective surgical intervention of any type independently of the type of anesthesia, on the day of the surgical intervention or maximum 42 days before."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="EvidenceVariable"/>
+      </extension>
+      <reference>
+        <reference value="EvidenceVariable/PopOlderAdultPatientsPreoperatively"/>
+      </reference>
+      <name value="Population: Older Adult Surgical Patients Preoperatively"/>
+      <description value="Adult patients being 70 years old or older, before undergoing a surgical intervention of any type"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/PractitionerRoleClaudiaSpies"/>
+      </reference>
+      <name value="PractitionerRoleClaudiaSpies"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Citation"/>
+      </extension>
+      <reference>
+        <reference value="Citation/Recommendation0.1PreOperativeScreeningOfDelirium"/>
+      </reference>
+      <name value="Recommendation 0.1: Preoperative screening of delirium"/>
+      <description value="Recommendation number 0.1 (Prerequisite) from Guideline 'Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients'"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Citation"/>
+      </extension>
+      <reference>
+        <reference value="Citation/Recommendation0.2PostOperativeScreeningOfDelirium"/>
+      </reference>
+      <name value="Recommendation 0.2: Postoperative screening of delirium"/>
+      <description value="Recommendation number 0.2 (Prerequisite) from Guideline 'Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients'"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Citation"/>
+      </extension>
+      <reference>
+        <reference value="Citation/Recommendation2.1RiskFactors"/>
+      </reference>
+      <name value="Recommendation 2.1: Preoperative Risk Factors"/>
+      <description value="Recommendation number 2.1 from Guideline 'Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients'"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Citation"/>
+      </extension>
+      <reference>
+        <reference value="Citation/Recommendation3.1PrevMeasuresIEffectsOfDrugsOnPODPrevention"/>
+      </reference>
+      <name value="Recommendation 3.1: Preventive Measures I (Effects of Drugs on POD prevention) - Drugs as prophylactic measure to reduce the incidence of POD"/>
+      <description value="Recommendation number 3.1 from Guideline 'Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients'"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Citation"/>
+      </extension>
+      <reference>
+        <reference value="Citation/Recommendation3.2PrevMeasuresIEffectsOfDrugsOnPODPrevention"/>
+      </reference>
+      <name value="Recommendation 3.2: Preventive Measures I (Effects of Drugs on POD prevention) - Preventive dexmedetomidine administration intra- or postoperative"/>
+      <description value="Recommendation number 3.2 from Guideline 'Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients'"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Citation"/>
+      </extension>
+      <reference>
+        <reference value="Citation/Recommendation3.3PrevMeasuresIEffectsOfDrugsOnPODPrevention"/>
+      </reference>
+      <name value="Recommendation 3.3: Preventive Measures I (Effects of Drugs on POD prevention) - Type of surgery or anesthesia to reduce the incidence of POD"/>
+      <description value="Recommendation number 3.3 from Guideline 'Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients'"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Citation"/>
+      </extension>
+      <reference>
+        <reference value="Citation/Recommendation3.4PrevMeasuresIEffectsOfDrugsOnPODPrevention"/>
+      </reference>
+      <name value="Recommendation 3.4: Preventive Measures I (Effects of Drugs on POD prevention) - Biomarker to identify patients at risk of POD"/>
+      <description value="Recommendation number 3.4 from Guideline 'Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients'"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Citation"/>
+      </extension>
+      <reference>
+        <reference value="Citation/Recommendation4.1PrevMeasuresIINonPharmacologicalInterventions"/>
+      </reference>
+      <name value="Recommendation 4.1: Preventive Measures II (Non Pharmacological Interventions) - Screening for risk factors and optimizing preoperative status in older adults"/>
+      <description value="Recommendation number 4.1 from Guideline 'Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients'"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Citation"/>
+      </extension>
+      <reference>
+        <reference value="Citation/Recommendation4.2PrevMeasuresIINonPharmacologicalInterventions"/>
+      </reference>
+      <name value="Recommendation 4.2: Preventive Measures II (Non Pharmacological Interventions) - Sharing, discussing and documenting results of risk factors and preventive strategies"/>
+      <description value="Recommendation number 4.2 from Guideline 'Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients'"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Citation"/>
+      </extension>
+      <reference>
+        <reference value="Citation/Recommendation4.3PrevMeasuresIINonPharmacologicalInterventions"/>
+      </reference>
+      <name value="Recommendation 4.3: Preventive Measures II (Non Pharmacological Interventions) - Multi-component non-pharmacological interventions in all patients at risk for POD"/>
+      <description value="Recommendation number 4.3 from Guideline 'Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients'"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Citation"/>
+      </extension>
+      <reference>
+        <reference value="Citation/Recommendation5.1Neuromonitoring"/>
+      </reference>
+      <name value="Recommendation 5.1: Neuromonitoring - EEG monitoring depth of anesthesia guidance"/>
+      <description value="Recommendation number 5.1 from Guideline 'Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients'"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Citation"/>
+      </extension>
+      <reference>
+        <reference value="Citation/Recommendation5.2Neuromonitoring"/>
+      </reference>
+      <name value="Recommendation 5.2: Neuromonitoring - Multi-parameter, intraoperative EEG monitoring during anesthesia"/>
+      <description value="Recommendation number 5.2 from Guideline 'Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients'"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Citation"/>
+      </extension>
+      <reference>
+        <reference value="Citation/Recommendation6.1PharmacologicalTreatmentOfPODAndPODOutcomes"/>
+      </reference>
+      <name value="Recommendation 6.1: Pharmacological Treatment of POD and POD Outcomes - Low-dose haloperidol as treatment"/>
+      <description value="Recommendation number 6.1 from Guideline 'Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients'"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Citation"/>
+      </extension>
+      <reference>
+        <reference value="Citation/Recommendation6.2PharmacologicalTreatmentOfPODAndPODOutcomes"/>
+      </reference>
+      <name value="Recommendation 6.2: Pharmacological Treatment of POD and POD Outcomes - Benzodiazepines as treatment"/>
+      <description value="Recommendation number 6.2 from Guideline 'Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients'"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Citation"/>
+      </extension>
+      <reference>
+        <reference value="Citation/Recommendation6.3PharmacologicalTreatmentOfPODAndPODOutcomes"/>
+      </reference>
+      <name value="Recommendation 6.3: Pharmacological Treatment of POD and POD Outcomes - Dexmedetomidine as treatment in patients with cardiac surgery"/>
+      <description value="Recommendation number 6.3 from Guideline 'Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients'"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/RecCollCheckRFAdultSurgicalPatientsPreoperatively"/>
+      </reference>
+      <name value="Recommendation Collection: Check risk factors in Adult Surgical Patients Preoperatively"/>
+      <description value="Recommendation collection for adult patients that will undergo a surgical intervention: Check risk factors age, American Society of Anesthesiology Physical status score (ASA), Charlson Comorbidity Index (CCI) and Mini-cog test score (Mini-cog). If Mini-cog test score is equal to or higher than 3, perform Montreal Cognitive Assessment (MoCA), Addenbrooke's Cognitive Examination (ACE-R) or Mini Mental State Examination (MMSE). Please note that MMSE is not free of charge (license fees)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/RecCollAdultSurgicalPatPreOrIntraOPNoSpecSurgeryOrAnesthesiaType"/>
+      </reference>
+      <name value="Recommendation Collection: Do no suggest any specific type of surgery and type of anaesthesia to reduce the incidence of POD in Adult Surgical Patients Pre- or Intraoperatively"/>
+      <description value="Recommendation collection for adult patients before or during a surgical intervention: Do no suggest any specific type of surgery and type of anaesthesia to reduce the incidence of postoperative delirium (POD)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/RecCollAdultSurgicalPatPreOrIntraOPNoSpecificBiomarker"/>
+      </reference>
+      <name value="Recommendation Collection: Do no suggest using any single specific biomarker to identify patients at risk of POD in Adult Surgical Patients Pre- or Intraoperatively"/>
+      <description value="Recommendation collection for adult patients before or during a surgical intervention: Do no suggest using any single specific biomarker to identify patients at risk of postoperative delirium (POD)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/RecCollPreoperativeDeliriumScreening"/>
+      </reference>
+      <name value="Recommendation Collection: Perform Baseline Delirium Screening in Adult Surgical Patients Preoperatively"/>
+      <description value="Recommendation collection for adult patients that will undergo a surgical intervention: Perform baseline delirium screening."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/RecCollDeliriumScreeningOnSurgeryDayEveningShift"/>
+      </reference>
+      <name value="Recommendation Collection: Perform Delirium Screening in Adult Surgical Patients Postoperatively on surgery day during the evening shift"/>
+      <description value="Recommendation collection for adult patients that had a surgical intervention: Perform delirium screening on surgery day during the evening shift."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/RecCollDeliriumScreeningOnSurgeryDayMorningShift"/>
+      </reference>
+      <name value="Recommendation Collection: Perform Delirium Screening in Adult Surgical Patients Postoperatively on surgery day during the morning shift"/>
+      <description value="Recommendation collection for adult patients that had a surgical intervention: Perform delirium screening on surgery day during the morning shift."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/RecCollDeliriumScreeningOnSurgeryDayNightShift"/>
+      </reference>
+      <name value="Recommendation Collection: Perform Delirium Screening in Adult Surgical Patients Postoperatively on surgery day during the night shift"/>
+      <description value="Recommendation collection for adult patients that had a surgical intervention: Perform delirium screening on surgery day during the night shift."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/RecCollDeliriumScreeningPostoperativelyOnSurgeryDay"/>
+      </reference>
+      <name value="Recommendation Collection: Perform Delirium Screening in Adult Surgical Patients Postoperatively on surgery day, ideally once a shift and at least twice a day"/>
+      <description value="Recommendation collection for adult patients that had a surgical intervention: Perform delirium screening on surgery day, ideally once a shift and at least twice a day."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/RecCollIntraoperativeEEGMonitoringDepth"/>
+      </reference>
+      <name value="Recommendation Collection: Use Index-based EEG monitoring depth of anaesthesia guidance in Adult Surgical Patients Intraoperatively"/>
+      <description value="Recommendation collection for adult patients during a surgical intervention: Use Index-based EEG monitoring depth of anaesthesia guidance"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/RecCollIntraoperativeMultiparameterEEG"/>
+      </reference>
+      <name value="Recommendation Collection: Use multiparameter EEG monitoring in Adult Surgical Patients Intraoperatively"/>
+      <description value="Recommendation collection for adult patients during a surgical intervention: Use multiparameter electroencephalographic (EEG) monitoring focusing on burst suppression activity and including the density spectral array (DSA)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionIntraoperativeEEGMonitoringBurstSuppression"/>
+      </reference>
+      <name value="Recommended Action for Population: Adult Surgical Patients Intraoperatively, perform monitoring burst suppression pattern using electroencephalography"/>
+      <description value="Recommended Action for Adult Surgical Patients, Intraoperatively, burst suppression patterns should be monitored using electroencephalography (EEG)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionIntraoperativeEEGDensitySpectralArray"/>
+      </reference>
+      <name value="Recommended Action for Population: Adult Surgical Patients Intraoperatively, use electroencephalographic density spectral array"/>
+      <description value="Recommended Action for Adult Surgical Patients, Intraoperatively, EEG monitoring must include density spectral array (DSA)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionIntraoperativeEEGMonitoringDepth"/>
+      </reference>
+      <name value="Recommended Action for Population: Adult Surgical Patients Intraoperatively, use Index-based EEG monitoring depth of anaesthesia guidance"/>
+      <description value="Recommended Action for Adult Surgical Patients, Intraoperatively, use Index-based EEG monitoring depth of anaesthesia guidance to decrease the risk of POD."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheck3DCAMEveningShift"/>
+      </reference>
+      <name value="Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check 3-minute Diagnostic Interview for CAM-defined Delirium (3D-CAM) score during the evening shift"/>
+      <description value="Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check 3-minute Diagnostic Interview for CAM-defined Delirium (3D-CAM) score during the evening shift."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheck3DCAMMorningShift"/>
+      </reference>
+      <name value="Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check 3-minute Diagnostic Interview for CAM-defined Delirium (3D-CAM) score during the morning shift"/>
+      <description value="Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check 3-minute Diagnostic Interview for CAM-defined Delirium (3D-CAM) score during the morning shift."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheck3DCAMNightShift"/>
+      </reference>
+      <name value="Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check 3-minute Diagnostic Interview for CAM-defined Delirium (3D-CAM) score during the night shift"/>
+      <description value="Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check 3-minute Diagnostic Interview for CAM-defined Delirium (3D-CAM) score during the night shift."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckAT4EveningShift"/>
+      </reference>
+      <name value="Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check AT4 score during the evening shift"/>
+      <description value="Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check AT4 score during the evening shift."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckAT4MorningShift"/>
+      </reference>
+      <name value="Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check AT4 score during the morning shift"/>
+      <description value="Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check AT4 score during the morning shift."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckAT4NightShift"/>
+      </reference>
+      <name value="Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check AT4 score during the night shift"/>
+      <description value="Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check AT4 score during the night shift."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckCAMEveningShift"/>
+      </reference>
+      <name value="Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check Confusion Assessment Method (CAM) score during the evening shift"/>
+      <description value="Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check Confusion Assessment Method (CAM) score during the evening shift."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckCAMMorningShift"/>
+      </reference>
+      <name value="Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check Confusion Assessment Method (CAM) score during the morning shift"/>
+      <description value="Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check Confusion Assessment Method (CAM) score during the morning shift."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckCAMNightShift"/>
+      </reference>
+      <name value="Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check Confusion Assessment Method (CAM) score during the night shift"/>
+      <description value="Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check Confusion Assessment Method (CAM) score during the night shift."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckDOSEveningShift"/>
+      </reference>
+      <name value="Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check Delirium Observation Scale (DOS) score during the evening shift"/>
+      <description value="Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check Delirium Observation Scale (DOS) score during the evening shift."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckDOSMorningShift"/>
+      </reference>
+      <name value="Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check Delirium Observation Scale (DOS) score during the morning shift"/>
+      <description value="Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check Delirium Observation Scale (DOS) score during the morning shift."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckDOSNightShift"/>
+      </reference>
+      <name value="Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check Delirium Observation Scale (DOS) score during the night shift"/>
+      <description value="Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check Delirium Observation Scale (DOS) score during the night shift."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckDRSEveningShift"/>
+      </reference>
+      <name value="Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check Delirium Rating Scale (DRS) score during the evening shift"/>
+      <description value="Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check Delirium Rating Scale (DRS) score during the evening shift."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckDRSMorningShift"/>
+      </reference>
+      <name value="Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check Delirium Rating Scale (DRS) score during the morning shift"/>
+      <description value="Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check Delirium Rating Scale (DRS) score during the morning shift."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckDRSNightShift"/>
+      </reference>
+      <name value="Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check Delirium Rating Scale (DRS) score during the night shift"/>
+      <description value="Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check Delirium Rating Scale (DRS) score during the night shift."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionAdultPatientsPostperativelyCheckNUDESCEveningShift"/>
+      </reference>
+      <name value="Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check Nursing Delirium Screening Scale (NU-DESC) score during the evening shift"/>
+      <description value="Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check Nursing Delirium Screening Scale (NU-DESC) score during the evening shift."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionAdultPatientsPostperativelyCheckNUDESCMorningShift"/>
+      </reference>
+      <name value="Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check Nursing Delirium Screening Scale (NU-DESC) score during the morning shift"/>
+      <description value="Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check Nursing Delirium Screening Scale (NU-DESC) score during the morning shift."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionAdultPatientsPostperativelyCheckNUDESCNightShift"/>
+      </reference>
+      <name value="Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check Nursing Delirium Screening Scale (NU-DESC) score during the night shift"/>
+      <description value="Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check Nursing Delirium Screening Scale (NU-DESC) score during the night shift."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckCAMICUEveningShift"/>
+      </reference>
+      <name value="Recommended Action for Population: Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Confusion Assessment Method for the Intesive Care Unit (CAM-ICU) score during the evening shift"/>
+      <description value="Recommended Action for Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Confusion Assessment Method for the Intesive Care Unit (CAM-ICU) score during the evening shift."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckCAMICUMorningShift"/>
+      </reference>
+      <name value="Recommended Action for Population: Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Confusion Assessment Method for the Intesive Care Unit (CAM-ICU) score during the morning shift"/>
+      <description value="Recommended Action for Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Confusion Assessment Method for the Intesive Care Unit (CAM-ICU) score during the morning shift."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckCAMICUNightShift"/>
+      </reference>
+      <name value="Recommended Action for Population: Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Confusion Assessment Method for the Intesive Care Unit (CAM-ICU) score during the night shift"/>
+      <description value="Recommended Action for Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Confusion Assessment Method for the Intesive Care Unit (CAM-ICU) score during the night shift."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckDDSEveningShift"/>
+      </reference>
+      <name value="Recommended Action for Population: Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Delirium Detection score (DDS) during the evening shift"/>
+      <description value="Recommended Action for Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Delirium Detection score (DDS) during the evening shift."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckDDSMorningShift"/>
+      </reference>
+      <name value="Recommended Action for Population: Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Delirium Detection score (DDS) during the morning shift"/>
+      <description value="Recommended Action for Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Delirium Detection score (DDS) during the morning shift."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckDDSNightShift"/>
+      </reference>
+      <name value="Recommended Action for Population: Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Delirium Detection score (DDS) during the night shift"/>
+      <description value="Recommended Action for Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Delirium Detection score (DDS) during the night shift."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckICDSCEveningShift"/>
+      </reference>
+      <name value="Recommended Action for Population: Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Intensive Care Delirium Screening Checklist score (ICDSC) during the evening shift"/>
+      <description value="Recommended Action for Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Intensive Care Delirium Screening Checklist score (ICDSC) during the evening shift."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckICDSCMorningShift"/>
+      </reference>
+      <name value="Recommended Action for Population: Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Intensive Care Delirium Screening Checklist score (ICDSC) during the morning shift"/>
+      <description value="Recommended Action for Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Intensive Care Delirium Screening Checklist score (ICDSC) during the morning shift."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckICDSCNightShift"/>
+      </reference>
+      <name value="Recommended Action for Population: Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Intensive Care Delirium Screening Checklist score (ICDSC) during the night shift"/>
+      <description value="Recommended Action for Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Intensive Care Delirium Screening Checklist score (ICDSC) during the night shift."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionAdultSurgicalPatNoSpecSurgeryOrAnesthesiaTypeWarning"/>
+      </reference>
+      <name value="Recommended Action for Population: Adult Surgical Patients Pre- or Intraoperatively, do not suggest any specific type of surgery and type of anaesthesia to reduce the incidence of POD"/>
+      <description value="Recommended Action for Adult Surgical Patients Pre- or Intraoperatively, do not suggest any specific type of surgery and type of anaesthesia to reduce the incidence of postoperative delirium (POD) and show recommendation 3.3."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionAdultSurgicalPatientsNoSpecificBiomarkerWarning"/>
+      </reference>
+      <name value="Recommended Action for Population: Adult Surgical Patients Pre- or Intraoperatively, do not suggest using any single specific biomarker to identify patients at risk of POD"/>
+      <description value="Recommended Action for Adult Surgical Patients Pre- or Intraoperatively, do not suggest using any single specific biomarker to identify patients at risk of postoperative delirium (POD) and show recommendation 3.4."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionAdultSurgicalPatientsPreoperativelyCheckRFMiniCog"/>
+      </reference>
+      <name value="Recommended Action for Population: Adult Surgical Patients Preoperatively check risk factor Mini-cog test score"/>
+      <description value="Recommended Action for Adult Surgical Patients Preoperatively, check risk factor Mini-cog test score."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionAdultSurgicalPatientsPreoperativelyNeedMMSEFeeWarning"/>
+      </reference>
+      <name value="Recommended Action for Population: Adult Surgical Patients Preoperatively with Positive Mini-cog Test Score that need MMSE, provide warning for license fees"/>
+      <description value="Recommended Action for Adult Surgical Patients Preoperatively if Mini-cog test score is equal to or higher than 3 that need MMSE, provide warning for license fees"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionAdultSurgicalPatientsPreoperativelyCheckRFACER"/>
+      </reference>
+      <name value="Recommended Action for Population: Adult Surgical Patients Preoperatively with Positive Mini-cog Test Score, check risk factor Addenbrooke's Cognitive Examination revised score"/>
+      <description value="Recommended Action for Adult Surgical Patients Preoperatively if Mini-cog test score is equal to or higher than 3, check risk factor Addenbrooke's Cognitive Examination revised score."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionAdultSurgicalPatientsPreoperativelyCheckRFMMSE"/>
+      </reference>
+      <name value="Recommended Action for Population: Adult Surgical Patients Preoperatively with Positive Mini-cog Test Score, check risk factor Mini-Mental State Examination Score"/>
+      <description value="Recommended Action for Adult Surgical Patients Preoperatively if Mini-cog test score is equal to or higher than 3, check risk factor Mini-Mental State Examination Score."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionAdultSurgicalPatientsPreoperativelyCheckRFMoCA"/>
+      </reference>
+      <name value="Recommended Action for Population: Adult Surgical Patients Preoperatively with Positive Mini-cog Test Score, check risk factor Montreal Cognitive Assessment score"/>
+      <description value="Recommended Action for Adult Surgical Patients Preoperatively if Mini-cog test score is equal to or higher than 3, check risk factor Montreal Cognitive Assessment (MoCA) score."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionAdultPatientsPreoperativelyCheck3DCAM"/>
+      </reference>
+      <name value="Recommended Action for Population: Adult Surgical Patients Preoperatively, check 3-minute Diagnostic Interview for CAM-defined Delirium (3D-CAM) score"/>
+      <description value="Recommended Action for Adult Surgical Patients Preoperatively, check baseline 3-minute Diagnostic Interview for CAM-defined Delirium (3D-CAM) score."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionAdultPatientsPreoperativelyCheckAT4"/>
+      </reference>
+      <name value="Recommended Action for Population: Adult Surgical Patients Preoperatively, check AT4 score"/>
+      <description value="Recommended Action for Adult Surgical Patients Preoperatively, check baseline AT4 score."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionAdultPatientsPreoperativelyCheckCAM"/>
+      </reference>
+      <name value="Recommended Action for Population: Adult Surgical Patients Preoperatively, check Confusion Assessment Method (CAM) score"/>
+      <description value="Recommended Action for Adult Surgical Patients Preoperatively, check baseline Confusion Assessment Method (CAM) score"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionAdultPatientsPreoperativelyCheckDOS"/>
+      </reference>
+      <name value="Recommended Action for Population: Adult Surgical Patients Preoperatively, check Delirium Observation Scale (DOS) score"/>
+      <description value="Recommended Action for Adult Surgical Patients Preoperatively, check baseline Delirium Observation Scale (DOS) score."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionAdultPatientsPreoperativelyCheckDRS"/>
+      </reference>
+      <name value="Recommended Action for Population: Adult Surgical Patients Preoperatively, check Delirium Rating Scale (DRS) score"/>
+      <description value="Recommended Action for Adult Surgical Patients Preoperatively, check baseline Delirium Rating Scale (DRS) score."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionAdultPatientsPreoperativelyCheckNUDESC"/>
+      </reference>
+      <name value="Recommended Action for Population: Adult Surgical Patients Preoperatively, check Nursing Delirium Screening Scale (NU-DESC) score"/>
+      <description value="Recommended Action for Adult Surgical Patients Preoperatively, check baseline Nursing Delirium Screening Scale (NU-DESC) score."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionAdultSurgicalPatientsPreoperativelyCheckRFASA"/>
+      </reference>
+      <name value="Recommended Action for Population: Adult Surgical Patients Preoperatively, check risk factor American Society of Anesthesiology Physical status score"/>
+      <description value="Recommended Action for Adult Surgical Patients Preoperatively, check risk factor American Society of Anesthesiology Physical status score."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionAdultSurgicalPatientsPreoperativelyCheckRFCCI"/>
+      </reference>
+      <name value="Recommended Action for Population: Adult Surgical Patients Preoperatively, check risk factor Charlson Comorbidity Index"/>
+      <description value="Recommended Action for Adult Surgical Patients Preoperatively, check risk factor Charlson Comorbidity Index (CCI). Please note, the CCI preoperative might not reflect the actual/final CCI."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionAdultSurgicalPatientsPreoperativelyCheckRFAge"/>
+      </reference>
+      <name value="Recommended Action for Population: Adult Surgical Patients Preoperatively, check risk factor older age"/>
+      <description value="Recommended Action for Adult Surgical Patients Preoperatively, check risk factor older age."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckAnemiaRF"/>
+      </reference>
+      <name value="Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for anemia as risk factor for POD"/>
+      <description value="Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for anemia as risk factor for postoperative delirium (POD)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckAnticholLoadRF"/>
+      </reference>
+      <name value="Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for anticholinergic load as risk factor for POD"/>
+      <description value="Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for anticholinergic load as risk factor for postoperative delirium (POD)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckAnxietyRF"/>
+      </reference>
+      <name value="Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for anxiety as risk factor for POD"/>
+      <description value="Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for anxiety as risk factor for postoperative delirium (POD)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckCardiacRF"/>
+      </reference>
+      <name value="Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for cardiac conditions as risk factors for POD"/>
+      <description value="Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check cardiac conditions as risk factors for postoperative delirium (POD)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckCardiovascularRF"/>
+      </reference>
+      <name value="Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for cardiovascular conditions as risk factors for POD"/>
+      <description value="Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check cardiovascular conditions as risk factors for postoperative delirium (POD)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckPainRF"/>
+      </reference>
+      <name value="Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for chronic pain as risk factor for POD"/>
+      <description value="Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for chronic pain as risk factor for postoperative delirium (POD)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckCognitiveRF"/>
+      </reference>
+      <name value="Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for cognitive deficits as risk factors for POD"/>
+      <description value="Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for cognitive deficits as risk factors for postoperative delirium (POD)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckDeglutitionRF"/>
+      </reference>
+      <name value="Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for deglutition disorders as risk factors for POD"/>
+      <description value="Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for deglutition disorders as risk factors for postoperative delirium (POD)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckDementiaRF"/>
+      </reference>
+      <name value="Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for dementia as risk factor for POD"/>
+      <description value="Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for dementia as risk factor for postoperative delirium (POD)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckDepressionRF"/>
+      </reference>
+      <name value="Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for depression as risk factor for POD"/>
+      <description value="Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for depression as risk factor for postoperative delirium (POD)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckDiabetesRF"/>
+      </reference>
+      <name value="Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for diabetes as risk factor for POD"/>
+      <description value="Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for diabetes as risk factor for postoperative delirium (POD)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckElectrolytesRF"/>
+      </reference>
+      <name value="Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for electrolyte disorders as risk factors for POD"/>
+      <description value="Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for electrolyte disorders as risk factors for postoperative delirium (POD)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckFrailtyRF"/>
+      </reference>
+      <name value="Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for frailty as risk factor for POD"/>
+      <description value="Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for frailty as risk factor for postoperative delirium (POD)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckMalnutritionRF"/>
+      </reference>
+      <name value="Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for malnutrition as risk factor for POD"/>
+      <description value="Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for malnutrition as risk factor for postoperative delirium (POD)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckNeurologicalRF"/>
+      </reference>
+      <name value="Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for neurological conditions as risk factors for POD"/>
+      <description value="Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check neurological conditions as risk factors for postoperative delirium (POD)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckPolypharmacyRF"/>
+      </reference>
+      <name value="Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for polypharmacy as risk factor for POD"/>
+      <description value="Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for polypharmacy as risk factor for postoperative delirium (POD)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckSensoryDeficitsRF"/>
+      </reference>
+      <name value="Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for sensory deficits as risk factors for POD"/>
+      <description value="Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for sensory deficits as risk factors for postoperative delirium (POD)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckSubstanceDepRF"/>
+      </reference>
+      <name value="Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for substance dependency (alcohol, benzodiazepine, other substances) as risk factor for POD"/>
+      <description value="Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for substance dependency (alcohol, benzodiazepine, other substances) as risk factor for postoperative delirium (POD)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/RecActionOlderAdultSurgicalPatientsPreoperativelyCheckRF"/>
+      </reference>
+      <name value="Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check predisposing and precipitating risk factors"/>
+      <description value="Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check predisposing and precipitating risk factors"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/RecPlanIntraoperativeEEGMonitoringDepth"/>
+      </reference>
+      <name value="Recommended Plan for Population: Adult Surgical Patients Intraoperatively, use Index-based EEG monitoring depth of anaesthesia guidance"/>
+      <description value="Recommended Plan for Adult Surgical Patients, Intraoperatively, use Index-based EEG monitoring depth of anaesthesia guidance"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/RecPlanIntraoperativeMultiparameterEEG"/>
+      </reference>
+      <name value="Recommended Plan for Population: Adult Surgical Patients Intraoperatively, use multiparameter EEG monitoring"/>
+      <description value="Recommended Plan for Adult Surgical Patients, Intraoperatively, use multiparameter electroencephalography (EEG) focusing on burst suppression activity and including the density spectral array (DSA)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/RecPlanPostoperativeDeliriumScreeningOnSurgeryDayNWEveningShift"/>
+      </reference>
+      <name value="Recommended Plan for Population: Adult Surgical Patients Postoperatively on a Normal Ward, Perform Delirium Screening during the evening shift"/>
+      <description value="Recommended Plan for Adult Surgical Patients Postoperatively on a Normal Ward, Perform Delirium Screening during the evening shift."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/RecPlanPostoperativeDeliriumScreeningOnSurgeryDayNWMorningShift"/>
+      </reference>
+      <name value="Recommended Plan for Population: Adult Surgical Patients Postoperatively on a Normal Ward, Perform Delirium Screening during the morning shift"/>
+      <description value="Recommended Plan for Adult Surgical Patients Postoperatively on a Normal Ward, Perform Delirium Screening during the morning shift."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/RecPlanPostoperativeDeliriumScreeningOnSurgeryDayNWNightShift"/>
+      </reference>
+      <name value="Recommended Plan for Population: Adult Surgical Patients Postoperatively on a Normal Ward, Perform Delirium Screening during the night shift"/>
+      <description value="Recommended Plan for Adult Surgical Patients Postoperatively on a Normal Ward, Perform Delirium Screening during the night shift."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/RecPlanPostoperativeDeliriumScreeningOnSurgeryDayICUEveningShift"/>
+      </reference>
+      <name value="Recommended Plan for Population: Adult Surgical Patients Postoperatively on an Intensive Care Unit, Perform Delirium Screening during the evening shift"/>
+      <description value="Recommended Plan for Adult Surgical Patients Postoperatively on an Intensive Care Unit, Perform Delirium Screening during the evening shift."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/RecPlanPostoperativeDeliriumScreeningOnSurgeryDayICUMorningShift"/>
+      </reference>
+      <name value="Recommended Plan for Population: Adult Surgical Patients Postoperatively on an Intensive Care Unit, Perform Delirium Screening during the morning shift"/>
+      <description value="Recommended Plan for Adult Surgical Patients Postoperatively on an Intensive Care Unit, Perform Delirium Screening during the morning shift."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/RecPlanPostoperativeDeliriumScreeningOnSurgeryDayOnICUNightShift"/>
+      </reference>
+      <name value="Recommended Plan for Population: Adult Surgical Patients Postoperatively on an Intensive Care Unit, Perform Delirium Screening during the night shift"/>
+      <description value="Recommended Plan for Adult Surgical Patients Postoperatively on an Intensive Care Unit, Perform Delirium Screening during the night shift."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/RecPlanShowRecommendationNoSpecificSurgeryOrAnesthesiaType"/>
+      </reference>
+      <name value="Recommended Plan for Population: Adult Surgical Patients Pre- or Intraoperatively, do not suggest any specific type of surgery and type of anaesthesia to reduce the incidence of POD"/>
+      <description value="Recommended Plan for Adult Surgical Patients Pre- or Intraoperatively, do not suggest any specific type of surgery and type of anaesthesia to reduce the incidence of postoperative delirium (POD) and show recommendation 3.3."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/RecPlanShowRecommendationNoSpecificBiomarker"/>
+      </reference>
+      <name value="Recommended Plan for Population: Adult Surgical Patients Pre- or Intraoperatively, do not suggest using any single specific biomarker to identify patients at risk of POD"/>
+      <description value="Recommended Plan for Adult Surgical Patients Pre- or Intraoperatively, do not suggest using any single specific biomarker to identify patients at risk of postoperative delirium (POD) and show recommendation 3.4."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/RecPlanProvideLicenseFeeWarningForMMSE"/>
+      </reference>
+      <name value="Recommended Plan for Population: Adult Surgical Patients Preoperatively with Positive Mini-cog Test Score that need a Mini-Mental State Examination, provide warning because of MMSE license fees"/>
+      <description value="Recommended Plan for Adult Surgical Patients Preoperatively with Positive Mini-cog Test Score that need a Mini-Mental State Examination, provide warning because of MMSE license fees."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/RecPlanCheckRiskFactorsMoCAACERMMSE"/>
+      </reference>
+      <name value="Recommended Plan for Population: Adult Surgical Patients Preoperatively with Positive Mini-cog Test Score, check risk factor Montreal Cognitive Assessment (MoCA) score, Addenbrooke's Cognitive Examination revised (ACE-R) score or Mini Mental State Examination (MMSE) score"/>
+      <description value="Recommended Plan for Adult Surgical Patients Preoperatively if Mini-cog test score is equal to or higher than 3, check risk factors Montreal Cognitive Assessment (MoCA) score, Addenbrooke's Cognitive Examination revised (ACE-R) score or Mini Mental State Examination (MMSE) score."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/RecPlanCheckRiskFactorsAgeASACCIMiniCog"/>
+      </reference>
+      <name value="Recommended Plan for Population: Adult Surgical Patients Preoperatively, check risk factors age, ASA, CCI and Mini-cog"/>
+      <description value="Recommended Plan for Adult Surgical Patients Preoperatively, check risk factors age, American Society of Anesthesiology Physical status score (ASA), Charlson Comorbidity Index (CCI) and Mini-cog test score (Mini-cog)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/RecPlanPreoperativeDeliriumScreening"/>
+      </reference>
+      <name value="Recommended Plan for Population: Adult Surgical Patients Preoperatively, Perform Baseline Delirium Screening"/>
+      <description value="Recommended Plan for Adult Surgical Patients Preoperatively, perform baseline delirium screening."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/RiccardoAudisio"/>
+      </reference>
+      <name value="RiccardoAudisio"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/RobertSanders"/>
+      </reference>
+      <name value="RobertSanders"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/SimonePiva"/>
+      </reference>
+      <name value="SimonePiva"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/StefaniaRenzi"/>
+      </reference>
+      <name value="StefaniaRenzi"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/StefanoRomagnoli"/>
+      </reference>
+      <name value="StefanoRomagnoli"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/SusanneKoch"/>
+      </reference>
+      <name value="SusanneKoch"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Citation"/>
+      </extension>
+      <reference>
+        <reference value="Citation/ClinicalPracticeGuidelineESAICOnPostOpDeliriumInAdultPatients"/>
+      </reference>
+      <name value="Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients"/>
+      <description value="Evidence-based and consensus-based guideline on postoperative delirium in adult patients, updated by the European Society of Anaesthesiology and Intensive Care Medicine (ESAIC) in 2021"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/WojciechDabrowski"/>
+      </reference>
+      <name value="WojciechDabrowski"/>
+      <isExample value="false"/>
+    </resource>
+    <page>
+      <sourceUrl value="toc.html"/>
+      <name value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <sourceUrl value="index.html"/>
+        <name value="index.html"/>
+        <title value="CPG-on-EBMonFHIR template"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="downloads.html"/>
+        <name value="downloads.html"/>
+        <title value="Downloads"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <sourceUrl value="changelog.html"/>
+        <name value="changelog.html"/>
+        <title value="Change Log"/>
+        <generation value="markdown"/>
+      </page>
+    </page>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="copyrightyear"/>
+      </code>
+      <value value="2023+"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="releaselabel"/>
+      </code>
+      <value value="ci-build"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="active-tables"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-contact"/>
+      </code>
+      <value value="false"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-jurisdiction"/>
+      </code>
+      <value value="false"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-publisher"/>
+      </code>
+      <value value="false"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-version"/>
+      </code>
+      <value value="false"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="show-inherited-invariants"/>
+      </code>
+      <value value="false"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="usage-stats-opt-out"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="excludexml"/>
+      </code>
+      <value value="false"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="excludejsn"/>
+      </code>
+      <value value="false"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="excludettl"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="excludemap"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="excludeexample"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="extension-domain"/>
+      </code>
+      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="extension-domain"/>
+      </code>
+      <value value="https://simplifier.net"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="autoload-resources"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-pages"/>
+      </code>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-pages"/>
+      </code>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-liquid"/>
+      </code>
+      <value value="template/liquid"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-liquid"/>
+      </code>
+      <value value="input/liquid"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-qa"/>
+      </code>
+      <value value="temp/qa"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-temp"/>
+      </code>
+      <value value="temp/pages"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-output"/>
+      </code>
+      <value value="output"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-tx-cache"/>
+      </code>
+      <value value="input-cache/txcache"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-suppressed-warnings"/>
+      </code>
+      <value value="input/ignoreWarnings.txt"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-history"/>
+      </code>
+      <value value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/history.html"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="template-html"/>
+      </code>
+      <value value="template-page.html"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="template-md"/>
+      </code>
+      <value value="template-page-md.html"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-context"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-copyright"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-license"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-wg"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="fmm-definition"/>
+      </code>
+      <value value="http://hl7.org/fhir/versions.html#maturity"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="propagate-status"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="excludelogbinaryformat"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="tabbed-snapshots"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

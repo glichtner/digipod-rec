@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="AlasdairMacLullich"/>
+  <text>
+    <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">Resource representing Alasdai MacLullich</div>
+  </text>
+  <name>
+    <family value="MacLullich"/>
+    <given value="Alasdair"/>
+  </name>
+</Practitioner>

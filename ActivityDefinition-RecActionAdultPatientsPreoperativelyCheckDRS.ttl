@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPreoperativelyCheckDRS> a fhir:ActivityDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "RecActionAdultPatientsPreoperativelyCheckDRS"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/assessment-action"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/assessment-action>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ActivityDefinition</b><a name=\"RecActionAdultPatientsPreoperativelyCheckDRS\"> </a><a name=\"hcRecActionAdultPatientsPreoperativelyCheckDRS\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceActivityDefinition &quot;RecActionAdultPatientsPreoperativelyCheckDRS&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"file:///github/workspace/output/StructureDefinition-assessment-action.html\">Assessment Action</a></p></div><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>url</b>: <code>https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPreoperativelyCheckDRS</code></p><p><b>version</b>: 0.2.0</p><p><b>name</b>: RecActionAdultPatientsPreoperativelyCheckDRS</p><p><b>title</b>: Recommended Action for Population: Adult Surgical Patients Preoperatively, check Delirium Rating Scale (DRS) score</p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>subject</b>: Patient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R5/codesystem-fhir-types.html\">All FHIR Types</a>#Patient)</span></p><p><b>date</b>: 2024-04</p><p><b>publisher</b>: DIGIPOD</p><p><b>description</b>: Recommended Action for Adult Surgical Patients Preoperatively, check baseline Delirium Rating Scale (DRS) score.</p><p><b>kind</b>: ServiceRequest</p><p><b>code</b>: Delirium Rating Scale score <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-digipod.html\">DIGIPOD</a>#019)</span></p><p><b>timing</b>: Count 1  times, Once</p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "computable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "structured" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPreoperativelyCheckDRS"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:name [ fhir:v "RecActionAdultPatientsPreoperativelyCheckDRS"] ; # 
+  fhir:title [ fhir:v "Recommended Action for Population: Adult Surgical Patients Preoperatively, check Delirium Rating Scale (DRS) score"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:subject [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/fhir-types"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Patient" ]
+     ] )
+  ] ; # 
+  fhir:date [ fhir:v "2024-04"^^xsd:gYearMonth] ; # 
+  fhir:publisher [ fhir:v "DIGIPOD"] ; # 
+  fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Preoperatively, check baseline Delirium Rating Scale (DRS) score."] ; # 
+  fhir:kind [ fhir:v "ServiceRequest"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://www.charite.de/fhir/digipod/CodeSystem/digipod"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "019" ] ;
+       fhir:display [ fhir:v "Delirium Rating Scale score" ]
+     ] )
+  ] ; # 
+  fhir:timing [
+     a fhir:Timing ;
+     fhir:repeat [
+       fhir:count [ fhir:v "1"^^xsd:positiveInteger ]
+     ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

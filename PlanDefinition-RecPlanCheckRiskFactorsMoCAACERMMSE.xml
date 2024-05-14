@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PlanDefinition xmlns="http://hl7.org/fhir">
+  <id value="RecPlanCheckRiskFactorsMoCAACERMMSE"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: PlanDefinition</b><a name="RecPlanCheckRiskFactorsMoCAACERMMSE"> </a><a name="hcRecPlanCheckRiskFactorsMoCAACERMMSE"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourcePlanDefinition &quot;RecPlanCheckRiskFactorsMoCAACERMMSE&quot; </p><p style="margin-bottom: 0px">Profile: <a href="file:///github/workspace/output/StructureDefinition-recommendation-plan.html">Recommendation Plan</a></p></div><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>partOf</b>: <a href="PlanDefinition-RecCollCheckRFAdultSurgicalPatientsPreoperatively.html">Recommendation Collection: Check risk factors in Adult Surgical Patients Preoperatively</a></p><blockquote><p><b>Action Combination Method</b></p><blockquote><p><b>url</b></p><code>method</code></blockquote><p><b>value</b>: At Least <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="file:///github/workspace/output/CodeSystem-cs-action-combination-method.html">Action Combination Method</a>#at-least)</span></p><blockquote><p><b>url</b></p><code>threshold</code></blockquote><p><b>value</b>: 1</p></blockquote><p><b>url</b>: <code>https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecPlanCheckRiskFactorsMoCAACERMMSE</code></p><p><b>version</b>: 0.2.0</p><p><b>name</b>: RecPlanCheckRiskFactorsMoCAACERMMSE</p><p><b>title</b>: Recommended Plan for Population: Adult Surgical Patients Preoperatively with Positive Mini-cog Test Score, check risk factor Montreal Cognitive Assessment (MoCA) score, Addenbrooke's Cognitive Examination revised (ACE-R) score or Mini-Mental State Examination (MMSE) score</p><p><b>type</b>: ECA Rule <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.5.0/CodeSystem-plan-definition-type.html">PlanDefinitionType</a>#eca-rule)</span></p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>subject</b>: <a href="EvidenceVariable-PopAdultSurgicalPatientsPreoperativelyWithPositiveMiniCog.html">Population: Adult Surgical Patients Preoperatively with Positive Mini-cog Test Score</a></p><p><b>date</b>: 2024-02</p><p><b>publisher</b>: DIGIPOD</p><p><b>description</b>: Recommended Plan for Adult Surgical Patients Preoperatively if Mini-cog test score is equal to or higher than 3, check risk factors Montreal Cognitive Assessment (MoCA) score, Addenbrooke's Cognitive Examination revised (ACE-R) score or Mini-Mental State Examination (MMSE) score.</p><blockquote><p><b>action</b></p><p><b>code</b>: Evaluation procedure (procedure) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOWMED CT</a>#386053000)</span></p><p><b>reason</b>: Risk assessment <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/R5/codesystem-action-reason-code.html">Action Reason Code</a>#risk-assessment)</span></p><p><b>requiredBehavior</b>: must</p><p><b>definition</b>: <a href="ActivityDefinition-RecActionAdultSurgicalPatientsPreoperativelyCheckRFMoCA.html">Recommended Action for Population: Adult Surgical Patients Preoperatively with Positive Mini-cog Test Score, check risk factor Montreal Cognitive Assessment score</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: Evaluation procedure (procedure) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOWMED CT</a>#386053000)</span></p><p><b>reason</b>: Risk assessment <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/R5/codesystem-action-reason-code.html">Action Reason Code</a>#risk-assessment)</span></p><p><b>requiredBehavior</b>: must</p><p><b>definition</b>: <a href="ActivityDefinition-RecActionAdultSurgicalPatientsPreoperativelyCheckRFACER.html">Recommended Action for Population: Adult Surgical Patients Preoperatively if Mini-cog test score is equal to or higher than 3, check risk factor Addenbrooke's Cognitive Examination revised score</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: Evaluation procedure (procedure) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOWMED CT</a>#386053000)</span></p><p><b>reason</b>: Risk assessment <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/R5/codesystem-action-reason-code.html">Action Reason Code</a>#risk-assessment)</span></p><p><b>requiredBehavior</b>: must</p><p><b>definition</b>: <a href="ActivityDefinition-RecActionAdultSurgicalPatientsPreoperativelyCheckRFMMSE.html">Recommended Action for Population: Adult Surgical Patients Preoperatively, check risk factor Mini-Mental State Examination Score if Mini-cog test score is equal to or higher than 3. Please note that MMSE is not free of charge (license fees)</a></p></blockquote></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-partOf">
+    <valueCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecCollCheckRFAdultSurgicalPatientsPreoperatively"/>
+  </extension>
+  <extension url="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method">
+    <extension url="method">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"/>
+          <code value="at-least"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="threshold">
+      <valuePositiveInt value="1"/>
+    </extension>
+  </extension>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecPlanCheckRiskFactorsMoCAACERMMSE"/>
+  <version value="0.2.0"/>
+  <name value="RecPlanCheckRiskFactorsMoCAACERMMSE"/>
+  <title value="Recommended Plan for Population: Adult Surgical Patients Preoperatively with Positive Mini-cog Test Score, check risk factor Montreal Cognitive Assessment (MoCA) score, Addenbrooke's Cognitive Examination revised (ACE-R) score or Mini-Mental State Examination (MMSE) score"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+      <code value="eca-rule"/>
+    </coding>
+  </type>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <subjectCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/EvidenceVariable/PopAdultSurgicalPatientsPreoperativelyWithPositiveMiniCog"/>
+  <date value="2024-02"/>
+  <publisher value="DIGIPOD"/>
+  <description value="Recommended Plan for Adult Surgical Patients Preoperatively if Mini-cog test score is equal to or higher than 3, check risk factors Montreal Cognitive Assessment (MoCA) score, Addenbrooke's Cognitive Examination revised (ACE-R) score or Mini-Mental State Examination (MMSE) score."/>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="386053000"/>
+        <display value="Evaluation procedure (procedure)"/>
+      </coding>
+    </code>
+    <reason>
+      <coding>
+        <system value="http://hl7.org/fhir/action-reason-code"/>
+        <code value="risk-assessment"/>
+        <display value="Risk assessment"/>
+      </coding>
+    </reason>
+    <requiredBehavior value="must"/>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultSurgicalPatientsPreoperativelyCheckRFMoCA"/>
+  </action>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="386053000"/>
+        <display value="Evaluation procedure (procedure)"/>
+      </coding>
+    </code>
+    <reason>
+      <coding>
+        <system value="http://hl7.org/fhir/action-reason-code"/>
+        <code value="risk-assessment"/>
+        <display value="Risk assessment"/>
+      </coding>
+    </reason>
+    <requiredBehavior value="must"/>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultSurgicalPatientsPreoperativelyCheckRFACER"/>
+  </action>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="386053000"/>
+        <display value="Evaluation procedure (procedure)"/>
+      </coding>
+    </code>
+    <reason>
+      <coding>
+        <system value="http://hl7.org/fhir/action-reason-code"/>
+        <code value="risk-assessment"/>
+        <display value="Risk assessment"/>
+      </coding>
+    </reason>
+    <requiredBehavior value="must"/>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultSurgicalPatientsPreoperativelyCheckRFMMSE"/>
+  </action>
+</PlanDefinition>

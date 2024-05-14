@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Citation xmlns="http://hl7.org/fhir">
+  <id value="Recommendation4.2PrevMeasuresIINonPharmacologicalInterventions"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-citation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Citation</b><a name="Recommendation4.2PrevMeasuresIINonPharmacologicalInterventions"> </a><a name="hcRecommendation4.2PrevMeasuresIINonPharmacologicalInterventions"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceCitation &quot;Recommendation4.2PrevMeasuresIINonPharmacologicalInterventions&quot; </p><p style="margin-bottom: 0px">Profile: <a href="file:///github/workspace/output/StructureDefinition-recommendation-citation.html">Recommendation Citation</a></p></div><p><b>version</b>: 0.2.0</p><p><b>name</b>: Recommendation4_2PrevMeasuresIINonPharmacologicalInterventions</p><p><b>title</b>: Recommendation 4.2: Preventive Measures II (Non Pharmacological Interventions) - Sharing, discussing and documenting results of risk factors and preventive strategies</p><p><b>status</b>: draft</p><p><b>date</b>: 2024-02</p><blockquote><p><b>citedArtifact</b></p><p><b>identifier</b>: 37599617-rec4.2</p><h3>Versions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Value</b></td></tr><tr><td style="display: none">*</td><td>1.0</td></tr></table><p><b>currentState</b>: Published final form <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/R5/codesystem-cited-artifact-status-type.html">Cited Artifact Status Type</a>#published-final-form)</span></p><h3>Titles</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Language</b></td><td><b>Text</b></td></tr><tr><td style="display: none">*</td><td>Primary title <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/R5/codesystem-title-type.html">Title Type</a>#primary)</span></td><td>English <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ietf3066.html">Tags for the Identification of Languages</a>#en)</span></td><td>Recommendation 4.2</td></tr></table><h3>Parts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value</b></td></tr><tr><td style="display: none">*</td><td>paragraphs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/R5/codesystem-cited-artifact-part-type.html">Cited Artifact Part Type</a>#paragraphs)</span></td><td>We recommend that the results of the screening for POD risk factors are shared among the care team and the preventive strategies discussed and registered in the medical records.</td></tr></table><h3>RelatesTos</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Resource</b></td></tr><tr><td style="display: none">*</td><td>contained-in</td><td><a href="Citation-ClinicalPracticeGuidelineESAICOnPostOpDeliriumInAdultPatients.html">Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients</a></td></tr></table><h3>Classifications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Classifier</b></td></tr><tr><td style="display: none">*</td><td>Publication Type <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/R5/codesystem-cited-artifact-classification-type.html">Cited Artifact Classification Type</a>#publication-type)</span></td><td>Clinical practice guideline recommendation <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="file:///github/workspace/output/CodeSystem-ceosys-code-system.html">CEOsys Code System</a>#guideline-recommendation)</span></td></tr></table><blockquote><p><b>contributorship</b></p><blockquote><p><b>entry</b></p><p><b>contributor</b>: <a href="Practitioner-GabriellaBettelli.html">Practitioner/GabriellaBettelli</a> &quot; BETTELLI&quot;</p><p><b>affiliation</b>: <span>: Department of Biomedical Studies, University of the Republic of San Marino, San Marino</span></p></blockquote><blockquote><p><b>entry</b></p><p><b>contributor</b>: <a href="Practitioner-PaolaAceto.html">Practitioner/PaolaAceto</a> &quot; ACETO&quot;</p><p><b>affiliation</b>: </p><ul><li><span>: Dipartimento di Scienze dell'Emergenza, Anestesiologiche e della Rianimazione, Fondazione Policlinico Universitario A. Gemelli IRCCS, Rome, Italy</span></li><li><span>: Dipartimento di Scienze Biotecnologiche di Base, Cliniche Intensivologiche e Perioperatorie, Università Cattolica del Sacro Cuore, Rome, Italy</span></li></ul></blockquote><blockquote><p><b>entry</b></p><p><b>contributor</b>: <a href="Practitioner-RiccardoAudisio.html">Practitioner/RiccardoAudisio</a> &quot; AUDISIO&quot;</p><p><b>affiliation</b>: <span>: Department of Surgery, Institute of Clinical Sciences, Sahlgrenska University Hospital, Göteborg, Sweden</span></p></blockquote><blockquote><p><b>entry</b></p><p><b>contributor</b>: <a href="Practitioner-AntonioCherubini.html">Practitioner/AntonioCherubini</a> &quot; CHERUBINI&quot;</p><p><b>affiliation</b>: <span>: Geriatria, Accettazione Geriatrica e Centro di ricerca per l'invecchiamento, IRCCS INRCA, Ancona, Italy</span></p></blockquote><blockquote><p><b>entry</b></p><p><b>contributor</b>: <a href="Practitioner-BrunoNeuner.html">Practitioner/BrunoNeuner</a> &quot; NEUNER&quot;</p><p><b>affiliation</b>: <span>: Department of Anesthesiology and Intensive Care Medicine, Charité-Universitätsmedizin Berlin, Corporate Member of Freie Universität Berlin, and Humboldt Universität zu Berlin, Campus Charité Mitte, and Campus Virchow Klinikum</span></p></blockquote><blockquote><p><b>entry</b></p><p><b>contributor</b>: <a href="Practitioner-MariaSchubert.html">Practitioner/MariaSchubert</a> &quot; SCHUBERT&quot;</p><p><b>affiliation</b>: <span>: School of Health Sciences, Institute of Nursing, ZHAW Zurich University of Applied Science, Winterthur, Switzerland</span></p></blockquote><blockquote><p><b>entry</b></p><p><b>contributor</b>: <a href="Practitioner-FatimaYuerek.html">Practitioner/FatimaYuerek</a> &quot; YÜREK&quot;</p><p><b>affiliation</b>: <span>: Department of Anesthesiology and Intensive Care Medicine, Charité-Universitätsmedizin Berlin, Corporate Member of Freie Universität Berlin, and Humboldt Universität zu Berlin, Campus Charité Mitte, and Campus Virchow Klinikum</span></p></blockquote></blockquote></blockquote></div>
+  </text>
+  <version value="0.2.0"/>
+  <name value="Recommendation4_2PrevMeasuresIINonPharmacologicalInterventions"/>
+  <title value="Recommendation 4.2: Preventive Measures II (Non Pharmacological Interventions) - Sharing, discussing and documenting results of risk factors and preventive strategies"/>
+  <status value="draft"/>
+  <date value="2024-02"/>
+  <citedArtifact>
+    <identifier>
+      <value value="37599617-rec4.2"/>
+    </identifier>
+    <version>
+      <value value="1.0"/>
+    </version>
+    <currentState>
+      <coding>
+        <system value="http://hl7.org/fhir/cited-artifact-status-type"/>
+        <code value="published-final-form"/>
+        <display value="Published final form"/>
+      </coding>
+    </currentState>
+    <title>
+      <type>
+        <coding>
+          <system value="http://hl7.org/fhir/title-type"/>
+          <code value="primary"/>
+          <display value="Primary title"/>
+        </coding>
+      </type>
+      <language>
+        <coding>
+          <system value="urn:ietf:bcp:47"/>
+          <code value="en"/>
+        </coding>
+      </language>
+      <text value="Recommendation 4.2"/>
+    </title>
+    <part>
+      <type>
+        <coding>
+          <system value="http://hl7.org/fhir/cited-artifact-part-type"/>
+          <code value="paragraphs"/>
+          <display value="paragraphs"/>
+        </coding>
+      </type>
+      <value value="We recommend that the results of the screening for POD risk factors are shared among the care team and the preventive strategies discussed and registered in the medical records."/>
+    </part>
+    <relatesTo>
+      <type value="contained-in"/>
+      <resource value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Citation/ClinicalPracticeGuidelineESAICOnPostOpDeliriumInAdultPatients"/>
+    </relatesTo>
+    <classification>
+      <type>
+        <coding>
+          <system value="http://hl7.org/fhir/cited-artifact-classification-type"/>
+          <code value="publication-type"/>
+          <display value="Publication Type"/>
+        </coding>
+      </type>
+      <classifier>
+        <coding>
+          <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system"/>
+          <code value="guideline-recommendation"/>
+          <display value="Clinical practice guideline recommendation"/>
+        </coding>
+      </classifier>
+    </classification>
+    <contributorship>
+      <entry>
+        <contributor>
+          <reference value="Practitioner/GabriellaBettelli"/>
+        </contributor>
+        <affiliation>
+          <display value="Department of Biomedical Studies, University of the Republic of San Marino, San Marino"/>
+        </affiliation>
+      </entry>
+      <entry>
+        <contributor>
+          <reference value="Practitioner/PaolaAceto"/>
+        </contributor>
+        <affiliation>
+          <display value="Dipartimento di Scienze dell'Emergenza, Anestesiologiche e della Rianimazione, Fondazione Policlinico Universitario A. Gemelli IRCCS, Rome, Italy"/>
+        </affiliation>
+        <affiliation>
+          <display value="Dipartimento di Scienze Biotecnologiche di Base, Cliniche Intensivologiche e Perioperatorie, Università Cattolica del Sacro Cuore, Rome, Italy"/>
+        </affiliation>
+      </entry>
+      <entry>
+        <contributor>
+          <reference value="Practitioner/RiccardoAudisio"/>
+        </contributor>
+        <affiliation>
+          <display value="Department of Surgery, Institute of Clinical Sciences, Sahlgrenska University Hospital, Göteborg, Sweden"/>
+        </affiliation>
+      </entry>
+      <entry>
+        <contributor>
+          <reference value="Practitioner/AntonioCherubini"/>
+        </contributor>
+        <affiliation>
+          <display value="Geriatria, Accettazione Geriatrica e Centro di ricerca per l'invecchiamento, IRCCS INRCA, Ancona, Italy"/>
+        </affiliation>
+      </entry>
+      <entry>
+        <contributor>
+          <reference value="Practitioner/BrunoNeuner"/>
+        </contributor>
+        <affiliation>
+          <display value="Department of Anesthesiology and Intensive Care Medicine, Charité-Universitätsmedizin Berlin, Corporate Member of Freie Universität Berlin, and Humboldt Universität zu Berlin, Campus Charité Mitte, and Campus Virchow Klinikum"/>
+        </affiliation>
+      </entry>
+      <entry>
+        <contributor>
+          <reference value="Practitioner/MariaSchubert"/>
+        </contributor>
+        <affiliation>
+          <display value="School of Health Sciences, Institute of Nursing, ZHAW Zurich University of Applied Science, Winterthur, Switzerland"/>
+        </affiliation>
+      </entry>
+      <entry>
+        <contributor>
+          <reference value="Practitioner/FatimaYuerek"/>
+        </contributor>
+        <affiliation>
+          <display value="Department of Anesthesiology and Intensive Care Medicine, Charité-Universitätsmedizin Berlin, Corporate Member of Freie Universität Berlin, and Humboldt Universität zu Berlin, Campus Charité Mitte, and Campus Virchow Klinikum"/>
+        </affiliation>
+      </entry>
+    </contributorship>
+  </citedArtifact>
+</Citation>

@@ -1,0 +1,115 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "digipod",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This  code system <code>https://www.charite.de/fhir/digipod/CodeSystem/digipod</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">001<a name=\"digipod-001\"> </a></td><td>N5 elektiv</td><td/></tr><tr><td style=\"white-space:nowrap\">002<a name=\"digipod-002\"> </a></td><td>N4 innerhalb 12-24 h</td><td/></tr><tr><td style=\"white-space:nowrap\">003<a name=\"digipod-003\"> </a></td><td>N3 innerhalb 6-12 h</td><td/></tr><tr><td style=\"white-space:nowrap\">004<a name=\"digipod-004\"> </a></td><td>N2 innerhalb 1-6 h</td><td/></tr><tr><td style=\"white-space:nowrap\">005<a name=\"digipod-005\"> </a></td><td>N1 innerhalb 1 h</td><td/></tr><tr><td style=\"white-space:nowrap\">006<a name=\"digipod-006\"> </a></td><td>N0 sofort</td><td/></tr><tr><td style=\"white-space:nowrap\">007<a name=\"digipod-007\"> </a></td><td>Date of surgical procedure</td><td/></tr><tr><td style=\"white-space:nowrap\">009<a name=\"digipod-009\"> </a></td><td>Result of Charlson Comorbidity Index</td><td/></tr><tr><td style=\"white-space:nowrap\">012<a name=\"digipod-012\"> </a></td><td>Result of Addenbrooke cognitive examination revised</td><td/></tr><tr><td style=\"white-space:nowrap\">013<a name=\"digipod-013\"> </a></td><td>Index-based Electroencephalogram monitoring depth of anaesthesia guidance</td><td/></tr><tr><td style=\"white-space:nowrap\">014<a name=\"digipod-014\"> </a></td><td>Monitoring burst suppression patterns</td><td/></tr><tr><td style=\"white-space:nowrap\">015<a name=\"digipod-015\"> </a></td><td>Encephalographic density spectral array</td><td/></tr><tr><td style=\"white-space:nowrap\">016<a name=\"digipod-016\"> </a></td><td>Nursing Delirium Screening Scale (NU-DESC) score</td><td/></tr><tr><td style=\"white-space:nowrap\">017<a name=\"digipod-017\"> </a></td><td>4AT score</td><td/></tr><tr><td style=\"white-space:nowrap\">018<a name=\"digipod-018\"> </a></td><td>Confusion Assessment Method score</td><td/></tr><tr><td style=\"white-space:nowrap\">019<a name=\"digipod-019\"> </a></td><td>Delirium Rating Scale score</td><td/></tr><tr><td style=\"white-space:nowrap\">020<a name=\"digipod-020\"> </a></td><td>Delirium Observation Scale score</td><td/></tr><tr><td style=\"white-space:nowrap\">021<a name=\"digipod-021\"> </a></td><td>3-minute Diagnostic Interview for CAM-defined Delirium score</td><td/></tr><tr><td style=\"white-space:nowrap\">022<a name=\"digipod-022\"> </a></td><td>Confusion Assessment Method for the Intensive Care Unit score</td><td/></tr><tr><td style=\"white-space:nowrap\">023<a name=\"digipod-023\"> </a></td><td>Delirium Detection Score score</td><td/></tr><tr><td style=\"white-space:nowrap\">024<a name=\"digipod-024\"> </a></td><td>Intensive Care Delirium Screening Checklist score</td><td/></tr><tr><td style=\"white-space:nowrap\">025<a name=\"digipod-025\"> </a></td><td>Day shift</td><td>Day shift is called 'Frühschicht' and lasts from 6am to 2pm</td></tr><tr><td style=\"white-space:nowrap\">026<a name=\"digipod-026\"> </a></td><td>Evening shift</td><td>Evening shift is called 'Spätschicht' and lasts from 2pm to 10pm</td></tr><tr><td style=\"white-space:nowrap\">027<a name=\"digipod-027\"> </a></td><td>Night shift</td><td>Night shift is called 'Nachtschicht' and lasts from 10pm to 6am of the next day</td></tr></table></div>"
+  },
+  "url" : "https://www.charite.de/fhir/digipod/CodeSystem/digipod",
+  "name" : "DIGIPOD",
+  "title" : "DIGIPOD",
+  "status" : "draft",
+  "date" : "2024-05-14T12:39:53+00:00",
+  "description" : "Concepts required in recommendations that are not defined elsewhere for the project DIGIPOD",
+  "content" : "complete",
+  "count" : 24,
+  "concept" : [{
+    "code" : "001",
+    "display" : "N5 elektiv"
+  },
+  {
+    "code" : "002",
+    "display" : "N4 innerhalb 12-24 h"
+  },
+  {
+    "code" : "003",
+    "display" : "N3 innerhalb 6-12 h"
+  },
+  {
+    "code" : "004",
+    "display" : "N2 innerhalb 1-6 h"
+  },
+  {
+    "code" : "005",
+    "display" : "N1 innerhalb 1 h"
+  },
+  {
+    "code" : "006",
+    "display" : "N0 sofort"
+  },
+  {
+    "code" : "007",
+    "display" : "Date of surgical procedure"
+  },
+  {
+    "code" : "009",
+    "display" : "Result of Charlson Comorbidity Index"
+  },
+  {
+    "code" : "012",
+    "display" : "Result of Addenbrooke cognitive examination revised"
+  },
+  {
+    "code" : "013",
+    "display" : "Index-based Electroencephalogram monitoring depth of anaesthesia guidance"
+  },
+  {
+    "code" : "014",
+    "display" : "Monitoring burst suppression patterns"
+  },
+  {
+    "code" : "015",
+    "display" : "Encephalographic density spectral array"
+  },
+  {
+    "code" : "016",
+    "display" : "Nursing Delirium Screening Scale (NU-DESC) score"
+  },
+  {
+    "code" : "017",
+    "display" : "4AT score"
+  },
+  {
+    "code" : "018",
+    "display" : "Confusion Assessment Method score"
+  },
+  {
+    "code" : "019",
+    "display" : "Delirium Rating Scale score"
+  },
+  {
+    "code" : "020",
+    "display" : "Delirium Observation Scale score"
+  },
+  {
+    "code" : "021",
+    "display" : "3-minute Diagnostic Interview for CAM-defined Delirium score"
+  },
+  {
+    "code" : "022",
+    "display" : "Confusion Assessment Method for the Intensive Care Unit score"
+  },
+  {
+    "code" : "023",
+    "display" : "Delirium Detection Score score"
+  },
+  {
+    "code" : "024",
+    "display" : "Intensive Care Delirium Screening Checklist score"
+  },
+  {
+    "code" : "025",
+    "display" : "Day shift",
+    "definition" : "Day shift is called 'Frühschicht' and lasts from 6am to 2pm"
+  },
+  {
+    "code" : "026",
+    "display" : "Evening shift",
+    "definition" : "Evening shift is called 'Spätschicht' and lasts from 2pm to 10pm"
+  },
+  {
+    "code" : "027",
+    "display" : "Night shift",
+    "definition" : "Night shift is called 'Nachtschicht' and lasts from 10pm to 6am of the next day"
+  }]
+}

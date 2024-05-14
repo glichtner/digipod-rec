@@ -1,0 +1,100 @@
+{
+  "resourceType" : "EvidenceVariable",
+  "id" : "PopAdultPatientsPostoperativelyGeneralOnSurgeryDayICU",
+  "meta" : {
+    "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: EvidenceVariable</b><a name=\"PopAdultPatientsPostoperativelyGeneralOnSurgeryDayICU\"> </a><a name=\"hcPopAdultPatientsPostoperativelyGeneralOnSurgeryDayICU\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceEvidenceVariable &quot;PopAdultPatientsPostoperativelyGeneralOnSurgeryDayICU&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"file:///github/workspace/output/StructureDefinition-recommendation-eligibility-criteria.html\">Recommendation Eligibility Criteria</a></p></div><p><b>url</b>: <code>https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/EvidenceVariable/PopAdultPatientsPostoperativelyGeneralOnSurgeryDayICU</code></p><p><b>version</b>: 0.2.0</p><p><b>name</b>: PopAdultPatientsPostoperativelyGeneralOnSurgeryDayICU</p><p><b>title</b>: Population: General Adult Surgical Patients Postoperatively on the Surgery Day on an Intensive Care Unit</p><p><b>status</b>: draft</p><p><b>date</b>: 2024-04</p><p><b>description</b>: Population for guideline 0.2 from https://pubmed.ncbi.nlm.nih.gov/37599617/: Adult patients, postoperatively, on the day of the surgical intervention, on an intensive care unit</p><blockquote><p><b>characteristic</b></p><p><b>exclude</b>: false</p><blockquote><p><b>definitionByCombination</b></p><p><b>code</b>: all-of</p><blockquote><p><b>characteristic</b></p><p><b>exclude</b>: false</p><blockquote><p><b>definitionByTypeAndValue</b></p></blockquote></blockquote><blockquote><p><b>characteristic</b></p><p><b>exclude</b>: false</p><blockquote><p><b>definitionByTypeAndValue</b></p></blockquote></blockquote><blockquote><p><b>characteristic</b></p><p><b>exclude</b>: false</p><blockquote><p><b>definitionByTypeAndValue</b></p></blockquote></blockquote></blockquote><h3>TimeFromEvents</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Description</b></td><td><b>Event[x]</b></td><td><b>Range</b></td></tr><tr><td style=\"display: none\">*</td><td>Postoperatively on the day of the surgery - from the completion time of the surgery until midnight of the day of surgery</td><td>Completion time of procedure (observable entity) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOWMED CT</a>#442137000)</span></td><td>?-1</td></tr></table></blockquote></div>"
+  },
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/EvidenceVariable/PopAdultPatientsPostoperativelyGeneralOnSurgeryDayICU",
+  "version" : "0.2.0",
+  "name" : "PopAdultPatientsPostoperativelyGeneralOnSurgeryDayICU",
+  "title" : "Population: General Adult Surgical Patients Postoperatively on the Surgery Day on an Intensive Care Unit",
+  "status" : "draft",
+  "date" : "2024-04",
+  "description" : "Population for guideline 0.2 from https://pubmed.ncbi.nlm.nih.gov/37599617/: Adult patients, postoperatively, on the day of the surgical intervention, on an intensive care unit",
+  "characteristic" : [{
+    "exclude" : false,
+    "definitionByCombination" : {
+      "code" : "all-of",
+      "characteristic" : [{
+        "exclude" : false,
+        "definitionByTypeAndValue" : {
+          "type" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "424144002",
+              "display" : "Current chronological age (observable entity)"
+            }]
+          },
+          "valueRange" : {
+            "low" : {
+              "value" : 18,
+              "unit" : "years",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "a"
+            }
+          }
+        }
+      },
+      {
+        "exclude" : false,
+        "definitionByTypeAndValue" : {
+          "type" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "71388002",
+              "display" : "Procedure (procedure)"
+            }]
+          },
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "387713003",
+              "display" : "Surgical procedure (procedure)"
+            }]
+          }
+        }
+      },
+      {
+        "exclude" : false,
+        "definitionByTypeAndValue" : {
+          "type" : {
+            "coding" : [{
+              "system" : "http://loinc.org",
+              "code" : "78030-4",
+              "display" : "Episode of care Type"
+            }]
+          },
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://fhir.de/CodeSystem/kontaktart-de",
+              "code" : "intensivstationaer",
+              "display" : "Intensivstationär"
+            }]
+          }
+        }
+      }]
+    },
+    "timeFromEvent" : [{
+      "description" : "Postoperatively on the day of the surgery - from the completion time of the surgery until midnight of the day of surgery",
+      "eventCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "442137000",
+          "display" : "Completion time of procedure (observable entity)"
+        }]
+      },
+      "range" : {
+        "high" : {
+          "value" : 1,
+          "unit" : "day",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "d"
+        }
+      }
+    }]
+  }]
+}

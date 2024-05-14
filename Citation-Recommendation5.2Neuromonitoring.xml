@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Citation xmlns="http://hl7.org/fhir">
+  <id value="Recommendation5.2Neuromonitoring"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-citation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Citation</b><a name="Recommendation5.2Neuromonitoring"> </a><a name="hcRecommendation5.2Neuromonitoring"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceCitation &quot;Recommendation5.2Neuromonitoring&quot; </p><p style="margin-bottom: 0px">Profile: <a href="file:///github/workspace/output/StructureDefinition-recommendation-citation.html">Recommendation Citation</a></p></div><p><b>version</b>: 0.2.0</p><p><b>name</b>: Recommendation5_2Neuromonitoring</p><p><b>title</b>: Recommendation 5.2: Neuromonitoring - Multi-parameter, intraoperative EEG monitoring during anesthesia</p><p><b>status</b>: draft</p><p><b>date</b>: 2024-02</p><blockquote><p><b>citedArtifact</b></p><p><b>identifier</b>: 37599617-rec5.2</p><h3>Versions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Value</b></td></tr><tr><td style="display: none">*</td><td>1.0</td></tr></table><p><b>currentState</b>: Published final form <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/R5/codesystem-cited-artifact-status-type.html">Cited Artifact Status Type</a>#published-final-form)</span></p><h3>Titles</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Language</b></td><td><b>Text</b></td></tr><tr><td style="display: none">*</td><td>Primary title <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/R5/codesystem-title-type.html">Title Type</a>#primary)</span></td><td>English <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ietf3066.html">Tags for the Identification of Languages</a>#en)</span></td><td>Recommendation 5.2</td></tr></table><h3>Parts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value</b></td></tr><tr><td style="display: none">*</td><td>paragraphs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/R5/codesystem-cited-artifact-part-type.html">Cited Artifact Part Type</a>#paragraphs)</span></td><td>We suggest multi-parameter, intraoperative EEG monitoring (Burst suppression, DSA) during anaesthesia to decrease the risk of POD.</td></tr></table><h3>RelatesTos</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Resource</b></td></tr><tr><td style="display: none">*</td><td>contained-in</td><td><a href="Citation-ClinicalPracticeGuidelineESAICOnPostOpDeliriumInAdultPatients.html">Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients</a></td></tr></table><h3>Classifications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Classifier</b></td></tr><tr><td style="display: none">*</td><td>Publication Type <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/R5/codesystem-cited-artifact-classification-type.html">Cited Artifact Classification Type</a>#publication-type)</span></td><td>Clinical practice guideline recommendation <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="file:///github/workspace/output/CodeSystem-ceosys-code-system.html">CEOsys Code System</a>#guideline-recommendation)</span></td></tr></table><blockquote><p><b>contributorship</b></p><blockquote><p><b>entry</b></p><p><b>contributor</b>: <a href="Practitioner-SusanneKoch.html">Practitioner/SusanneKoch</a> &quot; KOCH&quot;</p><p><b>affiliation</b>: <span>: Department of Anesthesiology and Intensive Care Medicine, Charité-Universitätsmedizin Berlin, Corporate Member of Freie Universität Berlin, and Humboldt Universität zu Berlin, Campus Charité Mitte, and Campus Virchow Klinikum</span></p></blockquote><blockquote><p><b>entry</b></p><p><b>contributor</b>: <a href="Practitioner-NicolaLatronico.html">Practitioner/NicolaLatronico</a> &quot; LATRONICO&quot;</p><p><b>affiliation</b>: </p><ul><li><span>: Department of Medical and Surgical Specialties, Radiological Sciences and Public Health, University of Brescia</span></li><li><span>: Department of Anesthesia, Critical Care and Emergency, Spedali Civili University Hospital, Brescia, Italy</span></li></ul></blockquote><blockquote><p><b>entry</b></p><p><b>contributor</b>: <a href="Practitioner-AlasdairMacLullich.html">Practitioner/AlasdairMacLullich</a> &quot; MACLULLICH&quot;</p><p><b>affiliation</b>: <span>: Edinburgh Delirium Research Group, Ageing and Health, Usher Institute, University of Edinburgh, Edinburgh, United Kingdom</span></p></blockquote><blockquote><p><b>entry</b></p><p><b>contributor</b>: <a href="Practitioner-SimonePiva.html">Practitioner/SimonePiva</a> &quot; PIVA&quot;</p><p><b>affiliation</b>: </p><ul><li><span>: Department of Medical and Surgical Specialties, Radiological Sciences and Public Health, University of Brescia</span></li><li><span>: Department of Anesthesia, Critical Care and Emergency, Spedali Civili University Hospital, Brescia, Italy</span></li></ul></blockquote><blockquote><p><b>entry</b></p><p><b>contributor</b>: <a href="Practitioner-FinnRadtke.html">Practitioner/FinnRadtke</a> &quot; RADTKE&quot;</p><p><b>affiliation</b>: <span>: Department of Anaesthesia and Intensive Care, Nykoebing Hospital; University of Southern Denmark, SDU</span></p></blockquote><blockquote><p><b>entry</b></p><p><b>contributor</b>: <a href="Practitioner-RobertSanders.html">Practitioner/RobertSanders</a> &quot; SANDERS&quot;</p><p><b>affiliation</b>: <span>: Specialty of Anaesthetics &amp; NHMRC Clinical Trials Centre, University of Sydney &amp; Department of Anaesthetics and Institute of Academic Surgery, Royal Prince Alfred Hospital</span></p></blockquote><blockquote><p><b>entry</b></p><p><b>contributor</b>: <a href="Practitioner-ConcezioneTommasino.html">Practitioner/ConcezioneTommasino</a> &quot; TOMMASINO&quot;</p><p><b>affiliation</b>: <span>: Dental Anesthesia and Intensive Care Unit, Polo Universitario Ospedale San Paolo, Department of Biomedical, Surgical and Odontoiatric Sciences, University of Milano, Milano, Italy</span></p></blockquote></blockquote></blockquote></div>
+  </text>
+  <version value="0.2.0"/>
+  <name value="Recommendation5_2Neuromonitoring"/>
+  <title value="Recommendation 5.2: Neuromonitoring - Multi-parameter, intraoperative EEG monitoring during anesthesia"/>
+  <status value="draft"/>
+  <date value="2024-02"/>
+  <citedArtifact>
+    <identifier>
+      <value value="37599617-rec5.2"/>
+    </identifier>
+    <version>
+      <value value="1.0"/>
+    </version>
+    <currentState>
+      <coding>
+        <system value="http://hl7.org/fhir/cited-artifact-status-type"/>
+        <code value="published-final-form"/>
+        <display value="Published final form"/>
+      </coding>
+    </currentState>
+    <title>
+      <type>
+        <coding>
+          <system value="http://hl7.org/fhir/title-type"/>
+          <code value="primary"/>
+          <display value="Primary title"/>
+        </coding>
+      </type>
+      <language>
+        <coding>
+          <system value="urn:ietf:bcp:47"/>
+          <code value="en"/>
+        </coding>
+      </language>
+      <text value="Recommendation 5.2"/>
+    </title>
+    <part>
+      <type>
+        <coding>
+          <system value="http://hl7.org/fhir/cited-artifact-part-type"/>
+          <code value="paragraphs"/>
+          <display value="paragraphs"/>
+        </coding>
+      </type>
+      <value value="We suggest multi-parameter, intraoperative EEG monitoring (Burst suppression, DSA) during anaesthesia to decrease the risk of POD."/>
+    </part>
+    <relatesTo>
+      <type value="contained-in"/>
+      <resource value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Citation/ClinicalPracticeGuidelineESAICOnPostOpDeliriumInAdultPatients"/>
+    </relatesTo>
+    <classification>
+      <type>
+        <coding>
+          <system value="http://hl7.org/fhir/cited-artifact-classification-type"/>
+          <code value="publication-type"/>
+          <display value="Publication Type"/>
+        </coding>
+      </type>
+      <classifier>
+        <coding>
+          <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/ceosys-code-system"/>
+          <code value="guideline-recommendation"/>
+          <display value="Clinical practice guideline recommendation"/>
+        </coding>
+      </classifier>
+    </classification>
+    <contributorship>
+      <entry>
+        <contributor>
+          <reference value="Practitioner/SusanneKoch"/>
+        </contributor>
+        <affiliation>
+          <display value="Department of Anesthesiology and Intensive Care Medicine, Charité-Universitätsmedizin Berlin, Corporate Member of Freie Universität Berlin, and Humboldt Universität zu Berlin, Campus Charité Mitte, and Campus Virchow Klinikum"/>
+        </affiliation>
+      </entry>
+      <entry>
+        <contributor>
+          <reference value="Practitioner/NicolaLatronico"/>
+        </contributor>
+        <affiliation>
+          <display value="Department of Medical and Surgical Specialties, Radiological Sciences and Public Health, University of Brescia"/>
+        </affiliation>
+        <affiliation>
+          <display value="Department of Anesthesia, Critical Care and Emergency, Spedali Civili University Hospital, Brescia, Italy"/>
+        </affiliation>
+      </entry>
+      <entry>
+        <contributor>
+          <reference value="Practitioner/AlasdairMacLullich"/>
+        </contributor>
+        <affiliation>
+          <display value="Edinburgh Delirium Research Group, Ageing and Health, Usher Institute, University of Edinburgh, Edinburgh, United Kingdom"/>
+        </affiliation>
+      </entry>
+      <entry>
+        <contributor>
+          <reference value="Practitioner/SimonePiva"/>
+        </contributor>
+        <affiliation>
+          <display value="Department of Medical and Surgical Specialties, Radiological Sciences and Public Health, University of Brescia"/>
+        </affiliation>
+        <affiliation>
+          <display value="Department of Anesthesia, Critical Care and Emergency, Spedali Civili University Hospital, Brescia, Italy"/>
+        </affiliation>
+      </entry>
+      <entry>
+        <contributor>
+          <reference value="Practitioner/FinnRadtke"/>
+        </contributor>
+        <affiliation>
+          <display value="Department of Anaesthesia and Intensive Care, Nykoebing Hospital; University of Southern Denmark, SDU"/>
+        </affiliation>
+      </entry>
+      <entry>
+        <contributor>
+          <reference value="Practitioner/RobertSanders"/>
+        </contributor>
+        <affiliation>
+          <display value="Specialty of Anaesthetics &amp; NHMRC Clinical Trials Centre, University of Sydney &amp; Department of Anaesthetics and Institute of Academic Surgery, Royal Prince Alfred Hospital"/>
+        </affiliation>
+      </entry>
+      <entry>
+        <contributor>
+          <reference value="Practitioner/ConcezioneTommasino"/>
+        </contributor>
+        <affiliation>
+          <display value="Dental Anesthesia and Intensive Care Unit, Polo Universitario Ospedale San Paolo, Department of Biomedical, Surgical and Odontoiatric Sciences, University of Milano, Milano, Italy"/>
+        </affiliation>
+      </entry>
+    </contributorship>
+  </citedArtifact>
+</Citation>

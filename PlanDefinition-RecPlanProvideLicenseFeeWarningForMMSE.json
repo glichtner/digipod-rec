@@ -1,0 +1,63 @@
+{
+  "resourceType" : "PlanDefinition",
+  "id" : "RecPlanProvideLicenseFeeWarningForMMSE",
+  "meta" : {
+    "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PlanDefinition</b><a name=\"RecPlanProvideLicenseFeeWarningForMMSE\"> </a><a name=\"hcRecPlanProvideLicenseFeeWarningForMMSE\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourcePlanDefinition &quot;RecPlanProvideLicenseFeeWarningForMMSE&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"file:///github/workspace/output/StructureDefinition-recommendation-plan.html\">Recommendation Plan</a></p></div><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>partOf</b>: <a href=\"PlanDefinition-RecCollCheckRFAdultSurgicalPatientsPreoperatively.html\">Recommendation Collection: Check risk factors in Adult Surgical Patients Preoperatively</a></p><blockquote><p><b>Action Combination Method</b></p><blockquote><p><b>url</b></p><code>method</code></blockquote><p><b>value</b>: All <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"file:///github/workspace/output/CodeSystem-cs-action-combination-method.html\">Action Combination Method</a>#all)</span></p></blockquote><p><b>url</b>: <code>https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecPlanProvideLicenseFeeWarningForMMSE</code></p><p><b>version</b>: 0.2.0</p><p><b>name</b>: RecommendationPlanProvideLicenseFeeWarningForMMSE</p><p><b>title</b>: Population: Adult Surgical Patients Preoperatively with Positive Mini-cog Test Score that need a Mini-Mental State Examination, provide warning because of MMSE license fees</p><p><b>type</b>: ECA Rule <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-plan-definition-type.html\">PlanDefinitionType</a>#eca-rule)</span></p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>subject</b>: <a href=\"EvidenceVariable-PopAdultSurgicalPatPreoperativelyWithPositiveMiniCogNeedMMSE.html\">Population: Adult Surgical Patients Preoperatively with Positive Mini-cog Test Score that need a Mini-Mental State Examination</a></p><p><b>date</b>: 2024-02</p><p><b>publisher</b>: DIGIPOD</p><p><b>description</b>: Recommended Plan for Adult Surgical Patients Preoperatively with Positive Mini-cog Test Score that need a Mini-Mental State Examination, provide warning because of MMSE license fees.</p><h3>Actions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>RequiredBehavior</b></td><td><b>Definition[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>Provide warning about license fees for Mini-Mental State Examination <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOWMED CT</a>#74964007 &quot;Other (qualifier value)&quot;)</span></td><td>must</td><td><a href=\"ActivityDefinition-RecActionAdultSurgicalPatientsPreoperativelyNeedMMSEFeeWarning.html\">Recommended Action for Population: Adult Surgical Patients Preoperatively with Positive Mini-cog Test Score that need MMSE, provide warning for license fees</a></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "computable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueCode" : "structured"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-partOf",
+    "valueCanonical" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecCollCheckRFAdultSurgicalPatientsPreoperatively"
+  },
+  {
+    "extension" : [{
+      "url" : "method",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method",
+          "code" : "all"
+        }]
+      }
+    }],
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method"
+  }],
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecPlanProvideLicenseFeeWarningForMMSE",
+  "version" : "0.2.0",
+  "name" : "RecommendationPlanProvideLicenseFeeWarningForMMSE",
+  "title" : "Population: Adult Surgical Patients Preoperatively with Positive Mini-cog Test Score that need a Mini-Mental State Examination, provide warning because of MMSE license fees",
+  "type" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+      "code" : "eca-rule"
+    }]
+  },
+  "status" : "draft",
+  "experimental" : true,
+  "subjectCanonical" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/EvidenceVariable/PopAdultSurgicalPatPreoperativelyWithPositiveMiniCogNeedMMSE",
+  "date" : "2024-02",
+  "publisher" : "DIGIPOD",
+  "description" : "Recommended Plan for Adult Surgical Patients Preoperatively with Positive Mini-cog Test Score that need a Mini-Mental State Examination, provide warning because of MMSE license fees.",
+  "action" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "74964007",
+        "display" : "Other (qualifier value)"
+      }],
+      "text" : "Provide warning about license fees for Mini-Mental State Examination"
+    },
+    "requiredBehavior" : "must",
+    "definitionCanonical" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultSurgicalPatientsPreoperativelyNeedMMSEFeeWarning"
+  }]
+}

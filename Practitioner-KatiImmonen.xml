@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="KatiImmonen"/>
+  <text>
+    <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">Resource representing Kati Immonen</div>
+  </text>
+  <name>
+    <family value="Immonen"/>
+    <given value="Kati"/>
+  </name>
+</Practitioner>

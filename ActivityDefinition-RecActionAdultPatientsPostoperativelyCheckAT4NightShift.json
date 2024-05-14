@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ActivityDefinition",
+  "id" : "RecActionAdultPatientsPostoperativelyCheckAT4NightShift",
+  "meta" : {
+    "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/assessment-action"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ActivityDefinition</b><a name=\"RecActionAdultPatientsPostoperativelyCheckAT4NightShift\"> </a><a name=\"hcRecActionAdultPatientsPostoperativelyCheckAT4NightShift\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceActivityDefinition &quot;RecActionAdultPatientsPostoperativelyCheckAT4NightShift&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"file:///github/workspace/output/StructureDefinition-assessment-action.html\">Assessment Action</a></p></div><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>url</b>: <code>https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckAT4NightShift</code></p><p><b>version</b>: 0.2.0</p><p><b>name</b>: RecActionAdultPatientsPostoperativelyCheckAT4NightShift</p><p><b>title</b>: Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check AT4 score during the night shift</p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>subject</b>: Patient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R5/codesystem-fhir-types.html\">All FHIR Types</a>#Patient)</span></p><p><b>date</b>: 2024-04</p><p><b>publisher</b>: DIGIPOD</p><p><b>description</b>: Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check AT4 score during the night shift.</p><p><b>kind</b>: ServiceRequest</p><p><b>code</b>: 4AT score <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-digipod.html\">DIGIPOD</a>#017)</span></p><p><b>timing</b>: Count 1  times, , ?ngen-6?</p></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "computable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueCode" : "structured"
+  }],
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckAT4NightShift",
+  "version" : "0.2.0",
+  "name" : "RecActionAdultPatientsPostoperativelyCheckAT4NightShift",
+  "title" : "Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check AT4 score during the night shift",
+  "status" : "draft",
+  "experimental" : true,
+  "subjectCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/fhir-types",
+      "code" : "Patient"
+    }]
+  },
+  "date" : "2024-04",
+  "publisher" : "DIGIPOD",
+  "description" : "Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check AT4 score during the night shift.",
+  "kind" : "ServiceRequest",
+  "code" : {
+    "coding" : [{
+      "system" : "https://www.charite.de/fhir/digipod/CodeSystem/digipod",
+      "code" : "017",
+      "display" : "4AT score"
+    }]
+  },
+  "timingTiming" : {
+    "repeat" : {
+      "count" : 1,
+      "when" : ["NIGHT"]
+    }
+  }
+}

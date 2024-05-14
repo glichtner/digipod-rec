@@ -1,0 +1,2181 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ImplementationGuide/template.cpg-on-ebmonfhir.netzwerk-universitaetsmedizin.de> a fhir:ImplementationGuide ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "template.cpg-on-ebmonfhir.netzwerk-universitaetsmedizin.de"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CPGonEBMonFHIRtemplate</h2><p>The official URL for this implementation guide is: </p><pre>https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ImplementationGuide/template.cpg-on-ebmonfhir.netzwerk-universitaetsmedizin.de</pre></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ImplementationGuide/template.cpg-on-ebmonfhir.netzwerk-universitaetsmedizin.de"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.1-snapshot"] ; # 
+  fhir:name [ fhir:v "CPGonEBMonFHIRtemplate"] ; # 
+  fhir:title [ fhir:v "CPG-on-EBMonFHIR template"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2024-05-14T12:39:53+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Example"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Example" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.example.com" ]
+     ] )
+  ] ) ; # 
+  fhir:packageId [ fhir:v "template.cpg-on-ebmonfhir.netzwerk-universitaetsmedizin.de"] ; # 
+  fhir:license [ fhir:v "CC0-1.0"] ; # 
+  fhir:fhirVersion ( [ fhir:v "5.0.0"] ) ; # 
+  fhir:dependsOn ( [
+     fhir:id [ fhir:v "hl7tx" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on HL7 Terminology" ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://terminology.hl7.org/ImplementationGuide/hl7.terminology"^^xsd:anyURI ;
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.terminology.r5" ] ;
+     fhir:version [ fhir:v "5.5.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7ext" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack" ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r5" ] ;
+     fhir:version [ fhir:v "5.1.0" ]
+  ] [
+     fhir:id [ fhir:v "de_netzwerk_universitaetsmedizin_ebm_cpg" ] ;
+     fhir:uri [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ImplementationGuide/de.netzwerk-universitaetsmedizin.ebm-cpg"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ImplementationGuide/de.netzwerk-universitaetsmedizin.ebm-cpg>
+     ] ;
+     fhir:packageId [ fhir:v "de.netzwerk-universitaetsmedizin.ebm-cpg" ] ;
+     fhir:version [ fhir:v "0.8.0-snapshot" ]
+  ] ) ; # 
+  fhir:definition [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "hl7.fhir.uv.tools#0.1.0" ]
+     ] ) ;
+     fhir:resource ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Practitioner/AlasdairMacLullich> ;
+         fhir:reference [ fhir:v "Practitioner/AlasdairMacLullich" ]
+       ] ;
+       fhir:name [ fhir:v "AlasdairMacLullich" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Practitioner/AliForookhi> ;
+         fhir:reference [ fhir:v "Practitioner/AliForookhi" ]
+       ] ;
+       fhir:name [ fhir:v "AliForookhi" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Practitioner/AnikaMueller> ;
+         fhir:reference [ fhir:v "Practitioner/AnikaMueller" ]
+       ] ;
+       fhir:name [ fhir:v "AnikaMueller" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Practitioner/AnnikaReintamBlaser> ;
+         fhir:reference [ fhir:v "Practitioner/AnnikaReintamBlaser" ]
+       ] ;
+       fhir:name [ fhir:v "AnnikaReintamBlaser" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Practitioner/AntonioCherubini> ;
+         fhir:reference [ fhir:v "Practitioner/AntonioCherubini" ]
+       ] ;
+       fhir:name [ fhir:v "AntonioCherubini" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Practitioner/ArjenSlooter> ;
+         fhir:reference [ fhir:v "Practitioner/ArjenSlooter" ]
+       ] ;
+       fhir:name [ fhir:v "ArjenSlooter" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Practitioner/BjoernWeiss> ;
+         fhir:reference [ fhir:v "Practitioner/BjoernWeiss" ]
+       ] ;
+       fhir:name [ fhir:v "BjoernWeiss" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Practitioner/BrunoNeuner> ;
+         fhir:reference [ fhir:v "Practitioner/BrunoNeuner" ]
+       ] ;
+       fhir:name [ fhir:v "BrunoNeuner" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Practitioner/CesarAldecoa> ;
+         fhir:reference [ fhir:v "Practitioner/CesarAldecoa" ]
+       ] ;
+       fhir:name [ fhir:v "CesarAldecoa" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Practitioner/ClaudiaSpies> ;
+         fhir:reference [ fhir:v "Practitioner/ClaudiaSpies" ]
+       ] ;
+       fhir:name [ fhir:v "ClaudiaSpies" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Practitioner/ColmCunningham> ;
+         fhir:reference [ fhir:v "Practitioner/ColmCunningham" ]
+       ] ;
+       fhir:name [ fhir:v "ColmCunningham" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Practitioner/ConcezioneTommasino> ;
+         fhir:reference [ fhir:v "Practitioner/ConcezioneTommasino" ]
+       ] ;
+       fhir:name [ fhir:v "ConcezioneTommasino" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/CodeSystem/digipod> ;
+         fhir:reference [ fhir:v "CodeSystem/digipod" ]
+       ] ;
+       fhir:name [ fhir:v "DIGIPOD" ] ;
+       fhir:description [ fhir:v "Concepts required in recommendations that are not defined elsewhere for the project DIGIPOD" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ConceptMap" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ConceptMap/DIGIPODtoStandardizedVocabularies> ;
+         fhir:reference [ fhir:v "ConceptMap/DIGIPODtoStandardizedVocabularies" ]
+       ] ;
+       fhir:name [ fhir:v "DIGIPOD to standardized vocabularies" ] ;
+       fhir:description [ fhir:v "Concept map from concepts defined in DIGIPOD to standardized vocabularies" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Practitioner/FatimaYuerek> ;
+         fhir:reference [ fhir:v "Practitioner/FatimaYuerek" ]
+       ] ;
+       fhir:name [ fhir:v "FatimaYuerek" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Practitioner/FedericoBilotta> ;
+         fhir:reference [ fhir:v "Practitioner/FedericoBilotta" ]
+       ] ;
+       fhir:name [ fhir:v "FedericoBilotta" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Practitioner/FinnRadtke> ;
+         fhir:reference [ fhir:v "Practitioner/FinnRadtke" ]
+       ] ;
+       fhir:name [ fhir:v "FinnRadtke" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Practitioner/GabriellaBettelli> ;
+         fhir:reference [ fhir:v "Practitioner/GabriellaBettelli" ]
+       ] ;
+       fhir:name [ fhir:v "GabriellaBettelli" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Practitioner/HenrikKehlet> ;
+         fhir:reference [ fhir:v "Practitioner/HenrikKehlet" ]
+       ] ;
+       fhir:name [ fhir:v "HenrikKehlet" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Practitioner/KatarzynaKotfis> ;
+         fhir:reference [ fhir:v "Practitioner/KatarzynaKotfis" ]
+       ] ;
+       fhir:name [ fhir:v "KatarzynaKotfis" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Practitioner/KatiImmonen> ;
+         fhir:reference [ fhir:v "Practitioner/KatiImmonen" ]
+       ] ;
+       fhir:name [ fhir:v "KatiImmonen" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Practitioner/LiorMevorach> ;
+         fhir:reference [ fhir:v "Practitioner/LiorMevorach" ]
+       ] ;
+       fhir:name [ fhir:v "LiorMevorach" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Practitioner/LisaVasiljewa> ;
+         fhir:reference [ fhir:v "Practitioner/LisaVasiljewa" ]
+       ] ;
+       fhir:name [ fhir:v "LisaVasiljewa" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Practitioner/MariaSchubert> ;
+         fhir:reference [ fhir:v "Practitioner/MariaSchubert" ]
+       ] ;
+       fhir:name [ fhir:v "MariaSchubert" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Practitioner/NicolaGitti> ;
+         fhir:reference [ fhir:v "Practitioner/NicolaGitti" ]
+       ] ;
+       fhir:name [ fhir:v "NicolaGitti" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Practitioner/NicolaLatronico> ;
+         fhir:reference [ fhir:v "Practitioner/NicolaLatronico" ]
+       ] ;
+       fhir:name [ fhir:v "NicolaLatronico" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Organization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Organization/OrganizationCharite> ;
+         fhir:reference [ fhir:v "Organization/OrganizationCharite" ]
+       ] ;
+       fhir:name [ fhir:v "OrganizationCharite" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Practitioner/PaolaAceto> ;
+         fhir:reference [ fhir:v "Practitioner/PaolaAceto" ]
+       ] ;
+       fhir:name [ fhir:v "PaolaAceto" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "EvidenceVariable" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/EvidenceVariable/PopAdultPatientsAtRiskForPOD> ;
+         fhir:reference [ fhir:v "EvidenceVariable/PopAdultPatientsAtRiskForPOD" ]
+       ] ;
+       fhir:name [ fhir:v "Population: Adult Surgical Patients Preoperative at Risk for POD" ] ;
+       fhir:description [ fhir:v "Adult patients before undergoing an elective surgical intervention of any type independently of the type of anesthesia and being at risk for postoperative delirium" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "EvidenceVariable" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/EvidenceVariable/PopAdultSurgicalPatientsPreoperativelyWithPositiveMiniCog> ;
+         fhir:reference [ fhir:v "EvidenceVariable/PopAdultSurgicalPatientsPreoperativelyWithPositiveMiniCog" ]
+       ] ;
+       fhir:name [ fhir:v "Population: Adult Surgical Patients Preoperatively with Positive Mini-cog Test Score" ] ;
+       fhir:description [ fhir:v "Adult patients with a positive Mini-cog test score before undergoing an elective surgical intervention of any type independently of the type of anesthesia" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "EvidenceVariable" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/EvidenceVariable/PopAdultSurgicalPatPreoperativelyWithPositiveMiniCogNeedMMSE> ;
+         fhir:reference [ fhir:v "EvidenceVariable/PopAdultSurgicalPatPreoperativelyWithPositiveMiniCogNeedMMSE" ]
+       ] ;
+       fhir:name [ fhir:v "Population: Adult Surgical Patients Preoperatively with Positive Mini-cog Test Score that need a Mini-Mental State Examination" ] ;
+       fhir:description [ fhir:v "Adult patients with a positive Mini-cog test score that need a Mini-Mental State Examination before undergoing an elective surgical intervention of any type independently of the type of anesthesia" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "EvidenceVariable" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/EvidenceVariable/PopAdultPatientsIntraoperativelyGeneral> ;
+         fhir:reference [ fhir:v "EvidenceVariable/PopAdultPatientsIntraoperativelyGeneral" ]
+       ] ;
+       fhir:name [ fhir:v "Population: General Adult Surgical Patients Intraoperatively" ] ;
+       fhir:description [ fhir:v "Adult patients during an elective surgical intervention of any type independently of the type of anesthesia" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "EvidenceVariable" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/EvidenceVariable/PopAdultPatientsPostoperativelyOnNormalWardWithRASSEqualLower-3> ;
+         fhir:reference [ fhir:v "EvidenceVariable/PopAdultPatientsPostoperativelyOnNormalWardWithRASSEqualLower-3" ]
+       ] ;
+       fhir:name [ fhir:v "Population: General Adult Surgical Patients Postoperatively On Normal Ward, With a RASS Equal Or Lower Than -3" ] ;
+       fhir:description [ fhir:v "Adult patients after undergoing an elective surgical intervention of any type independently of the type of anesthesia, on normal ward, with a RASS of -3 or less." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "EvidenceVariable" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/EvidenceVariable/PopAdultPatientsPostoperativelyGeneralOnSurgeryDayICU> ;
+         fhir:reference [ fhir:v "EvidenceVariable/PopAdultPatientsPostoperativelyGeneralOnSurgeryDayICU" ]
+       ] ;
+       fhir:name [ fhir:v "Population: General Adult Surgical Patients Postoperatively on the Surgery Day on an Intensive Care Unit" ] ;
+       fhir:description [ fhir:v "Adult patients after undergoing an elective surgical intervention of any type independently of the type of anesthesia, on the day of the surgical intervention (from the time of completion of the procedure to midnight), on an intensive care unit." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "EvidenceVariable" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/EvidenceVariable/PopAdultPatientsPostoperativelyGeneralOnSurgeryDayNormalWard> ;
+         fhir:reference [ fhir:v "EvidenceVariable/PopAdultPatientsPostoperativelyGeneralOnSurgeryDayNormalWard" ]
+       ] ;
+       fhir:name [ fhir:v "Population: General Adult Surgical Patients Postoperatively on the Surgery Day on Normal Ward or in the Recovery Room" ] ;
+       fhir:description [ fhir:v "Adult patients after undergoing an elective surgical intervention of any type independently of the type of anesthesia, on the day of the surgical intervention (from the time of completion of the procedure to midnight), in the recovery room or on normal ward." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "EvidenceVariable" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/EvidenceVariable/PopAdultPatientsPreAndIntraoperativelyGeneral> ;
+         fhir:reference [ fhir:v "EvidenceVariable/PopAdultPatientsPreAndIntraoperativelyGeneral" ]
+       ] ;
+       fhir:name [ fhir:v "Population: General Adult Surgical Patients Pre- and Intraoperatively" ] ;
+       fhir:description [ fhir:v "Adult patients before and/or during an elective surgical intervention of any type independently of the type of anesthesia" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "EvidenceVariable" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/EvidenceVariable/PopAdultSurgicalPatientsPreoperativelyGeneral> ;
+         fhir:reference [ fhir:v "EvidenceVariable/PopAdultSurgicalPatientsPreoperativelyGeneral" ]
+       ] ;
+       fhir:name [ fhir:v "Population: General Adult Surgical Patients Preoperatively" ] ;
+       fhir:description [ fhir:v "Adult patients before undergoing an elective surgical intervention of any type independently of the type of anesthesia" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "EvidenceVariable" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/EvidenceVariable/PopAdultPatientsPreoperativelyGeneralOnSurgeryDayAndBefore> ;
+         fhir:reference [ fhir:v "EvidenceVariable/PopAdultPatientsPreoperativelyGeneralOnSurgeryDayAndBefore" ]
+       ] ;
+       fhir:name [ fhir:v "Population: General Adult Surgical Patients Preoperatively on Surgery Day and Before" ] ;
+       fhir:description [ fhir:v "Adult patients before undergoing an elective surgical intervention of any type independently of the type of anesthesia, on the day of the surgical intervention or maximum 42 days before." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "EvidenceVariable" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/EvidenceVariable/PopOlderAdultPatientsPreoperatively> ;
+         fhir:reference [ fhir:v "EvidenceVariable/PopOlderAdultPatientsPreoperatively" ]
+       ] ;
+       fhir:name [ fhir:v "Population: Older Adult Surgical Patients Preoperatively" ] ;
+       fhir:description [ fhir:v "Adult patients being 70 years old or older, before undergoing a surgical intervention of any type" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PractitionerRole" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PractitionerRole/PractitionerRoleClaudiaSpies> ;
+         fhir:reference [ fhir:v "PractitionerRole/PractitionerRoleClaudiaSpies" ]
+       ] ;
+       fhir:name [ fhir:v "PractitionerRoleClaudiaSpies" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Citation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Citation/Recommendation0.1PreOperativeScreeningOfDelirium> ;
+         fhir:reference [ fhir:v "Citation/Recommendation0.1PreOperativeScreeningOfDelirium" ]
+       ] ;
+       fhir:name [ fhir:v "Recommendation 0.1: Preoperative screening of delirium" ] ;
+       fhir:description [ fhir:v "Recommendation number 0.1 (Prerequisite) from Guideline 'Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients'" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Citation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Citation/Recommendation0.2PostOperativeScreeningOfDelirium> ;
+         fhir:reference [ fhir:v "Citation/Recommendation0.2PostOperativeScreeningOfDelirium" ]
+       ] ;
+       fhir:name [ fhir:v "Recommendation 0.2: Postoperative screening of delirium" ] ;
+       fhir:description [ fhir:v "Recommendation number 0.2 (Prerequisite) from Guideline 'Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients'" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Citation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Citation/Recommendation2.1RiskFactors> ;
+         fhir:reference [ fhir:v "Citation/Recommendation2.1RiskFactors" ]
+       ] ;
+       fhir:name [ fhir:v "Recommendation 2.1: Preoperative Risk Factors" ] ;
+       fhir:description [ fhir:v "Recommendation number 2.1 from Guideline 'Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients'" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Citation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Citation/Recommendation3.1PrevMeasuresIEffectsOfDrugsOnPODPrevention> ;
+         fhir:reference [ fhir:v "Citation/Recommendation3.1PrevMeasuresIEffectsOfDrugsOnPODPrevention" ]
+       ] ;
+       fhir:name [ fhir:v "Recommendation 3.1: Preventive Measures I (Effects of Drugs on POD prevention) - Drugs as prophylactic measure to reduce the incidence of POD" ] ;
+       fhir:description [ fhir:v "Recommendation number 3.1 from Guideline 'Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients'" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Citation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Citation/Recommendation3.2PrevMeasuresIEffectsOfDrugsOnPODPrevention> ;
+         fhir:reference [ fhir:v "Citation/Recommendation3.2PrevMeasuresIEffectsOfDrugsOnPODPrevention" ]
+       ] ;
+       fhir:name [ fhir:v "Recommendation 3.2: Preventive Measures I (Effects of Drugs on POD prevention) - Preventive dexmedetomidine administration intra- or postoperative" ] ;
+       fhir:description [ fhir:v "Recommendation number 3.2 from Guideline 'Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients'" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Citation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Citation/Recommendation3.3PrevMeasuresIEffectsOfDrugsOnPODPrevention> ;
+         fhir:reference [ fhir:v "Citation/Recommendation3.3PrevMeasuresIEffectsOfDrugsOnPODPrevention" ]
+       ] ;
+       fhir:name [ fhir:v "Recommendation 3.3: Preventive Measures I (Effects of Drugs on POD prevention) - Type of surgery or anesthesia to reduce the incidence of POD" ] ;
+       fhir:description [ fhir:v "Recommendation number 3.3 from Guideline 'Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients'" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Citation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Citation/Recommendation3.4PrevMeasuresIEffectsOfDrugsOnPODPrevention> ;
+         fhir:reference [ fhir:v "Citation/Recommendation3.4PrevMeasuresIEffectsOfDrugsOnPODPrevention" ]
+       ] ;
+       fhir:name [ fhir:v "Recommendation 3.4: Preventive Measures I (Effects of Drugs on POD prevention) - Biomarker to identify patients at risk of POD" ] ;
+       fhir:description [ fhir:v "Recommendation number 3.4 from Guideline 'Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients'" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Citation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Citation/Recommendation4.1PrevMeasuresIINonPharmacologicalInterventions> ;
+         fhir:reference [ fhir:v "Citation/Recommendation4.1PrevMeasuresIINonPharmacologicalInterventions" ]
+       ] ;
+       fhir:name [ fhir:v "Recommendation 4.1: Preventive Measures II (Non Pharmacological Interventions) - Screening for risk factors and optimizing preoperative status in older adults" ] ;
+       fhir:description [ fhir:v "Recommendation number 4.1 from Guideline 'Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients'" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Citation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Citation/Recommendation4.2PrevMeasuresIINonPharmacologicalInterventions> ;
+         fhir:reference [ fhir:v "Citation/Recommendation4.2PrevMeasuresIINonPharmacologicalInterventions" ]
+       ] ;
+       fhir:name [ fhir:v "Recommendation 4.2: Preventive Measures II (Non Pharmacological Interventions) - Sharing, discussing and documenting results of risk factors and preventive strategies" ] ;
+       fhir:description [ fhir:v "Recommendation number 4.2 from Guideline 'Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients'" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Citation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Citation/Recommendation4.3PrevMeasuresIINonPharmacologicalInterventions> ;
+         fhir:reference [ fhir:v "Citation/Recommendation4.3PrevMeasuresIINonPharmacologicalInterventions" ]
+       ] ;
+       fhir:name [ fhir:v "Recommendation 4.3: Preventive Measures II (Non Pharmacological Interventions) - Multi-component non-pharmacological interventions in all patients at risk for POD" ] ;
+       fhir:description [ fhir:v "Recommendation number 4.3 from Guideline 'Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients'" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Citation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Citation/Recommendation5.1Neuromonitoring> ;
+         fhir:reference [ fhir:v "Citation/Recommendation5.1Neuromonitoring" ]
+       ] ;
+       fhir:name [ fhir:v "Recommendation 5.1: Neuromonitoring - EEG monitoring depth of anesthesia guidance" ] ;
+       fhir:description [ fhir:v "Recommendation number 5.1 from Guideline 'Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients'" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Citation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Citation/Recommendation5.2Neuromonitoring> ;
+         fhir:reference [ fhir:v "Citation/Recommendation5.2Neuromonitoring" ]
+       ] ;
+       fhir:name [ fhir:v "Recommendation 5.2: Neuromonitoring - Multi-parameter, intraoperative EEG monitoring during anesthesia" ] ;
+       fhir:description [ fhir:v "Recommendation number 5.2 from Guideline 'Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients'" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Citation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Citation/Recommendation6.1PharmacologicalTreatmentOfPODAndPODOutcomes> ;
+         fhir:reference [ fhir:v "Citation/Recommendation6.1PharmacologicalTreatmentOfPODAndPODOutcomes" ]
+       ] ;
+       fhir:name [ fhir:v "Recommendation 6.1: Pharmacological Treatment of POD and POD Outcomes - Low-dose haloperidol as treatment" ] ;
+       fhir:description [ fhir:v "Recommendation number 6.1 from Guideline 'Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients'" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Citation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Citation/Recommendation6.2PharmacologicalTreatmentOfPODAndPODOutcomes> ;
+         fhir:reference [ fhir:v "Citation/Recommendation6.2PharmacologicalTreatmentOfPODAndPODOutcomes" ]
+       ] ;
+       fhir:name [ fhir:v "Recommendation 6.2: Pharmacological Treatment of POD and POD Outcomes - Benzodiazepines as treatment" ] ;
+       fhir:description [ fhir:v "Recommendation number 6.2 from Guideline 'Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients'" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Citation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Citation/Recommendation6.3PharmacologicalTreatmentOfPODAndPODOutcomes> ;
+         fhir:reference [ fhir:v "Citation/Recommendation6.3PharmacologicalTreatmentOfPODAndPODOutcomes" ]
+       ] ;
+       fhir:name [ fhir:v "Recommendation 6.3: Pharmacological Treatment of POD and POD Outcomes - Dexmedetomidine as treatment in patients with cardiac surgery" ] ;
+       fhir:description [ fhir:v "Recommendation number 6.3 from Guideline 'Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients'" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecCollCheckRFAdultSurgicalPatientsPreoperatively> ;
+         fhir:reference [ fhir:v "PlanDefinition/RecCollCheckRFAdultSurgicalPatientsPreoperatively" ]
+       ] ;
+       fhir:name [ fhir:v "Recommendation Collection: Check risk factors in Adult Surgical Patients Preoperatively" ] ;
+       fhir:description [ fhir:v "Recommendation collection for adult patients that will undergo a surgical intervention: Check risk factors age, American Society of Anesthesiology Physical status score (ASA), Charlson Comorbidity Index (CCI) and Mini-cog test score (Mini-cog). If Mini-cog test score is equal to or higher than 3, perform Montreal Cognitive Assessment (MoCA), Addenbrooke's Cognitive Examination (ACE-R) or Mini Mental State Examination (MMSE). Please note that MMSE is not free of charge (license fees)" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecCollAdultSurgicalPatPreOrIntraOPNoSpecSurgeryOrAnesthesiaType> ;
+         fhir:reference [ fhir:v "PlanDefinition/RecCollAdultSurgicalPatPreOrIntraOPNoSpecSurgeryOrAnesthesiaType" ]
+       ] ;
+       fhir:name [ fhir:v "Recommendation Collection: Do no suggest any specific type of surgery and type of anaesthesia to reduce the incidence of POD in Adult Surgical Patients Pre- or Intraoperatively" ] ;
+       fhir:description [ fhir:v "Recommendation collection for adult patients before or during a surgical intervention: Do no suggest any specific type of surgery and type of anaesthesia to reduce the incidence of postoperative delirium (POD)." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecCollAdultSurgicalPatPreOrIntraOPNoSpecificBiomarker> ;
+         fhir:reference [ fhir:v "PlanDefinition/RecCollAdultSurgicalPatPreOrIntraOPNoSpecificBiomarker" ]
+       ] ;
+       fhir:name [ fhir:v "Recommendation Collection: Do no suggest using any single specific biomarker to identify patients at risk of POD in Adult Surgical Patients Pre- or Intraoperatively" ] ;
+       fhir:description [ fhir:v "Recommendation collection for adult patients before or during a surgical intervention: Do no suggest using any single specific biomarker to identify patients at risk of postoperative delirium (POD)." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecCollPreoperativeDeliriumScreening> ;
+         fhir:reference [ fhir:v "PlanDefinition/RecCollPreoperativeDeliriumScreening" ]
+       ] ;
+       fhir:name [ fhir:v "Recommendation Collection: Perform Baseline Delirium Screening in Adult Surgical Patients Preoperatively" ] ;
+       fhir:description [ fhir:v "Recommendation collection for adult patients that will undergo a surgical intervention: Perform baseline delirium screening." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecCollDeliriumScreeningOnSurgeryDayEveningShift> ;
+         fhir:reference [ fhir:v "PlanDefinition/RecCollDeliriumScreeningOnSurgeryDayEveningShift" ]
+       ] ;
+       fhir:name [ fhir:v "Recommendation Collection: Perform Delirium Screening in Adult Surgical Patients Postoperatively on surgery day during the evening shift" ] ;
+       fhir:description [ fhir:v "Recommendation collection for adult patients that had a surgical intervention: Perform delirium screening on surgery day during the evening shift." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecCollDeliriumScreeningOnSurgeryDayMorningShift> ;
+         fhir:reference [ fhir:v "PlanDefinition/RecCollDeliriumScreeningOnSurgeryDayMorningShift" ]
+       ] ;
+       fhir:name [ fhir:v "Recommendation Collection: Perform Delirium Screening in Adult Surgical Patients Postoperatively on surgery day during the morning shift" ] ;
+       fhir:description [ fhir:v "Recommendation collection for adult patients that had a surgical intervention: Perform delirium screening on surgery day during the morning shift." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecCollDeliriumScreeningOnSurgeryDayNightShift> ;
+         fhir:reference [ fhir:v "PlanDefinition/RecCollDeliriumScreeningOnSurgeryDayNightShift" ]
+       ] ;
+       fhir:name [ fhir:v "Recommendation Collection: Perform Delirium Screening in Adult Surgical Patients Postoperatively on surgery day during the night shift" ] ;
+       fhir:description [ fhir:v "Recommendation collection for adult patients that had a surgical intervention: Perform delirium screening on surgery day during the night shift." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecCollDeliriumScreeningPostoperativelyOnSurgeryDay> ;
+         fhir:reference [ fhir:v "PlanDefinition/RecCollDeliriumScreeningPostoperativelyOnSurgeryDay" ]
+       ] ;
+       fhir:name [ fhir:v "Recommendation Collection: Perform Delirium Screening in Adult Surgical Patients Postoperatively on surgery day, ideally once a shift and at least twice a day" ] ;
+       fhir:description [ fhir:v "Recommendation collection for adult patients that had a surgical intervention: Perform delirium screening on surgery day, ideally once a shift and at least twice a day." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecCollIntraoperativeEEGMonitoringDepth> ;
+         fhir:reference [ fhir:v "PlanDefinition/RecCollIntraoperativeEEGMonitoringDepth" ]
+       ] ;
+       fhir:name [ fhir:v "Recommendation Collection: Use Index-based EEG monitoring depth of anaesthesia guidance in Adult Surgical Patients Intraoperatively" ] ;
+       fhir:description [ fhir:v "Recommendation collection for adult patients during a surgical intervention: Use Index-based EEG monitoring depth of anaesthesia guidance" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecCollIntraoperativeMultiparameterEEG> ;
+         fhir:reference [ fhir:v "PlanDefinition/RecCollIntraoperativeMultiparameterEEG" ]
+       ] ;
+       fhir:name [ fhir:v "Recommendation Collection: Use multiparameter EEG monitoring in Adult Surgical Patients Intraoperatively" ] ;
+       fhir:description [ fhir:v "Recommendation collection for adult patients during a surgical intervention: Use multiparameter electroencephalographic (EEG) monitoring focusing on burst suppression activity and including the density spectral array (DSA)." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionIntraoperativeEEGMonitoringBurstSuppression> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionIntraoperativeEEGMonitoringBurstSuppression" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Adult Surgical Patients Intraoperatively, perform monitoring burst suppression pattern using electroencephalography" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients, Intraoperatively, burst suppression patterns should be monitored using electroencephalography (EEG)." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionIntraoperativeEEGDensitySpectralArray> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionIntraoperativeEEGDensitySpectralArray" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Adult Surgical Patients Intraoperatively, use electroencephalographic density spectral array" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients, Intraoperatively, EEG monitoring must include density spectral array (DSA)" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionIntraoperativeEEGMonitoringDepth> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionIntraoperativeEEGMonitoringDepth" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Adult Surgical Patients Intraoperatively, use Index-based EEG monitoring depth of anaesthesia guidance" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients, Intraoperatively, use Index-based EEG monitoring depth of anaesthesia guidance to decrease the risk of POD." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPostoperativelyCheck3DCAMEveningShift> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionAdultPatientsPostoperativelyCheck3DCAMEveningShift" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check 3-minute Diagnostic Interview for CAM-defined Delirium (3D-CAM) score during the evening shift" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check 3-minute Diagnostic Interview for CAM-defined Delirium (3D-CAM) score during the evening shift." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPostoperativelyCheck3DCAMMorningShift> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionAdultPatientsPostoperativelyCheck3DCAMMorningShift" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check 3-minute Diagnostic Interview for CAM-defined Delirium (3D-CAM) score during the morning shift" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check 3-minute Diagnostic Interview for CAM-defined Delirium (3D-CAM) score during the morning shift." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPostoperativelyCheck3DCAMNightShift> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionAdultPatientsPostoperativelyCheck3DCAMNightShift" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check 3-minute Diagnostic Interview for CAM-defined Delirium (3D-CAM) score during the night shift" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check 3-minute Diagnostic Interview for CAM-defined Delirium (3D-CAM) score during the night shift." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckAT4EveningShift> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckAT4EveningShift" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check AT4 score during the evening shift" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check AT4 score during the evening shift." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckAT4MorningShift> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckAT4MorningShift" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check AT4 score during the morning shift" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check AT4 score during the morning shift." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckAT4NightShift> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckAT4NightShift" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check AT4 score during the night shift" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check AT4 score during the night shift." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckCAMEveningShift> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckCAMEveningShift" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check Confusion Assessment Method (CAM) score during the evening shift" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check Confusion Assessment Method (CAM) score during the evening shift." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckCAMMorningShift> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckCAMMorningShift" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check Confusion Assessment Method (CAM) score during the morning shift" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check Confusion Assessment Method (CAM) score during the morning shift." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckCAMNightShift> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckCAMNightShift" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check Confusion Assessment Method (CAM) score during the night shift" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check Confusion Assessment Method (CAM) score during the night shift." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckDOSEveningShift> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckDOSEveningShift" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check Delirium Observation Scale (DOS) score during the evening shift" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check Delirium Observation Scale (DOS) score during the evening shift." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckDOSMorningShift> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckDOSMorningShift" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check Delirium Observation Scale (DOS) score during the morning shift" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check Delirium Observation Scale (DOS) score during the morning shift." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckDOSNightShift> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckDOSNightShift" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check Delirium Observation Scale (DOS) score during the night shift" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check Delirium Observation Scale (DOS) score during the night shift." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckDRSEveningShift> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckDRSEveningShift" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check Delirium Rating Scale (DRS) score during the evening shift" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check Delirium Rating Scale (DRS) score during the evening shift." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckDRSMorningShift> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckDRSMorningShift" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check Delirium Rating Scale (DRS) score during the morning shift" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check Delirium Rating Scale (DRS) score during the morning shift." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckDRSNightShift> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckDRSNightShift" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check Delirium Rating Scale (DRS) score during the night shift" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check Delirium Rating Scale (DRS) score during the night shift." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPostperativelyCheckNUDESCEveningShift> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionAdultPatientsPostperativelyCheckNUDESCEveningShift" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check Nursing Delirium Screening Scale (NU-DESC) score during the evening shift" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check Nursing Delirium Screening Scale (NU-DESC) score during the evening shift." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPostperativelyCheckNUDESCMorningShift> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionAdultPatientsPostperativelyCheckNUDESCMorningShift" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check Nursing Delirium Screening Scale (NU-DESC) score during the morning shift" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check Nursing Delirium Screening Scale (NU-DESC) score during the morning shift." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPostperativelyCheckNUDESCNightShift> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionAdultPatientsPostperativelyCheckNUDESCNightShift" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check Nursing Delirium Screening Scale (NU-DESC) score during the night shift" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check Nursing Delirium Screening Scale (NU-DESC) score during the night shift." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckCAMICUEveningShift> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckCAMICUEveningShift" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Confusion Assessment Method for the Intesive Care Unit (CAM-ICU) score during the evening shift" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Confusion Assessment Method for the Intesive Care Unit (CAM-ICU) score during the evening shift." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckCAMICUMorningShift> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckCAMICUMorningShift" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Confusion Assessment Method for the Intesive Care Unit (CAM-ICU) score during the morning shift" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Confusion Assessment Method for the Intesive Care Unit (CAM-ICU) score during the morning shift." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckCAMICUNightShift> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckCAMICUNightShift" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Confusion Assessment Method for the Intesive Care Unit (CAM-ICU) score during the night shift" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Confusion Assessment Method for the Intesive Care Unit (CAM-ICU) score during the night shift." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckDDSEveningShift> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckDDSEveningShift" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Delirium Detection score (DDS) during the evening shift" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Delirium Detection score (DDS) during the evening shift." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckDDSMorningShift> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckDDSMorningShift" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Delirium Detection score (DDS) during the morning shift" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Delirium Detection score (DDS) during the morning shift." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckDDSNightShift> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckDDSNightShift" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Delirium Detection score (DDS) during the night shift" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Delirium Detection score (DDS) during the night shift." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckICDSCEveningShift> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckICDSCEveningShift" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Intensive Care Delirium Screening Checklist score (ICDSC) during the evening shift" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Intensive Care Delirium Screening Checklist score (ICDSC) during the evening shift." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckICDSCMorningShift> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckICDSCMorningShift" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Intensive Care Delirium Screening Checklist score (ICDSC) during the morning shift" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Intensive Care Delirium Screening Checklist score (ICDSC) during the morning shift." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckICDSCNightShift> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckICDSCNightShift" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Intensive Care Delirium Screening Checklist score (ICDSC) during the night shift" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Intensive Care Delirium Screening Checklist score (ICDSC) during the night shift." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultSurgicalPatNoSpecSurgeryOrAnesthesiaTypeWarning> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionAdultSurgicalPatNoSpecSurgeryOrAnesthesiaTypeWarning" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Adult Surgical Patients Pre- or Intraoperatively, do not suggest any specific type of surgery and type of anaesthesia to reduce the incidence of POD" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Pre- or Intraoperatively, do not suggest any specific type of surgery and type of anaesthesia to reduce the incidence of postoperative delirium (POD) and show recommendation 3.3." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultSurgicalPatientsNoSpecificBiomarkerWarning> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionAdultSurgicalPatientsNoSpecificBiomarkerWarning" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Adult Surgical Patients Pre- or Intraoperatively, do not suggest using any single specific biomarker to identify patients at risk of POD" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Pre- or Intraoperatively, do not suggest using any single specific biomarker to identify patients at risk of postoperative delirium (POD) and show recommendation 3.4." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultSurgicalPatientsPreoperativelyCheckRFMiniCog> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionAdultSurgicalPatientsPreoperativelyCheckRFMiniCog" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Adult Surgical Patients Preoperatively check risk factor Mini-cog test score" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Preoperatively, check risk factor Mini-cog test score." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultSurgicalPatientsPreoperativelyNeedMMSEFeeWarning> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionAdultSurgicalPatientsPreoperativelyNeedMMSEFeeWarning" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Adult Surgical Patients Preoperatively with Positive Mini-cog Test Score that need MMSE, provide warning for license fees" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Preoperatively if Mini-cog test score is equal to or higher than 3 that need MMSE, provide warning for license fees" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultSurgicalPatientsPreoperativelyCheckRFACER> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionAdultSurgicalPatientsPreoperativelyCheckRFACER" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Adult Surgical Patients Preoperatively with Positive Mini-cog Test Score, check risk factor Addenbrooke's Cognitive Examination revised score" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Preoperatively if Mini-cog test score is equal to or higher than 3, check risk factor Addenbrooke's Cognitive Examination revised score." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultSurgicalPatientsPreoperativelyCheckRFMMSE> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionAdultSurgicalPatientsPreoperativelyCheckRFMMSE" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Adult Surgical Patients Preoperatively with Positive Mini-cog Test Score, check risk factor Mini-Mental State Examination Score" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Preoperatively if Mini-cog test score is equal to or higher than 3, check risk factor Mini-Mental State Examination Score." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultSurgicalPatientsPreoperativelyCheckRFMoCA> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionAdultSurgicalPatientsPreoperativelyCheckRFMoCA" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Adult Surgical Patients Preoperatively with Positive Mini-cog Test Score, check risk factor Montreal Cognitive Assessment score" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Preoperatively if Mini-cog test score is equal to or higher than 3, check risk factor Montreal Cognitive Assessment (MoCA) score." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPreoperativelyCheck3DCAM> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionAdultPatientsPreoperativelyCheck3DCAM" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Adult Surgical Patients Preoperatively, check 3-minute Diagnostic Interview for CAM-defined Delirium (3D-CAM) score" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Preoperatively, check baseline 3-minute Diagnostic Interview for CAM-defined Delirium (3D-CAM) score." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPreoperativelyCheckAT4> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionAdultPatientsPreoperativelyCheckAT4" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Adult Surgical Patients Preoperatively, check AT4 score" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Preoperatively, check baseline AT4 score." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPreoperativelyCheckCAM> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionAdultPatientsPreoperativelyCheckCAM" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Adult Surgical Patients Preoperatively, check Confusion Assessment Method (CAM) score" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Preoperatively, check baseline Confusion Assessment Method (CAM) score" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPreoperativelyCheckDOS> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionAdultPatientsPreoperativelyCheckDOS" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Adult Surgical Patients Preoperatively, check Delirium Observation Scale (DOS) score" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Preoperatively, check baseline Delirium Observation Scale (DOS) score." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPreoperativelyCheckDRS> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionAdultPatientsPreoperativelyCheckDRS" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Adult Surgical Patients Preoperatively, check Delirium Rating Scale (DRS) score" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Preoperatively, check baseline Delirium Rating Scale (DRS) score." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPreoperativelyCheckNUDESC> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionAdultPatientsPreoperativelyCheckNUDESC" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Adult Surgical Patients Preoperatively, check Nursing Delirium Screening Scale (NU-DESC) score" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Preoperatively, check baseline Nursing Delirium Screening Scale (NU-DESC) score." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultSurgicalPatientsPreoperativelyCheckRFASA> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionAdultSurgicalPatientsPreoperativelyCheckRFASA" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Adult Surgical Patients Preoperatively, check risk factor American Society of Anesthesiology Physical status score" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Preoperatively, check risk factor American Society of Anesthesiology Physical status score." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultSurgicalPatientsPreoperativelyCheckRFCCI> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionAdultSurgicalPatientsPreoperativelyCheckRFCCI" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Adult Surgical Patients Preoperatively, check risk factor Charlson Comorbidity Index" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Preoperatively, check risk factor Charlson Comorbidity Index (CCI). Please note, the CCI preoperative might not reflect the actual/final CCI." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultSurgicalPatientsPreoperativelyCheckRFAge> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionAdultSurgicalPatientsPreoperativelyCheckRFAge" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Adult Surgical Patients Preoperatively, check risk factor older age" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Preoperatively, check risk factor older age." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckAnemiaRF> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckAnemiaRF" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for anemia as risk factor for POD" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for anemia as risk factor for postoperative delirium (POD)" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckAnticholLoadRF> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckAnticholLoadRF" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for anticholinergic load as risk factor for POD" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for anticholinergic load as risk factor for postoperative delirium (POD)" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckAnxietyRF> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckAnxietyRF" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for anxiety as risk factor for POD" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for anxiety as risk factor for postoperative delirium (POD)" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckCardiacRF> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckCardiacRF" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for cardiac conditions as risk factors for POD" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check cardiac conditions as risk factors for postoperative delirium (POD)" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckCardiovascularRF> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckCardiovascularRF" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for cardiovascular conditions as risk factors for POD" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check cardiovascular conditions as risk factors for postoperative delirium (POD)" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckPainRF> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckPainRF" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for chronic pain as risk factor for POD" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for chronic pain as risk factor for postoperative delirium (POD)" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckCognitiveRF> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckCognitiveRF" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for cognitive deficits as risk factors for POD" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for cognitive deficits as risk factors for postoperative delirium (POD)" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckDeglutitionRF> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckDeglutitionRF" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for deglutition disorders as risk factors for POD" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for deglutition disorders as risk factors for postoperative delirium (POD)" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckDementiaRF> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckDementiaRF" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for dementia as risk factor for POD" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for dementia as risk factor for postoperative delirium (POD)" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckDepressionRF> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckDepressionRF" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for depression as risk factor for POD" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for depression as risk factor for postoperative delirium (POD)" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckDiabetesRF> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckDiabetesRF" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for diabetes as risk factor for POD" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for diabetes as risk factor for postoperative delirium (POD)" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckElectrolytesRF> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckElectrolytesRF" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for electrolyte disorders as risk factors for POD" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for electrolyte disorders as risk factors for postoperative delirium (POD)" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckFrailtyRF> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckFrailtyRF" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for frailty as risk factor for POD" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for frailty as risk factor for postoperative delirium (POD)" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckMalnutritionRF> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckMalnutritionRF" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for malnutrition as risk factor for POD" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for malnutrition as risk factor for postoperative delirium (POD)" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckNeurologicalRF> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckNeurologicalRF" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for neurological conditions as risk factors for POD" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check neurological conditions as risk factors for postoperative delirium (POD)" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckPolypharmacyRF> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckPolypharmacyRF" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for polypharmacy as risk factor for POD" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for polypharmacy as risk factor for postoperative delirium (POD)" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckSensoryDeficitsRF> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckSensoryDeficitsRF" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for sensory deficits as risk factors for POD" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for sensory deficits as risk factors for postoperative delirium (POD)" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckSubstanceDepRF> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckSubstanceDepRF" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for substance dependency (alcohol, benzodiazepine, other substances) as risk factor for POD" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for substance dependency (alcohol, benzodiazepine, other substances) as risk factor for postoperative delirium (POD)" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionOlderAdultSurgicalPatientsPreoperativelyCheckRF> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RecActionOlderAdultSurgicalPatientsPreoperativelyCheckRF" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check predisposing and precipitating risk factors" ] ;
+       fhir:description [ fhir:v "Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check predisposing and precipitating risk factors" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecPlanIntraoperativeEEGMonitoringDepth> ;
+         fhir:reference [ fhir:v "PlanDefinition/RecPlanIntraoperativeEEGMonitoringDepth" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Plan for Population: Adult Surgical Patients Intraoperatively, use Index-based EEG monitoring depth of anaesthesia guidance" ] ;
+       fhir:description [ fhir:v "Recommended Plan for Adult Surgical Patients, Intraoperatively, use Index-based EEG monitoring depth of anaesthesia guidance" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecPlanIntraoperativeMultiparameterEEG> ;
+         fhir:reference [ fhir:v "PlanDefinition/RecPlanIntraoperativeMultiparameterEEG" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Plan for Population: Adult Surgical Patients Intraoperatively, use multiparameter EEG monitoring" ] ;
+       fhir:description [ fhir:v "Recommended Plan for Adult Surgical Patients, Intraoperatively, use multiparameter electroencephalography (EEG) focusing on burst suppression activity and including the density spectral array (DSA)." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecPlanPostoperativeDeliriumScreeningOnSurgeryDayNWEveningShift> ;
+         fhir:reference [ fhir:v "PlanDefinition/RecPlanPostoperativeDeliriumScreeningOnSurgeryDayNWEveningShift" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Plan for Population: Adult Surgical Patients Postoperatively on a Normal Ward, Perform Delirium Screening during the evening shift" ] ;
+       fhir:description [ fhir:v "Recommended Plan for Adult Surgical Patients Postoperatively on a Normal Ward, Perform Delirium Screening during the evening shift." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecPlanPostoperativeDeliriumScreeningOnSurgeryDayNWMorningShift> ;
+         fhir:reference [ fhir:v "PlanDefinition/RecPlanPostoperativeDeliriumScreeningOnSurgeryDayNWMorningShift" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Plan for Population: Adult Surgical Patients Postoperatively on a Normal Ward, Perform Delirium Screening during the morning shift" ] ;
+       fhir:description [ fhir:v "Recommended Plan for Adult Surgical Patients Postoperatively on a Normal Ward, Perform Delirium Screening during the morning shift." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecPlanPostoperativeDeliriumScreeningOnSurgeryDayNWNightShift> ;
+         fhir:reference [ fhir:v "PlanDefinition/RecPlanPostoperativeDeliriumScreeningOnSurgeryDayNWNightShift" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Plan for Population: Adult Surgical Patients Postoperatively on a Normal Ward, Perform Delirium Screening during the night shift" ] ;
+       fhir:description [ fhir:v "Recommended Plan for Adult Surgical Patients Postoperatively on a Normal Ward, Perform Delirium Screening during the night shift." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecPlanPostoperativeDeliriumScreeningOnSurgeryDayICUEveningShift> ;
+         fhir:reference [ fhir:v "PlanDefinition/RecPlanPostoperativeDeliriumScreeningOnSurgeryDayICUEveningShift" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Plan for Population: Adult Surgical Patients Postoperatively on an Intensive Care Unit, Perform Delirium Screening during the evening shift" ] ;
+       fhir:description [ fhir:v "Recommended Plan for Adult Surgical Patients Postoperatively on an Intensive Care Unit, Perform Delirium Screening during the evening shift." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecPlanPostoperativeDeliriumScreeningOnSurgeryDayICUMorningShift> ;
+         fhir:reference [ fhir:v "PlanDefinition/RecPlanPostoperativeDeliriumScreeningOnSurgeryDayICUMorningShift" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Plan for Population: Adult Surgical Patients Postoperatively on an Intensive Care Unit, Perform Delirium Screening during the morning shift" ] ;
+       fhir:description [ fhir:v "Recommended Plan for Adult Surgical Patients Postoperatively on an Intensive Care Unit, Perform Delirium Screening during the morning shift." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecPlanPostoperativeDeliriumScreeningOnSurgeryDayOnICUNightShift> ;
+         fhir:reference [ fhir:v "PlanDefinition/RecPlanPostoperativeDeliriumScreeningOnSurgeryDayOnICUNightShift" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Plan for Population: Adult Surgical Patients Postoperatively on an Intensive Care Unit, Perform Delirium Screening during the night shift" ] ;
+       fhir:description [ fhir:v "Recommended Plan for Adult Surgical Patients Postoperatively on an Intensive Care Unit, Perform Delirium Screening during the night shift." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecPlanShowRecommendationNoSpecificSurgeryOrAnesthesiaType> ;
+         fhir:reference [ fhir:v "PlanDefinition/RecPlanShowRecommendationNoSpecificSurgeryOrAnesthesiaType" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Plan for Population: Adult Surgical Patients Pre- or Intraoperatively, do not suggest any specific type of surgery and type of anaesthesia to reduce the incidence of POD" ] ;
+       fhir:description [ fhir:v "Recommended Plan for Adult Surgical Patients Pre- or Intraoperatively, do not suggest any specific type of surgery and type of anaesthesia to reduce the incidence of postoperative delirium (POD) and show recommendation 3.3." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecPlanShowRecommendationNoSpecificBiomarker> ;
+         fhir:reference [ fhir:v "PlanDefinition/RecPlanShowRecommendationNoSpecificBiomarker" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Plan for Population: Adult Surgical Patients Pre- or Intraoperatively, do not suggest using any single specific biomarker to identify patients at risk of POD" ] ;
+       fhir:description [ fhir:v "Recommended Plan for Adult Surgical Patients Pre- or Intraoperatively, do not suggest using any single specific biomarker to identify patients at risk of postoperative delirium (POD) and show recommendation 3.4." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecPlanProvideLicenseFeeWarningForMMSE> ;
+         fhir:reference [ fhir:v "PlanDefinition/RecPlanProvideLicenseFeeWarningForMMSE" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Plan for Population: Adult Surgical Patients Preoperatively with Positive Mini-cog Test Score that need a Mini-Mental State Examination, provide warning because of MMSE license fees" ] ;
+       fhir:description [ fhir:v "Recommended Plan for Adult Surgical Patients Preoperatively with Positive Mini-cog Test Score that need a Mini-Mental State Examination, provide warning because of MMSE license fees." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecPlanCheckRiskFactorsMoCAACERMMSE> ;
+         fhir:reference [ fhir:v "PlanDefinition/RecPlanCheckRiskFactorsMoCAACERMMSE" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Plan for Population: Adult Surgical Patients Preoperatively with Positive Mini-cog Test Score, check risk factor Montreal Cognitive Assessment (MoCA) score, Addenbrooke's Cognitive Examination revised (ACE-R) score or Mini Mental State Examination (MMSE) score" ] ;
+       fhir:description [ fhir:v "Recommended Plan for Adult Surgical Patients Preoperatively if Mini-cog test score is equal to or higher than 3, check risk factors Montreal Cognitive Assessment (MoCA) score, Addenbrooke's Cognitive Examination revised (ACE-R) score or Mini Mental State Examination (MMSE) score." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecPlanCheckRiskFactorsAgeASACCIMiniCog> ;
+         fhir:reference [ fhir:v "PlanDefinition/RecPlanCheckRiskFactorsAgeASACCIMiniCog" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Plan for Population: Adult Surgical Patients Preoperatively, check risk factors age, ASA, CCI and Mini-cog" ] ;
+       fhir:description [ fhir:v "Recommended Plan for Adult Surgical Patients Preoperatively, check risk factors age, American Society of Anesthesiology Physical status score (ASA), Charlson Comorbidity Index (CCI) and Mini-cog test score (Mini-cog)." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecPlanPreoperativeDeliriumScreening> ;
+         fhir:reference [ fhir:v "PlanDefinition/RecPlanPreoperativeDeliriumScreening" ]
+       ] ;
+       fhir:name [ fhir:v "Recommended Plan for Population: Adult Surgical Patients Preoperatively, Perform Baseline Delirium Screening" ] ;
+       fhir:description [ fhir:v "Recommended Plan for Adult Surgical Patients Preoperatively, perform baseline delirium screening." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Practitioner/RiccardoAudisio> ;
+         fhir:reference [ fhir:v "Practitioner/RiccardoAudisio" ]
+       ] ;
+       fhir:name [ fhir:v "RiccardoAudisio" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Practitioner/RobertSanders> ;
+         fhir:reference [ fhir:v "Practitioner/RobertSanders" ]
+       ] ;
+       fhir:name [ fhir:v "RobertSanders" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Practitioner/SimonePiva> ;
+         fhir:reference [ fhir:v "Practitioner/SimonePiva" ]
+       ] ;
+       fhir:name [ fhir:v "SimonePiva" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Practitioner/StefaniaRenzi> ;
+         fhir:reference [ fhir:v "Practitioner/StefaniaRenzi" ]
+       ] ;
+       fhir:name [ fhir:v "StefaniaRenzi" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Practitioner/StefanoRomagnoli> ;
+         fhir:reference [ fhir:v "Practitioner/StefanoRomagnoli" ]
+       ] ;
+       fhir:name [ fhir:v "StefanoRomagnoli" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Practitioner/SusanneKoch> ;
+         fhir:reference [ fhir:v "Practitioner/SusanneKoch" ]
+       ] ;
+       fhir:name [ fhir:v "SusanneKoch" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Citation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Citation/ClinicalPracticeGuidelineESAICOnPostOpDeliriumInAdultPatients> ;
+         fhir:reference [ fhir:v "Citation/ClinicalPracticeGuidelineESAICOnPostOpDeliriumInAdultPatients" ]
+       ] ;
+       fhir:name [ fhir:v "Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients" ] ;
+       fhir:description [ fhir:v "Evidence-based and consensus-based guideline on postoperative delirium in adult patients, updated by the European Society of Anaesthesiology and Intensive Care Medicine (ESAIC) in 2021" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Practitioner/WojciechDabrowski> ;
+         fhir:reference [ fhir:v "Practitioner/WojciechDabrowski" ]
+       ] ;
+       fhir:name [ fhir:v "WojciechDabrowski" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] ) ;
+     fhir:page [
+       fhir:source [ fhir:v "toc.html"^^xsd:anyURI ] ;
+       fhir:name [ fhir:v "toc.html"^^xsd:anyURI ] ;
+       fhir:title [ fhir:v "Table of Contents" ] ;
+       fhir:generation [ fhir:v "html" ] ;
+       fhir:page ( [
+         fhir:source [ fhir:v "index.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "index.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "CPG-on-EBMonFHIR template" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [ fhir:v "downloads.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "downloads.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Downloads" ] ;
+         fhir:generation [ fhir:v "html" ]
+       ] [
+         fhir:source [ fhir:v "changelog.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "changelog.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Change Log" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] )
+     ] ;
+     fhir:parameter ( [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "copyrightyear" ]
+       ] ;
+       fhir:value [ fhir:v "2023+" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "releaselabel" ]
+       ] ;
+       fhir:value [ fhir:v "ci-build" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "active-tables" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-contact" ]
+       ] ;
+       fhir:value [ fhir:v "false" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-jurisdiction" ]
+       ] ;
+       fhir:value [ fhir:v "false" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-publisher" ]
+       ] ;
+       fhir:value [ fhir:v "false" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-version" ]
+       ] ;
+       fhir:value [ fhir:v "false" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "show-inherited-invariants" ]
+       ] ;
+       fhir:value [ fhir:v "false" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "usage-stats-opt-out" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "excludexml" ]
+       ] ;
+       fhir:value [ fhir:v "false" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "excludejsn" ]
+       ] ;
+       fhir:value [ fhir:v "false" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "excludettl" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "excludemap" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "excludeexample" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "extension-domain" ]
+       ] ;
+       fhir:value [ fhir:v "https://www.netzwerk-universitaetsmedizin.de" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "extension-domain" ]
+       ] ;
+       fhir:value [ fhir:v "https://simplifier.net" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "autoload-resources" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/capabilities" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/examples" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/extensions" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/models" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/operations" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/profiles" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/resources" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/vocabulary" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/maps" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/testing" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/history" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "fsh-generated/resources" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-pages" ]
+       ] ;
+       fhir:value [ fhir:v "template/config" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-pages" ]
+       ] ;
+       fhir:value [ fhir:v "input/images" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-liquid" ]
+       ] ;
+       fhir:value [ fhir:v "template/liquid" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-liquid" ]
+       ] ;
+       fhir:value [ fhir:v "input/liquid" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-qa" ]
+       ] ;
+       fhir:value [ fhir:v "temp/qa" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-temp" ]
+       ] ;
+       fhir:value [ fhir:v "temp/pages" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-output" ]
+       ] ;
+       fhir:value [ fhir:v "output" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-tx-cache" ]
+       ] ;
+       fhir:value [ fhir:v "input-cache/txcache" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-suppressed-warnings" ]
+       ] ;
+       fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-history" ]
+       ] ;
+       fhir:value [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/history.html" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "template-html" ]
+       ] ;
+       fhir:value [ fhir:v "template-page.html" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "template-md" ]
+       ] ;
+       fhir:value [ fhir:v "template-page-md.html" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-context" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-copyright" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-license" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-wg" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "fmm-definition" ]
+       ] ;
+       fhir:value [ fhir:v "http://hl7.org/fhir/versions.html#maturity" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "propagate-status" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "excludelogbinaryformat" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "tabbed-snapshots" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

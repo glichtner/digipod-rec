@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ActivityDefinition xmlns="http://hl7.org/fhir">
+  <id value="RecActionOlderAdultPatientsPreoperativelyCheckSensoryDeficitsRF"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-action"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: ActivityDefinition</b><a name="RecActionOlderAdultPatientsPreoperativelyCheckSensoryDeficitsRF"> </a><a name="hcRecActionOlderAdultPatientsPreoperativelyCheckSensoryDeficitsRF"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceActivityDefinition &quot;RecActionOlderAdultPatientsPreoperativelyCheckSensoryDeficitsRF&quot; </p><p style="margin-bottom: 0px">Profile: <a href="file:///github/workspace/output/StructureDefinition-recommendation-action.html">Recommendation Action</a></p></div><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>url</b>: <code>https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckSensoryDeficitsRF</code></p><p><b>version</b>: 0.2.0</p><p><b>name</b>: RecActionOlderAdultPatientsPreoperativelyCheckSensoryDeficitsRF</p><p><b>title</b>: Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for sensory deficits as risk factors for POD</p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>subject</b>: Patient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/R5/codesystem-fhir-types.html">All FHIR Types</a>#Patient)</span></p><p><b>date</b>: 2024-02</p><p><b>publisher</b>: DIGIPOD</p><p><b>description</b>: Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for sensory deficits as risk factors for postoperative delirium (POD)</p><p><b>kind</b>: ServiceRequest</p><p><b>code</b>: Determination of existing sensory impairments (procedure) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOWMED CT</a>#370837004)</span></p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckSensoryDeficitsRF"/>
+  <version value="0.2.0"/>
+  <name value="RecActionOlderAdultPatientsPreoperativelyCheckSensoryDeficitsRF"/>
+  <title value="Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for sensory deficits as risk factors for POD"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <subjectCodeableConcept>
+    <coding>
+      <system value="http://hl7.org/fhir/fhir-types"/>
+      <code value="Patient"/>
+    </coding>
+  </subjectCodeableConcept>
+  <date value="2024-02"/>
+  <publisher value="DIGIPOD"/>
+  <description value="Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for sensory deficits as risk factors for postoperative delirium (POD)"/>
+  <kind value="ServiceRequest"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="370837004"/>
+      <display value="Determination of existing sensory impairments (procedure)"/>
+    </coding>
+  </code>
+</ActivityDefinition>

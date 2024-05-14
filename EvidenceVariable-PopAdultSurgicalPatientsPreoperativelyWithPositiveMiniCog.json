@@ -1,0 +1,104 @@
+{
+  "resourceType" : "EvidenceVariable",
+  "id" : "PopAdultSurgicalPatientsPreoperativelyWithPositiveMiniCog",
+  "meta" : {
+    "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: EvidenceVariable</b><a name=\"PopAdultSurgicalPatientsPreoperativelyWithPositiveMiniCog\"> </a><a name=\"hcPopAdultSurgicalPatientsPreoperativelyWithPositiveMiniCog\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceEvidenceVariable &quot;PopAdultSurgicalPatientsPreoperativelyWithPositiveMiniCog&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"file:///github/workspace/output/StructureDefinition-recommendation-eligibility-criteria.html\">Recommendation Eligibility Criteria</a></p></div><p><b>url</b>: <code>https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/EvidenceVariable/PopAdultSurgicalPatientsPreoperativelyWithPositiveMiniCog</code></p><p><b>version</b>: 0.2.0</p><p><b>name</b>: PopAdultSurgicalPatientsPreoperativelyWithPositiveMiniCog</p><p><b>title</b>: Population: Adult Surgical Patients Preoperatively with Positive Mini-cog Test Score</p><p><b>status</b>: draft</p><p><b>date</b>: 2024-02</p><p><b>description</b>: Population for guideline 2.1 from https://pubmed.ncbi.nlm.nih.gov/37599617/: Adult patients, preoperative, that had a positive Mini-cog test score</p><blockquote><p><b>characteristic</b></p><p><b>exclude</b>: false</p><blockquote><p><b>definitionByCombination</b></p><p><b>code</b>: all-of</p><blockquote><p><b>characteristic</b></p><p><b>exclude</b>: false</p><blockquote><p><b>definitionByTypeAndValue</b></p></blockquote></blockquote><blockquote><p><b>characteristic</b></p><p><b>exclude</b>: false</p><blockquote><p><b>definitionByTypeAndValue</b></p></blockquote></blockquote><blockquote><p><b>characteristic</b></p><p><b>exclude</b>: false</p><blockquote><p><b>definitionByTypeAndValue</b></p></blockquote></blockquote></blockquote><h3>TimeFromEvents</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Description</b></td><td><b>Event[x]</b></td><td><b>Range</b></td></tr><tr><td style=\"display: none\">*</td><td>Preoperatively - time period of pre-anesthetic assessment</td><td>Date of surgical procedure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-digipod.html\">DIGIPOD</a>#007)</span></td><td>-1008--2 hour</td></tr></table></blockquote></div>"
+  },
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/EvidenceVariable/PopAdultSurgicalPatientsPreoperativelyWithPositiveMiniCog",
+  "version" : "0.2.0",
+  "name" : "PopAdultSurgicalPatientsPreoperativelyWithPositiveMiniCog",
+  "title" : "Population: Adult Surgical Patients Preoperatively with Positive Mini-cog Test Score",
+  "status" : "draft",
+  "date" : "2024-02",
+  "description" : "Population for guideline 2.1 from https://pubmed.ncbi.nlm.nih.gov/37599617/: Adult patients, preoperative, that had a positive Mini-cog test score",
+  "characteristic" : [{
+    "exclude" : false,
+    "definitionByCombination" : {
+      "code" : "all-of",
+      "characteristic" : [{
+        "exclude" : false,
+        "definitionByTypeAndValue" : {
+          "type" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "424144002",
+              "display" : "Current chronological age (observable entity)"
+            }]
+          },
+          "valueRange" : {
+            "low" : {
+              "value" : 18,
+              "unit" : "years",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "a"
+            }
+          }
+        }
+      },
+      {
+        "exclude" : false,
+        "definitionByTypeAndValue" : {
+          "type" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "71388002",
+              "display" : "Procedure (procedure)"
+            }]
+          },
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "387713003",
+              "display" : "Surgical procedure (procedure)"
+            }]
+          }
+        }
+      },
+      {
+        "exclude" : false,
+        "definitionByTypeAndValue" : {
+          "type" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "713408000",
+              "display" : "Mini-Cog brief cognitive screening test score (observable entity)"
+            }]
+          },
+          "valueRange" : {
+            "low" : {
+              "value" : 3
+            }
+          }
+        }
+      }]
+    },
+    "timeFromEvent" : [{
+      "description" : "Preoperatively - time period of pre-anesthetic assessment",
+      "eventCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://www.charite.de/fhir/digipod/CodeSystem/digipod",
+          "code" : "007",
+          "display" : "Date of surgical procedure"
+        }]
+      },
+      "range" : {
+        "low" : {
+          "value" : -1008,
+          "unit" : "hour",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "h"
+        },
+        "high" : {
+          "value" : -2,
+          "unit" : "hour",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "h"
+        }
+      }
+    }]
+  }]
+}

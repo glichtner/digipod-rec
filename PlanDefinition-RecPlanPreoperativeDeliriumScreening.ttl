@@ -1,0 +1,198 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecPlanPreoperativeDeliriumScreening> a fhir:PlanDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "RecPlanPreoperativeDeliriumScreening"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PlanDefinition</b><a name=\"RecPlanPreoperativeDeliriumScreening\"> </a><a name=\"hcRecPlanPreoperativeDeliriumScreening\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourcePlanDefinition &quot;RecPlanPreoperativeDeliriumScreening&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"file:///github/workspace/output/StructureDefinition-recommendation-plan.html\">Recommendation Plan</a></p></div><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>partOf</b>: <a href=\"PlanDefinition-RecCollPreoperativeDeliriumScreening.html\">Recommendation Collection: Perform Baseline Delirium Screening in Adult Surgical Patients Preoperatively</a></p><blockquote><p><b>Action Combination Method</b></p><blockquote><p><b>url</b></p><code>method</code></blockquote><p><b>value</b>: At Least <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"file:///github/workspace/output/CodeSystem-cs-action-combination-method.html\">Action Combination Method</a>#at-least)</span></p><blockquote><p><b>url</b></p><code>threshold</code></blockquote><p><b>value</b>: 1</p></blockquote><p><b>url</b>: <code>https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecPlanPreoperativeDeliriumScreening</code></p><p><b>version</b>: 0.2.0</p><p><b>name</b>: RecPlanPreoperativeDeliriumScreening</p><p><b>title</b>: Recommended Plan for Population: Adult Surgical Patients Preoperatively, Perform Baseline Delirium Screening</p><p><b>type</b>: ECA Rule <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-plan-definition-type.html\">PlanDefinitionType</a>#eca-rule)</span></p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>subject</b>: <a href=\"EvidenceVariable-PopAdultPatientsPreoperativelyGeneralOnSurgeryDayAndBefore.html\">Population: General Adult Surgical Patients Preoperatively on Surgery Day and Before</a></p><p><b>date</b>: 2024-04</p><p><b>publisher</b>: DIGIPOD</p><p><b>description</b>: Recommended Plan for Adult Surgical Patients Preoperatively, perform baseline delirium screening.</p><blockquote><p><b>action</b></p><p><b>code</b>: Evaluation procedure (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOWMED CT</a>#386053000)</span></p><p><b>reason</b>: Quality measure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R5/codesystem-action-reason-code.html\">Action Reason Code</a>#quality-measure)</span></p><p><b>requiredBehavior</b>: must</p><p><b>definition</b>: <a href=\"ActivityDefinition-RecActionAdultPatientsPreoperativelyCheckNUDESC.html\">Recommended Action for Population: Adult Surgical Patients Preoperatively, check Nursing Delirium Screening Scale (NU-DESC) score</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: Evaluation procedure (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOWMED CT</a>#386053000)</span></p><p><b>reason</b>: Quality measure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R5/codesystem-action-reason-code.html\">Action Reason Code</a>#quality-measure)</span></p><p><b>requiredBehavior</b>: must</p><p><b>definition</b>: <a href=\"ActivityDefinition-RecActionAdultPatientsPreoperativelyCheckDRS.html\">Recommended Action for Population: Adult Surgical Patients Preoperatively, check Delirium Rating Scale (DRS) score</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: Evaluation procedure (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOWMED CT</a>#386053000)</span></p><p><b>reason</b>: Quality measure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R5/codesystem-action-reason-code.html\">Action Reason Code</a>#quality-measure)</span></p><p><b>requiredBehavior</b>: must</p><p><b>definition</b>: <a href=\"ActivityDefinition-RecActionAdultPatientsPreoperativelyCheckDOS.html\">Recommended Action for Population: Adult Surgical Patients Preoperatively, check Delirium Observation Scale (DOS) score</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: Evaluation procedure (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOWMED CT</a>#386053000)</span></p><p><b>reason</b>: Quality measure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R5/codesystem-action-reason-code.html\">Action Reason Code</a>#quality-measure)</span></p><p><b>requiredBehavior</b>: must</p><p><b>definition</b>: <a href=\"ActivityDefinition-RecActionAdultPatientsPreoperativelyCheckCAM.html\">Recommended Action for Population: Adult Surgical Patients Preoperatively, check Confusion Assessment Method (CAM) score</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: Evaluation procedure (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOWMED CT</a>#386053000)</span></p><p><b>reason</b>: Quality measure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R5/codesystem-action-reason-code.html\">Action Reason Code</a>#quality-measure)</span></p><p><b>requiredBehavior</b>: must</p><p><b>definition</b>: <a href=\"ActivityDefinition-RecActionAdultPatientsPreoperativelyCheckAT4.html\">Recommended Action for Population: Adult Surgical Patients Preoperatively, check AT4 score</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: Evaluation procedure (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOWMED CT</a>#386053000)</span></p><p><b>reason</b>: Quality measure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R5/codesystem-action-reason-code.html\">Action Reason Code</a>#quality-measure)</span></p><p><b>requiredBehavior</b>: must</p><p><b>definition</b>: <a href=\"ActivityDefinition-RecActionAdultPatientsPreoperativelyCheck3DCAM.html\">Recommended Action for Population: Adult Surgical Patients Preoperatively, check 3-minute Diagnostic Interview for CAM-defined Delirium (3D-CAM) score</a></p></blockquote></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "computable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "structured" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-partOf"^^xsd:anyURI ] ;
+     fhir:value [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecCollPreoperativeDeliriumScreening"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecCollPreoperativeDeliriumScreening>
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "method"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "at-least" ]
+         ] )
+       ]
+     ] [
+       fhir:url [ fhir:v "threshold"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "1"^^xsd:positiveInteger ]
+     ] ) ;
+     fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecPlanPreoperativeDeliriumScreening"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:name [ fhir:v "RecPlanPreoperativeDeliriumScreening"] ; # 
+  fhir:title [ fhir:v "Recommended Plan for Population: Adult Surgical Patients Preoperatively, Perform Baseline Delirium Screening"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/plan-definition-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "eca-rule" ]
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:subject [
+     fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/EvidenceVariable/PopAdultPatientsPreoperativelyGeneralOnSurgeryDayAndBefore"^^xsd:anyURI ;
+     fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/EvidenceVariable/PopAdultPatientsPreoperativelyGeneralOnSurgeryDayAndBefore>
+  ] ; # 
+  fhir:date [ fhir:v "2024-04"^^xsd:gYearMonth] ; # 
+  fhir:publisher [ fhir:v "DIGIPOD"] ; # 
+  fhir:description [ fhir:v "Recommended Plan for Adult Surgical Patients Preoperatively, perform baseline delirium screening."] ; # 
+  fhir:action ( [
+     fhir:code [
+       fhir:coding ( [
+         a sct:386053000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "386053000" ] ;
+         fhir:display [ fhir:v "Evaluation procedure (procedure)" ]
+       ] )
+     ] ;
+     fhir:reason ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/action-reason-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "quality-measure" ] ;
+         fhir:display [ fhir:v "Quality measure" ]
+       ] )
+     ] ) ;
+     fhir:requiredBehavior [ fhir:v "must" ] ;
+     fhir:definition [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPreoperativelyCheckNUDESC"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPreoperativelyCheckNUDESC>
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:386053000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "386053000" ] ;
+         fhir:display [ fhir:v "Evaluation procedure (procedure)" ]
+       ] )
+     ] ;
+     fhir:reason ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/action-reason-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "quality-measure" ] ;
+         fhir:display [ fhir:v "Quality measure" ]
+       ] )
+     ] ) ;
+     fhir:requiredBehavior [ fhir:v "must" ] ;
+     fhir:definition [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPreoperativelyCheckDRS"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPreoperativelyCheckDRS>
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:386053000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "386053000" ] ;
+         fhir:display [ fhir:v "Evaluation procedure (procedure)" ]
+       ] )
+     ] ;
+     fhir:reason ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/action-reason-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "quality-measure" ] ;
+         fhir:display [ fhir:v "Quality measure" ]
+       ] )
+     ] ) ;
+     fhir:requiredBehavior [ fhir:v "must" ] ;
+     fhir:definition [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPreoperativelyCheckDOS"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPreoperativelyCheckDOS>
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:386053000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "386053000" ] ;
+         fhir:display [ fhir:v "Evaluation procedure (procedure)" ]
+       ] )
+     ] ;
+     fhir:reason ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/action-reason-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "quality-measure" ] ;
+         fhir:display [ fhir:v "Quality measure" ]
+       ] )
+     ] ) ;
+     fhir:requiredBehavior [ fhir:v "must" ] ;
+     fhir:definition [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPreoperativelyCheckCAM"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPreoperativelyCheckCAM>
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:386053000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "386053000" ] ;
+         fhir:display [ fhir:v "Evaluation procedure (procedure)" ]
+       ] )
+     ] ;
+     fhir:reason ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/action-reason-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "quality-measure" ] ;
+         fhir:display [ fhir:v "Quality measure" ]
+       ] )
+     ] ) ;
+     fhir:requiredBehavior [ fhir:v "must" ] ;
+     fhir:definition [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPreoperativelyCheckAT4"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPreoperativelyCheckAT4>
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:386053000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "386053000" ] ;
+         fhir:display [ fhir:v "Evaluation procedure (procedure)" ]
+       ] )
+     ] ;
+     fhir:reason ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/action-reason-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "quality-measure" ] ;
+         fhir:display [ fhir:v "Quality measure" ]
+       ] )
+     ] ) ;
+     fhir:requiredBehavior [ fhir:v "must" ] ;
+     fhir:definition [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPreoperativelyCheck3DCAM"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/RecActionAdultPatientsPreoperativelyCheck3DCAM>
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

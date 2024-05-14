@@ -1,0 +1,27 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/Organization/OrganizationCharite> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "OrganizationCharite"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "additional" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Resource representing the Organization Charité - Universitätsmedizin Berlin</div>"
+  ] ; # 
+  fhir:name [ fhir:v "Charité-Universitätsmedizin Berlin, Corporate Member of Freie Universität Berlin, and Humboldt Universität zu Berlin, Department of Anesthesiology and Intensive Care Medicine, Campus Charité Mitte and Campus Virchow Klinikum"] ; # 
+  fhir:contact ( [
+     fhir:address [
+       fhir:use [ fhir:v "work" ] ;
+       fhir:text [ fhir:v "Augustenburger Platz 1" ] ;
+       fhir:city [ fhir:v "Berlin" ] ;
+       fhir:postalCode [ fhir:v "10117" ] ;
+       fhir:country [ fhir:v "Germany" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

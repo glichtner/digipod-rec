@@ -1,0 +1,12 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "NicolaGitti",
+  "text" : {
+    "status" : "additional",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Resource representing Nicola Gitti</div>"
+  },
+  "name" : [{
+    "family" : "Gitti",
+    "given" : ["Nicola"]
+  }]
+}

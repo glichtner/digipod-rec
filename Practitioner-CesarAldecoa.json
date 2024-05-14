@@ -1,0 +1,12 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "CesarAldecoa",
+  "text" : {
+    "status" : "additional",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Resource representing Cesar Aldecoa</div>"
+  },
+  "name" : [{
+    "family" : "Aldecoa",
+    "given" : ["César"]
+  }]
+}

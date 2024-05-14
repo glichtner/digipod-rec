@@ -1,0 +1,102 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecCollDeliriumScreeningPostoperativelyOnSurgeryDay> a fhir:PlanDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "RecCollDeliriumScreeningPostoperativelyOnSurgeryDay"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PlanDefinition</b><a name=\"RecCollDeliriumScreeningPostoperativelyOnSurgeryDay\"> </a><a name=\"hcRecCollDeliriumScreeningPostoperativelyOnSurgeryDay\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourcePlanDefinition &quot;RecCollDeliriumScreeningPostoperativelyOnSurgeryDay&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"file:///github/workspace/output/StructureDefinition-recommendation.html\">Recommendation</a></p></div><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><blockquote><p><b>Action Combination Method</b></p><blockquote><p><b>url</b></p><code>method</code></blockquote><p><b>value</b>: At Least <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"file:///github/workspace/output/CodeSystem-cs-action-combination-method.html\">Action Combination Method</a>#at-least)</span></p><blockquote><p><b>url</b></p><code>threshold</code></blockquote><p><b>value</b>: 2</p></blockquote><p><b>url</b>: <code>https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecCollDeliriumScreeningPostoperativelyOnSurgeryDay</code></p><p><b>version</b>: 0.2.0</p><p><b>name</b>: RecCollDeliriumScreeningPostoperativelyOnSurgeryDay</p><p><b>title</b>: Recommendation Collection: Perform Delirium Screening in Adult Surgical Patients Postoperatively on surgery day, ideally once a shift and at least twice a day</p><p><b>type</b>: Workflow Definition <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-plan-definition-type.html\">PlanDefinitionType</a>#workflow-definition)</span></p><p><b>status</b>: draft</p><p><b>date</b>: 2024-02</p><p><b>publisher</b>: European Society of Anaesthesiology and Intensive Care Medicine (ESAIC)</p><p><b>description</b>: Recommendation collection for adult patients that had a surgical intervention: Perform delirium screening on surgery day, ideally once a shift and at least twice a day.</p><blockquote><p><b>action</b></p><p><b>title</b>: RecCollDeliriumScreeningOnSurgeryDayMorningShift</p><p><b>description</b>: Perform Delirium Screening in Adult Surgical Patients, Postoperatively, on Surgery Day during the Morning Shift.</p><p><b>code</b>: Guideline-based Care <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/uv/cpg/STU1/CodeSystem-cpg-common-process.html\">CPG Common Process</a>#guideline-based-care)</span></p><p><b>selectionBehavior</b>: one-or-more</p><p><b>definition</b>: <a href=\"PlanDefinition-RecCollDeliriumScreeningOnSurgeryDayMorningShift.html\">Recommendation Collection: Perform Delirium Screening in Adult Surgical Patients Postoperatively on surgery day during the morning shift</a></p></blockquote><blockquote><p><b>action</b></p><p><b>title</b>: RecCollDeliriumScreeningOnSurgeryDayEveningShift</p><p><b>description</b>: Perform Delirium Screening in Adult Surgical Patients, Postoperatively, on Surgery Day during the Evening Shift.</p><p><b>code</b>: Guideline-based Care <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/uv/cpg/STU1/CodeSystem-cpg-common-process.html\">CPG Common Process</a>#guideline-based-care)</span></p><p><b>selectionBehavior</b>: one-or-more</p><p><b>definition</b>: <a href=\"PlanDefinition-RecCollDeliriumScreeningOnSurgeryDayEveningShift.html\">Recommendation Collection: Perform Delirium Screening in Adult Surgical Patients Postoperatively on surgery day during the evening shift</a></p></blockquote><blockquote><p><b>action</b></p><p><b>title</b>: RecCollDeliriumScreeningOnSurgeryDayNightShift</p><p><b>description</b>: Perform Delirium Screening in Adult Surgical Patients, Postoperatively, on Surgery Day during the Night Shift.</p><p><b>code</b>: Guideline-based Care <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/uv/cpg/STU1/CodeSystem-cpg-common-process.html\">CPG Common Process</a>#guideline-based-care)</span></p><p><b>selectionBehavior</b>: one-or-more</p><p><b>definition</b>: <a href=\"PlanDefinition-RecCollDeliriumScreeningOnSurgeryDayNightShift.html\">Recommendation Collection: Perform Delirium Screening in Adult Surgical Patients Postoperatively on surgery day during the night shift</a></p></blockquote></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "computable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "structured" ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "method"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "at-least" ]
+         ] )
+       ]
+     ] [
+       fhir:url [ fhir:v "threshold"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "2"^^xsd:positiveInteger ]
+     ] ) ;
+     fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecCollDeliriumScreeningPostoperativelyOnSurgeryDay"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:name [ fhir:v "RecCollDeliriumScreeningPostoperativelyOnSurgeryDay"] ; # 
+  fhir:title [ fhir:v "Recommendation Collection: Perform Delirium Screening in Adult Surgical Patients Postoperatively on surgery day, ideally once a shift and at least twice a day"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/plan-definition-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "workflow-definition" ]
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2024-02"^^xsd:gYearMonth] ; # 
+  fhir:publisher [ fhir:v "European Society of Anaesthesiology and Intensive Care Medicine (ESAIC)"] ; # 
+  fhir:description [ fhir:v "Recommendation collection for adult patients that had a surgical intervention: Perform delirium screening on surgery day, ideally once a shift and at least twice a day."] ; # 
+  fhir:action ( [
+     fhir:title [ fhir:v "RecCollDeliriumScreeningOnSurgeryDayMorningShift" ] ;
+     fhir:description [ fhir:v "Perform Delirium Screening in Adult Surgical Patients, Postoperatively, on Surgery Day during the Morning Shift." ] ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "guideline-based-care" ]
+       ] )
+     ] ;
+     fhir:selectionBehavior [ fhir:v "one-or-more" ] ;
+     fhir:definition [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecCollDeliriumScreeningOnSurgeryDayMorningShift"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecCollDeliriumScreeningOnSurgeryDayMorningShift>
+     ]
+  ] [
+     fhir:title [ fhir:v "RecCollDeliriumScreeningOnSurgeryDayEveningShift" ] ;
+     fhir:description [ fhir:v "Perform Delirium Screening in Adult Surgical Patients, Postoperatively, on Surgery Day during the Evening Shift." ] ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "guideline-based-care" ]
+       ] )
+     ] ;
+     fhir:selectionBehavior [ fhir:v "one-or-more" ] ;
+     fhir:definition [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecCollDeliriumScreeningOnSurgeryDayEveningShift"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecCollDeliriumScreeningOnSurgeryDayEveningShift>
+     ]
+  ] [
+     fhir:title [ fhir:v "RecCollDeliriumScreeningOnSurgeryDayNightShift" ] ;
+     fhir:description [ fhir:v "Perform Delirium Screening in Adult Surgical Patients, Postoperatively, on Surgery Day during the Night Shift." ] ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "guideline-based-care" ]
+       ] )
+     ] ;
+     fhir:selectionBehavior [ fhir:v "one-or-more" ] ;
+     fhir:definition [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecCollDeliriumScreeningOnSurgeryDayNightShift"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/RecCollDeliriumScreeningOnSurgeryDayNightShift>
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

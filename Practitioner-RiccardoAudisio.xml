@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="RiccardoAudisio"/>
+  <text>
+    <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">Resource representing Riccardo Audisio</div>
+  </text>
+  <name>
+    <family value="Audisio"/>
+    <given value="Riccardo"/>
+  </name>
+</Practitioner>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="OrganizationCharite"/>
+  <text>
+    <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">Resource representing the Organization Charité - Universitätsmedizin Berlin</div>
+  </text>
+  <name value="Charité-Universitätsmedizin Berlin, Corporate Member of Freie Universität Berlin, and Humboldt Universität zu Berlin, Department of Anesthesiology and Intensive Care Medicine, Campus Charité Mitte and Campus Virchow Klinikum"/>
+  <contact>
+    <address>
+      <use value="work"/>
+      <text value="Augustenburger Platz 1"/>
+      <city value="Berlin"/>
+      <postalCode value="10117"/>
+      <country value="Germany"/>
+    </address>
+  </contact>
+</Organization>

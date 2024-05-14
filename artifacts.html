@@ -1,0 +1,1507 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>TEMPLATE.CPG-ON-EBMONFHIR.NETZWERK-UNIVERSITAETSMEDIZIN.DE\Artifacts Summary - FHIR v5.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+  <!-- Placeholder for child template CSS declarations -->
+<link rel="stylesheet" href="assets/css/colors.css"/>
+<link rel="stylesheet" href="assets/css/celida.css"/>
+
+
+    <script src="assets/js/fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4.0"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Left logo - typically the publisher's logo - project or affiliate -->
+<div id="project-nav">
+  <a no-external="true" id="project-logo" href="https://www.github.com/CODEX-CELIDA/">
+    <img src="assets/images/logo_celida.png" alt="Project home" height="71"/>
+  </a>
+</div>
+
+  <!-- Right logo - for example the FHIR logo -->
+  <!-- Make sure you have authorization to use the FHIR logo -->
+<div id="family-nav">
+  <a no-external="true" id="family-logo" href="https://www.netzwerk-universitaetsmedizin.de">
+    <img src="assets/images/logo_num.svg" alt="FHIR website" height="70"/>
+  </a>
+</div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">CPG-on-EBMonFHIR template</span><br/>0.0.1-snapshot - ci-build</p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R5/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="changelog.html">Change Log</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">CPG-on-EBMonFHIR template - Local Development build (v0.0.1-snapshot) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Artifacts Summary</h2>
+  
+  
+  
+    <!-- DO NOT EDIT THIS FILE - It is generated and any changes made will be overwritten --><div xmlns:html="http://www.w3.org/1999/xhtml" xmlns:f="http://hl7.org/fhir" class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Knowledge Artifacts: Activity Definitions</a>
+      </li>
+      <li>
+         <a href="#2">Knowledge Artifacts: Plan Definitions</a>
+      </li>
+      <li>
+         <a href="#3">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#4">Example: Example Instances</a>
+      </li>
+      <li>
+         <a href="#5">Other</a>
+      </li>
+   </ul>
+</div>
+<div xmlns:html="http://www.w3.org/1999/xhtml" xmlns:f="http://hl7.org/fhir">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Knowledge Artifacts: Activity Definitions </h3>
+   <p>
+    <p>These define activities that can be performed as part of content in this implementation guide.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionIntraoperativeEEGMonitoringBurstSuppression.html" title="ActivityDefinition/RecActionIntraoperativeEEGMonitoringBurstSuppression">Recommended Action for Population: Adult Surgical Patients Intraoperatively, perform monitoring burst suppression pattern using electroencephalography</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients, Intraoperatively, burst suppression patterns should be monitored using electroencephalography (EEG).</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionIntraoperativeEEGMonitoringDepth.html" title="ActivityDefinition/RecActionIntraoperativeEEGMonitoringDepth">Recommended Action for Population: Adult Surgical Patients Intraoperatively, use Index-based EEG monitoring depth of anaesthesia guidance</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients, Intraoperatively, use Index-based EEG monitoring depth of anaesthesia guidance to decrease the risk of POD.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionIntraoperativeEEGDensitySpectralArray.html" title="ActivityDefinition/RecActionIntraoperativeEEGDensitySpectralArray">Recommended Action for Population: Adult Surgical Patients Intraoperatively, use electroencephalographic density spectral array</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients, Intraoperatively, EEG monitoring must include density spectral array (DSA)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionAdultPatientsPostoperativelyCheck3DCAMEveningShift.html" title="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheck3DCAMEveningShift">Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check 3-minute Diagnostic Interview for CAM-defined Delirium (3D-CAM) score during the evening shift</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check 3-minute Diagnostic Interview for CAM-defined Delirium (3D-CAM) score during the evening shift.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionAdultPatientsPostoperativelyCheck3DCAMMorningShift.html" title="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheck3DCAMMorningShift">Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check 3-minute Diagnostic Interview for CAM-defined Delirium (3D-CAM) score during the morning shift</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check 3-minute Diagnostic Interview for CAM-defined Delirium (3D-CAM) score during the morning shift.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionAdultPatientsPostoperativelyCheck3DCAMNightShift.html" title="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheck3DCAMNightShift">Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check 3-minute Diagnostic Interview for CAM-defined Delirium (3D-CAM) score during the night shift</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check 3-minute Diagnostic Interview for CAM-defined Delirium (3D-CAM) score during the night shift.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionAdultPatientsPostoperativelyCheckAT4EveningShift.html" title="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckAT4EveningShift">Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check AT4 score during the evening shift</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check AT4 score during the evening shift.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionAdultPatientsPostoperativelyCheckAT4MorningShift.html" title="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckAT4MorningShift">Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check AT4 score during the morning shift</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check AT4 score during the morning shift.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionAdultPatientsPostoperativelyCheckAT4NightShift.html" title="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckAT4NightShift">Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check AT4 score during the night shift</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check AT4 score during the night shift.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionAdultPatientsPostoperativelyCheckCAMEveningShift.html" title="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckCAMEveningShift">Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check Confusion Assessment Method (CAM) score during the evening shift</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check Confusion Assessment Method (CAM) score during the evening shift.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionAdultPatientsPostoperativelyCheckCAMMorningShift.html" title="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckCAMMorningShift">Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check Confusion Assessment Method (CAM) score during the morning shift</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check Confusion Assessment Method (CAM) score during the morning shift.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionAdultPatientsPostoperativelyCheckCAMNightShift.html" title="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckCAMNightShift">Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check Confusion Assessment Method (CAM) score during the night shift</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check Confusion Assessment Method (CAM) score during the night shift.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionAdultPatientsPostoperativelyCheckDOSEveningShift.html" title="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckDOSEveningShift">Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check Delirium Observation Scale (DOS) score during the evening shift</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check Delirium Observation Scale (DOS) score during the evening shift.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionAdultPatientsPostoperativelyCheckDOSMorningShift.html" title="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckDOSMorningShift">Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check Delirium Observation Scale (DOS) score during the morning shift</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check Delirium Observation Scale (DOS) score during the morning shift.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionAdultPatientsPostoperativelyCheckDOSNightShift.html" title="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckDOSNightShift">Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check Delirium Observation Scale (DOS) score during the night shift</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check Delirium Observation Scale (DOS) score during the night shift.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionAdultPatientsPostoperativelyCheckDRSEveningShift.html" title="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckDRSEveningShift">Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check Delirium Rating Scale (DRS) score during the evening shift</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check Delirium Rating Scale (DRS) score during the evening shift.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionAdultPatientsPostoperativelyCheckDRSMorningShift.html" title="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckDRSMorningShift">Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check Delirium Rating Scale (DRS) score during the morning shift</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check Delirium Rating Scale (DRS) score during the morning shift.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionAdultPatientsPostoperativelyCheckDRSNightShift.html" title="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckDRSNightShift">Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check Delirium Rating Scale (DRS) score during the night shift</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check Delirium Rating Scale (DRS) score during the night shift.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionAdultPatientsPostperativelyCheckNUDESCEveningShift.html" title="ActivityDefinition/RecActionAdultPatientsPostperativelyCheckNUDESCEveningShift">Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check Nursing Delirium Screening Scale (NU-DESC) score during the evening shift</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check Nursing Delirium Screening Scale (NU-DESC) score during the evening shift.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionAdultPatientsPostperativelyCheckNUDESCMorningShift.html" title="ActivityDefinition/RecActionAdultPatientsPostperativelyCheckNUDESCMorningShift">Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check Nursing Delirium Screening Scale (NU-DESC) score during the morning shift</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check Nursing Delirium Screening Scale (NU-DESC) score during the morning shift.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionAdultPatientsPostperativelyCheckNUDESCNightShift.html" title="ActivityDefinition/RecActionAdultPatientsPostperativelyCheckNUDESCNightShift">Recommended Action for Population: Adult Surgical Patients Postoperatively on a Normal Ward, check Nursing Delirium Screening Scale (NU-DESC) score during the night shift</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Postoperatively on a Normal Ward, check Nursing Delirium Screening Scale (NU-DESC) score during the night shift.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionAdultPatientsPostoperativelyCheckCAMICUEveningShift.html" title="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckCAMICUEveningShift">Recommended Action for Population: Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Confusion Assessment Method for the Intesive Care Unit (CAM-ICU) score during the evening shift</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Confusion Assessment Method for the Intesive Care Unit (CAM-ICU) score during the evening shift.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionAdultPatientsPostoperativelyCheckCAMICUMorningShift.html" title="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckCAMICUMorningShift">Recommended Action for Population: Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Confusion Assessment Method for the Intesive Care Unit (CAM-ICU) score during the morning shift</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Confusion Assessment Method for the Intesive Care Unit (CAM-ICU) score during the morning shift.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionAdultPatientsPostoperativelyCheckCAMICUNightShift.html" title="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckCAMICUNightShift">Recommended Action for Population: Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Confusion Assessment Method for the Intesive Care Unit (CAM-ICU) score during the night shift</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Confusion Assessment Method for the Intesive Care Unit (CAM-ICU) score during the night shift.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionAdultPatientsPostoperativelyCheckDDSEveningShift.html" title="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckDDSEveningShift">Recommended Action for Population: Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Delirium Detection score (DDS) during the evening shift</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Delirium Detection score (DDS) during the evening shift.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionAdultPatientsPostoperativelyCheckDDSMorningShift.html" title="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckDDSMorningShift">Recommended Action for Population: Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Delirium Detection score (DDS) during the morning shift</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Delirium Detection score (DDS) during the morning shift.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionAdultPatientsPostoperativelyCheckDDSNightShift.html" title="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckDDSNightShift">Recommended Action for Population: Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Delirium Detection score (DDS) during the night shift</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Delirium Detection score (DDS) during the night shift.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionAdultPatientsPostoperativelyCheckICDSCEveningShift.html" title="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckICDSCEveningShift">Recommended Action for Population: Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Intensive Care Delirium Screening Checklist score (ICDSC) during the evening shift</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Intensive Care Delirium Screening Checklist score (ICDSC) during the evening shift.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionAdultPatientsPostoperativelyCheckICDSCMorningShift.html" title="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckICDSCMorningShift">Recommended Action for Population: Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Intensive Care Delirium Screening Checklist score (ICDSC) during the morning shift</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Intensive Care Delirium Screening Checklist score (ICDSC) during the morning shift.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionAdultPatientsPostoperativelyCheckICDSCNightShift.html" title="ActivityDefinition/RecActionAdultPatientsPostoperativelyCheckICDSCNightShift">Recommended Action for Population: Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Intensive Care Delirium Screening Checklist score (ICDSC) during the night shift</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Postoperatively on an Intensive Care Unit, check Intensive Care Delirium Screening Checklist score (ICDSC) during the night shift.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionAdultSurgicalPatNoSpecSurgeryOrAnesthesiaTypeWarning.html" title="ActivityDefinition/RecActionAdultSurgicalPatNoSpecSurgeryOrAnesthesiaTypeWarning">Recommended Action for Population: Adult Surgical Patients Pre- or Intraoperatively, do not suggest any specific type of surgery and type of anaesthesia to reduce the incidence of POD</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Pre- or Intraoperatively, do not suggest any specific type of surgery and type of anaesthesia to reduce the incidence of postoperative delirium (POD) and show recommendation 3.3.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionAdultSurgicalPatientsNoSpecificBiomarkerWarning.html" title="ActivityDefinition/RecActionAdultSurgicalPatientsNoSpecificBiomarkerWarning">Recommended Action for Population: Adult Surgical Patients Pre- or Intraoperatively, do not suggest using any single specific biomarker to identify patients at risk of POD</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Pre- or Intraoperatively, do not suggest using any single specific biomarker to identify patients at risk of postoperative delirium (POD) and show recommendation 3.4.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionAdultSurgicalPatientsPreoperativelyCheckRFMiniCog.html" title="ActivityDefinition/RecActionAdultSurgicalPatientsPreoperativelyCheckRFMiniCog">Recommended Action for Population: Adult Surgical Patients Preoperatively check risk factor Mini-cog test score</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Preoperatively, check risk factor Mini-cog test score.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionAdultSurgicalPatientsPreoperativelyNeedMMSEFeeWarning.html" title="ActivityDefinition/RecActionAdultSurgicalPatientsPreoperativelyNeedMMSEFeeWarning">Recommended Action for Population: Adult Surgical Patients Preoperatively with Positive Mini-cog Test Score that need MMSE, provide warning for license fees</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Preoperatively if Mini-cog test score is equal to or higher than 3 that need MMSE, provide warning for license fees</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionAdultSurgicalPatientsPreoperativelyCheckRFACER.html" title="ActivityDefinition/RecActionAdultSurgicalPatientsPreoperativelyCheckRFACER">Recommended Action for Population: Adult Surgical Patients Preoperatively with Positive Mini-cog Test Score, check risk factor Addenbrooke's Cognitive Examination revised score</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Preoperatively if Mini-cog test score is equal to or higher than 3, check risk factor Addenbrooke’s Cognitive Examination revised score.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionAdultSurgicalPatientsPreoperativelyCheckRFMMSE.html" title="ActivityDefinition/RecActionAdultSurgicalPatientsPreoperativelyCheckRFMMSE">Recommended Action for Population: Adult Surgical Patients Preoperatively with Positive Mini-cog Test Score, check risk factor Mini-Mental State Examination Score</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Preoperatively if Mini-cog test score is equal to or higher than 3, check risk factor Mini-Mental State Examination Score.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionAdultSurgicalPatientsPreoperativelyCheckRFMoCA.html" title="ActivityDefinition/RecActionAdultSurgicalPatientsPreoperativelyCheckRFMoCA">Recommended Action for Population: Adult Surgical Patients Preoperatively with Positive Mini-cog Test Score, check risk factor Montreal Cognitive Assessment score</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Preoperatively if Mini-cog test score is equal to or higher than 3, check risk factor Montreal Cognitive Assessment (MoCA) score.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionAdultPatientsPreoperativelyCheck3DCAM.html" title="ActivityDefinition/RecActionAdultPatientsPreoperativelyCheck3DCAM">Recommended Action for Population: Adult Surgical Patients Preoperatively, check 3-minute Diagnostic Interview for CAM-defined Delirium (3D-CAM) score</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Preoperatively, check baseline 3-minute Diagnostic Interview for CAM-defined Delirium (3D-CAM) score.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionAdultPatientsPreoperativelyCheckAT4.html" title="ActivityDefinition/RecActionAdultPatientsPreoperativelyCheckAT4">Recommended Action for Population: Adult Surgical Patients Preoperatively, check AT4 score</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Preoperatively, check baseline AT4 score.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionAdultPatientsPreoperativelyCheckCAM.html" title="ActivityDefinition/RecActionAdultPatientsPreoperativelyCheckCAM">Recommended Action for Population: Adult Surgical Patients Preoperatively, check Confusion Assessment Method (CAM) score</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Preoperatively, check baseline Confusion Assessment Method (CAM) score</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionAdultPatientsPreoperativelyCheckDOS.html" title="ActivityDefinition/RecActionAdultPatientsPreoperativelyCheckDOS">Recommended Action for Population: Adult Surgical Patients Preoperatively, check Delirium Observation Scale (DOS) score</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Preoperatively, check baseline Delirium Observation Scale (DOS) score.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionAdultPatientsPreoperativelyCheckDRS.html" title="ActivityDefinition/RecActionAdultPatientsPreoperativelyCheckDRS">Recommended Action for Population: Adult Surgical Patients Preoperatively, check Delirium Rating Scale (DRS) score</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Preoperatively, check baseline Delirium Rating Scale (DRS) score.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionAdultPatientsPreoperativelyCheckNUDESC.html" title="ActivityDefinition/RecActionAdultPatientsPreoperativelyCheckNUDESC">Recommended Action for Population: Adult Surgical Patients Preoperatively, check Nursing Delirium Screening Scale (NU-DESC) score</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Preoperatively, check baseline Nursing Delirium Screening Scale (NU-DESC) score.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionAdultSurgicalPatientsPreoperativelyCheckRFASA.html" title="ActivityDefinition/RecActionAdultSurgicalPatientsPreoperativelyCheckRFASA">Recommended Action for Population: Adult Surgical Patients Preoperatively, check risk factor American Society of Anesthesiology Physical status score</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Preoperatively, check risk factor American Society of Anesthesiology Physical status score.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionAdultSurgicalPatientsPreoperativelyCheckRFCCI.html" title="ActivityDefinition/RecActionAdultSurgicalPatientsPreoperativelyCheckRFCCI">Recommended Action for Population: Adult Surgical Patients Preoperatively, check risk factor Charlson Comorbidity Index</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Preoperatively, check risk factor Charlson Comorbidity Index (CCI). Please note, the CCI preoperative might not reflect the actual/final CCI.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionAdultSurgicalPatientsPreoperativelyCheckRFAge.html" title="ActivityDefinition/RecActionAdultSurgicalPatientsPreoperativelyCheckRFAge">Recommended Action for Population: Adult Surgical Patients Preoperatively, check risk factor older age</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Preoperatively, check risk factor older age.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionOlderAdultPatientsPreoperativelyCheckAnemiaRF.html" title="ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckAnemiaRF">Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for anemia as risk factor for POD</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for anemia as risk factor for postoperative delirium (POD)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionOlderAdultPatientsPreoperativelyCheckAnticholLoadRF.html" title="ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckAnticholLoadRF">Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for anticholinergic load as risk factor for POD</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for anticholinergic load as risk factor for postoperative delirium (POD)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionOlderAdultPatientsPreoperativelyCheckAnxietyRF.html" title="ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckAnxietyRF">Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for anxiety as risk factor for POD</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for anxiety as risk factor for postoperative delirium (POD)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionOlderAdultPatientsPreoperativelyCheckCardiacRF.html" title="ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckCardiacRF">Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for cardiac conditions as risk factors for POD</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check cardiac conditions as risk factors for postoperative delirium (POD)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionOlderAdultPatientsPreoperativelyCheckCardiovascularRF.html" title="ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckCardiovascularRF">Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for cardiovascular conditions as risk factors for POD</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check cardiovascular conditions as risk factors for postoperative delirium (POD)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionOlderAdultPatientsPreoperativelyCheckPainRF.html" title="ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckPainRF">Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for chronic pain as risk factor for POD</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for chronic pain as risk factor for postoperative delirium (POD)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionOlderAdultPatientsPreoperativelyCheckCognitiveRF.html" title="ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckCognitiveRF">Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for cognitive deficits as risk factors for POD</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for cognitive deficits as risk factors for postoperative delirium (POD)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionOlderAdultPatientsPreoperativelyCheckDeglutitionRF.html" title="ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckDeglutitionRF">Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for deglutition disorders as risk factors for POD</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for deglutition disorders as risk factors for postoperative delirium (POD)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionOlderAdultPatientsPreoperativelyCheckDementiaRF.html" title="ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckDementiaRF">Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for dementia as risk factor for POD</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for dementia as risk factor for postoperative delirium (POD)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionOlderAdultPatientsPreoperativelyCheckDepressionRF.html" title="ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckDepressionRF">Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for depression as risk factor for POD</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for depression as risk factor for postoperative delirium (POD)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionOlderAdultPatientsPreoperativelyCheckDiabetesRF.html" title="ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckDiabetesRF">Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for diabetes as risk factor for POD</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for diabetes as risk factor for postoperative delirium (POD)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionOlderAdultPatientsPreoperativelyCheckElectrolytesRF.html" title="ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckElectrolytesRF">Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for electrolyte disorders as risk factors for POD</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for electrolyte disorders as risk factors for postoperative delirium (POD)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionOlderAdultPatientsPreoperativelyCheckFrailtyRF.html" title="ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckFrailtyRF">Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for frailty as risk factor for POD</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for frailty as risk factor for postoperative delirium (POD)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionOlderAdultPatientsPreoperativelyCheckMalnutritionRF.html" title="ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckMalnutritionRF">Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for malnutrition as risk factor for POD</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for malnutrition as risk factor for postoperative delirium (POD)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionOlderAdultPatientsPreoperativelyCheckNeurologicalRF.html" title="ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckNeurologicalRF">Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for neurological conditions as risk factors for POD</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check neurological conditions as risk factors for postoperative delirium (POD)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionOlderAdultPatientsPreoperativelyCheckPolypharmacyRF.html" title="ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckPolypharmacyRF">Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for polypharmacy as risk factor for POD</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for polypharmacy as risk factor for postoperative delirium (POD)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionOlderAdultPatientsPreoperativelyCheckSensoryDeficitsRF.html" title="ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckSensoryDeficitsRF">Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for sensory deficits as risk factors for POD</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for sensory deficits as risk factors for postoperative delirium (POD)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionOlderAdultPatientsPreoperativelyCheckSubstanceDepRF.html" title="ActivityDefinition/RecActionOlderAdultPatientsPreoperativelyCheckSubstanceDepRF">Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check for substance dependency (alcohol, benzodiazepine, other substances) as risk factor for POD</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check for substance dependency (alcohol, benzodiazepine, other substances) as risk factor for postoperative delirium (POD)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-RecActionOlderAdultSurgicalPatientsPreoperativelyCheckRF.html" title="ActivityDefinition/RecActionOlderAdultSurgicalPatientsPreoperativelyCheckRF">Recommended Action for Population: Older Adult Surgical Patients Preoperatively, check predisposing and precipitating risk factors</a>
+               </td>
+               <td>
+<p>Recommended Action for Adult Surgical Patients Preoperatively, 70 years old or older, check predisposing and precipitating risk factors</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="2"> </a>
+   <h3>Knowledge Artifacts: Plan Definitions </h3>
+   <p>
+    <p>These define workflows, rules, strategies, or protocols as part of content in this implementation guide.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-RecCollCheckRFAdultSurgicalPatientsPreoperatively.html" title="PlanDefinition/RecCollCheckRFAdultSurgicalPatientsPreoperatively">Recommendation Collection: Check risk factors in Adult Surgical Patients Preoperatively</a>
+               </td>
+               <td>
+<p>Recommendation collection for adult patients that will undergo a surgical intervention: Check risk factors age, American Society of Anesthesiology Physical status score (ASA), Charlson Comorbidity Index (CCI) and Mini-cog test score (Mini-cog). If Mini-cog test score is equal to or higher than 3, perform Montreal Cognitive Assessment (MoCA), Addenbrooke’s Cognitive Examination (ACE-R) or Mini Mental State Examination (MMSE). Please note that MMSE is not free of charge (license fees)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-RecCollAdultSurgicalPatPreOrIntraOPNoSpecSurgeryOrAnesthesiaType.html" title="PlanDefinition/RecCollAdultSurgicalPatPreOrIntraOPNoSpecSurgeryOrAnesthesiaType">Recommendation Collection: Do no suggest any specific type of surgery and type of anaesthesia to reduce the incidence of POD in Adult Surgical Patients Pre- or Intraoperatively</a>
+               </td>
+               <td>
+<p>Recommendation collection for adult patients before or during a surgical intervention: Do no suggest any specific type of surgery and type of anaesthesia to reduce the incidence of postoperative delirium (POD).</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-RecCollAdultSurgicalPatPreOrIntraOPNoSpecificBiomarker.html" title="PlanDefinition/RecCollAdultSurgicalPatPreOrIntraOPNoSpecificBiomarker">Recommendation Collection: Do no suggest using any single specific biomarker to identify patients at risk of POD in Adult Surgical Patients Pre- or Intraoperatively</a>
+               </td>
+               <td>
+<p>Recommendation collection for adult patients before or during a surgical intervention: Do no suggest using any single specific biomarker to identify patients at risk of postoperative delirium (POD).</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-RecCollPreoperativeDeliriumScreening.html" title="PlanDefinition/RecCollPreoperativeDeliriumScreening">Recommendation Collection: Perform Baseline Delirium Screening in Adult Surgical Patients Preoperatively</a>
+               </td>
+               <td>
+<p>Recommendation collection for adult patients that will undergo a surgical intervention: Perform baseline delirium screening.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-RecCollDeliriumScreeningOnSurgeryDayEveningShift.html" title="PlanDefinition/RecCollDeliriumScreeningOnSurgeryDayEveningShift">Recommendation Collection: Perform Delirium Screening in Adult Surgical Patients Postoperatively on surgery day during the evening shift</a>
+               </td>
+               <td>
+<p>Recommendation collection for adult patients that had a surgical intervention: Perform delirium screening on surgery day during the evening shift.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-RecCollDeliriumScreeningOnSurgeryDayMorningShift.html" title="PlanDefinition/RecCollDeliriumScreeningOnSurgeryDayMorningShift">Recommendation Collection: Perform Delirium Screening in Adult Surgical Patients Postoperatively on surgery day during the morning shift</a>
+               </td>
+               <td>
+<p>Recommendation collection for adult patients that had a surgical intervention: Perform delirium screening on surgery day during the morning shift.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-RecCollDeliriumScreeningOnSurgeryDayNightShift.html" title="PlanDefinition/RecCollDeliriumScreeningOnSurgeryDayNightShift">Recommendation Collection: Perform Delirium Screening in Adult Surgical Patients Postoperatively on surgery day during the night shift</a>
+               </td>
+               <td>
+<p>Recommendation collection for adult patients that had a surgical intervention: Perform delirium screening on surgery day during the night shift.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-RecCollDeliriumScreeningPostoperativelyOnSurgeryDay.html" title="PlanDefinition/RecCollDeliriumScreeningPostoperativelyOnSurgeryDay">Recommendation Collection: Perform Delirium Screening in Adult Surgical Patients Postoperatively on surgery day, ideally once a shift and at least twice a day</a>
+               </td>
+               <td>
+<p>Recommendation collection for adult patients that had a surgical intervention: Perform delirium screening on surgery day, ideally once a shift and at least twice a day.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-RecCollIntraoperativeEEGMonitoringDepth.html" title="PlanDefinition/RecCollIntraoperativeEEGMonitoringDepth">Recommendation Collection: Use Index-based EEG monitoring depth of anaesthesia guidance in Adult Surgical Patients Intraoperatively</a>
+               </td>
+               <td>
+<p>Recommendation collection for adult patients during a surgical intervention: Use Index-based EEG monitoring depth of anaesthesia guidance</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-RecCollIntraoperativeMultiparameterEEG.html" title="PlanDefinition/RecCollIntraoperativeMultiparameterEEG">Recommendation Collection: Use multiparameter EEG monitoring in Adult Surgical Patients Intraoperatively</a>
+               </td>
+               <td>
+<p>Recommendation collection for adult patients during a surgical intervention: Use multiparameter electroencephalographic (EEG) monitoring focusing on burst suppression activity and including the density spectral array (DSA).</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-RecPlanIntraoperativeEEGMonitoringDepth.html" title="PlanDefinition/RecPlanIntraoperativeEEGMonitoringDepth">Recommended Plan for Population: Adult Surgical Patients Intraoperatively, use Index-based EEG monitoring depth of anaesthesia guidance</a>
+               </td>
+               <td>
+<p>Recommended Plan for Adult Surgical Patients, Intraoperatively, use Index-based EEG monitoring depth of anaesthesia guidance</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-RecPlanIntraoperativeMultiparameterEEG.html" title="PlanDefinition/RecPlanIntraoperativeMultiparameterEEG">Recommended Plan for Population: Adult Surgical Patients Intraoperatively, use multiparameter EEG monitoring</a>
+               </td>
+               <td>
+<p>Recommended Plan for Adult Surgical Patients, Intraoperatively, use multiparameter electroencephalography (EEG) focusing on burst suppression activity and including the density spectral array (DSA).</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-RecPlanPostoperativeDeliriumScreeningOnSurgeryDayNWEveningShift.html" title="PlanDefinition/RecPlanPostoperativeDeliriumScreeningOnSurgeryDayNWEveningShift">Recommended Plan for Population: Adult Surgical Patients Postoperatively on a Normal Ward, Perform Delirium Screening during the evening shift</a>
+               </td>
+               <td>
+<p>Recommended Plan for Adult Surgical Patients Postoperatively on a Normal Ward, Perform Delirium Screening during the evening shift.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-RecPlanPostoperativeDeliriumScreeningOnSurgeryDayNWMorningShift.html" title="PlanDefinition/RecPlanPostoperativeDeliriumScreeningOnSurgeryDayNWMorningShift">Recommended Plan for Population: Adult Surgical Patients Postoperatively on a Normal Ward, Perform Delirium Screening during the morning shift</a>
+               </td>
+               <td>
+<p>Recommended Plan for Adult Surgical Patients Postoperatively on a Normal Ward, Perform Delirium Screening during the morning shift.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-RecPlanPostoperativeDeliriumScreeningOnSurgeryDayNWNightShift.html" title="PlanDefinition/RecPlanPostoperativeDeliriumScreeningOnSurgeryDayNWNightShift">Recommended Plan for Population: Adult Surgical Patients Postoperatively on a Normal Ward, Perform Delirium Screening during the night shift</a>
+               </td>
+               <td>
+<p>Recommended Plan for Adult Surgical Patients Postoperatively on a Normal Ward, Perform Delirium Screening during the night shift.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-RecPlanPostoperativeDeliriumScreeningOnSurgeryDayICUEveningShift.html" title="PlanDefinition/RecPlanPostoperativeDeliriumScreeningOnSurgeryDayICUEveningShift">Recommended Plan for Population: Adult Surgical Patients Postoperatively on an Intensive Care Unit, Perform Delirium Screening during the evening shift</a>
+               </td>
+               <td>
+<p>Recommended Plan for Adult Surgical Patients Postoperatively on an Intensive Care Unit, Perform Delirium Screening during the evening shift.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-RecPlanPostoperativeDeliriumScreeningOnSurgeryDayICUMorningShift.html" title="PlanDefinition/RecPlanPostoperativeDeliriumScreeningOnSurgeryDayICUMorningShift">Recommended Plan for Population: Adult Surgical Patients Postoperatively on an Intensive Care Unit, Perform Delirium Screening during the morning shift</a>
+               </td>
+               <td>
+<p>Recommended Plan for Adult Surgical Patients Postoperatively on an Intensive Care Unit, Perform Delirium Screening during the morning shift.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-RecPlanPostoperativeDeliriumScreeningOnSurgeryDayOnICUNightShift.html" title="PlanDefinition/RecPlanPostoperativeDeliriumScreeningOnSurgeryDayOnICUNightShift">Recommended Plan for Population: Adult Surgical Patients Postoperatively on an Intensive Care Unit, Perform Delirium Screening during the night shift</a>
+               </td>
+               <td>
+<p>Recommended Plan for Adult Surgical Patients Postoperatively on an Intensive Care Unit, Perform Delirium Screening during the night shift.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-RecPlanShowRecommendationNoSpecificSurgeryOrAnesthesiaType.html" title="PlanDefinition/RecPlanShowRecommendationNoSpecificSurgeryOrAnesthesiaType">Recommended Plan for Population: Adult Surgical Patients Pre- or Intraoperatively, do not suggest any specific type of surgery and type of anaesthesia to reduce the incidence of POD</a>
+               </td>
+               <td>
+<p>Recommended Plan for Adult Surgical Patients Pre- or Intraoperatively, do not suggest any specific type of surgery and type of anaesthesia to reduce the incidence of postoperative delirium (POD) and show recommendation 3.3.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-RecPlanShowRecommendationNoSpecificBiomarker.html" title="PlanDefinition/RecPlanShowRecommendationNoSpecificBiomarker">Recommended Plan for Population: Adult Surgical Patients Pre- or Intraoperatively, do not suggest using any single specific biomarker to identify patients at risk of POD</a>
+               </td>
+               <td>
+<p>Recommended Plan for Adult Surgical Patients Pre- or Intraoperatively, do not suggest using any single specific biomarker to identify patients at risk of postoperative delirium (POD) and show recommendation 3.4.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-RecPlanProvideLicenseFeeWarningForMMSE.html" title="PlanDefinition/RecPlanProvideLicenseFeeWarningForMMSE">Recommended Plan for Population: Adult Surgical Patients Preoperatively with Positive Mini-cog Test Score that need a Mini-Mental State Examination, provide warning because of MMSE license fees</a>
+               </td>
+               <td>
+<p>Recommended Plan for Adult Surgical Patients Preoperatively with Positive Mini-cog Test Score that need a Mini-Mental State Examination, provide warning because of MMSE license fees.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-RecPlanCheckRiskFactorsMoCAACERMMSE.html" title="PlanDefinition/RecPlanCheckRiskFactorsMoCAACERMMSE">Recommended Plan for Population: Adult Surgical Patients Preoperatively with Positive Mini-cog Test Score, check risk factor Montreal Cognitive Assessment (MoCA) score, Addenbrooke's Cognitive Examination revised (ACE-R) score or Mini Mental State Examination (MMSE) score</a>
+               </td>
+               <td>
+<p>Recommended Plan for Adult Surgical Patients Preoperatively if Mini-cog test score is equal to or higher than 3, check risk factors Montreal Cognitive Assessment (MoCA) score, Addenbrooke’s Cognitive Examination revised (ACE-R) score or Mini Mental State Examination (MMSE) score.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-RecPlanPreoperativeDeliriumScreening.html" title="PlanDefinition/RecPlanPreoperativeDeliriumScreening">Recommended Plan for Population: Adult Surgical Patients Preoperatively, Perform Baseline Delirium Screening</a>
+               </td>
+               <td>
+<p>Recommended Plan for Adult Surgical Patients Preoperatively, perform baseline delirium screening.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-RecPlanCheckRiskFactorsAgeASACCIMiniCog.html" title="PlanDefinition/RecPlanCheckRiskFactorsAgeASACCIMiniCog">Recommended Plan for Population: Adult Surgical Patients Preoperatively, check risk factors age, ASA, CCI and Mini-cog</a>
+               </td>
+               <td>
+<p>Recommended Plan for Adult Surgical Patients Preoperatively, check risk factors age, American Society of Anesthesiology Physical status score (ASA), Charlson Comorbidity Index (CCI) and Mini-cog test score (Mini-cog).</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="3"> </a>
+   <h3>Terminology: Code Systems </h3>
+   <p>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-digipod.html" title="CodeSystem/digipod">DIGIPOD</a>
+               </td>
+               <td>
+<p>Concepts required in recommendations that are not defined elsewhere for the project DIGIPOD</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="4"> </a>
+   <h3>Example: Example Instances </h3>
+   <p>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ConceptMap-DIGIPODtoStandardizedVocabularies.html" title="ConceptMap/DIGIPODtoStandardizedVocabularies">DIGIPOD to standardized vocabularies</a>
+               </td>
+               <td>
+<p>Concept map from concepts defined in DIGIPOD to standardized vocabularies</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Citation-Recommendation0.1PreOperativeScreeningOfDelirium.html" title="Citation/Recommendation0.1PreOperativeScreeningOfDelirium">Recommendation 0.1: Preoperative screening of delirium</a>
+               </td>
+               <td>
+<p>Recommendation number 0.1 (Prerequisite) from Guideline ‘Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients’</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Citation-Recommendation0.2PostOperativeScreeningOfDelirium.html" title="Citation/Recommendation0.2PostOperativeScreeningOfDelirium">Recommendation 0.2: Postoperative screening of delirium</a>
+               </td>
+               <td>
+<p>Recommendation number 0.2 (Prerequisite) from Guideline ‘Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients’</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Citation-Recommendation2.1RiskFactors.html" title="Citation/Recommendation2.1RiskFactors">Recommendation 2.1: Preoperative Risk Factors</a>
+               </td>
+               <td>
+<p>Recommendation number 2.1 from Guideline ‘Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients’</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Citation-Recommendation3.1PrevMeasuresIEffectsOfDrugsOnPODPrevention.html" title="Citation/Recommendation3.1PrevMeasuresIEffectsOfDrugsOnPODPrevention">Recommendation 3.1: Preventive Measures I (Effects of Drugs on POD prevention) - Drugs as prophylactic measure to reduce the incidence of POD</a>
+               </td>
+               <td>
+<p>Recommendation number 3.1 from Guideline ‘Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients’</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Citation-Recommendation3.2PrevMeasuresIEffectsOfDrugsOnPODPrevention.html" title="Citation/Recommendation3.2PrevMeasuresIEffectsOfDrugsOnPODPrevention">Recommendation 3.2: Preventive Measures I (Effects of Drugs on POD prevention) - Preventive dexmedetomidine administration intra- or postoperative</a>
+               </td>
+               <td>
+<p>Recommendation number 3.2 from Guideline ‘Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients’</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Citation-Recommendation3.3PrevMeasuresIEffectsOfDrugsOnPODPrevention.html" title="Citation/Recommendation3.3PrevMeasuresIEffectsOfDrugsOnPODPrevention">Recommendation 3.3: Preventive Measures I (Effects of Drugs on POD prevention) - Type of surgery or anesthesia to reduce the incidence of POD</a>
+               </td>
+               <td>
+<p>Recommendation number 3.3 from Guideline ‘Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients’</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Citation-Recommendation3.4PrevMeasuresIEffectsOfDrugsOnPODPrevention.html" title="Citation/Recommendation3.4PrevMeasuresIEffectsOfDrugsOnPODPrevention">Recommendation 3.4: Preventive Measures I (Effects of Drugs on POD prevention) - Biomarker to identify patients at risk of POD</a>
+               </td>
+               <td>
+<p>Recommendation number 3.4 from Guideline ‘Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients’</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Citation-Recommendation4.1PrevMeasuresIINonPharmacologicalInterventions.html" title="Citation/Recommendation4.1PrevMeasuresIINonPharmacologicalInterventions">Recommendation 4.1: Preventive Measures II (Non Pharmacological Interventions) - Screening for risk factors and optimizing preoperative status in older adults</a>
+               </td>
+               <td>
+<p>Recommendation number 4.1 from Guideline ‘Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients’</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Citation-Recommendation4.2PrevMeasuresIINonPharmacologicalInterventions.html" title="Citation/Recommendation4.2PrevMeasuresIINonPharmacologicalInterventions">Recommendation 4.2: Preventive Measures II (Non Pharmacological Interventions) - Sharing, discussing and documenting results of risk factors and preventive strategies</a>
+               </td>
+               <td>
+<p>Recommendation number 4.2 from Guideline ‘Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients’</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Citation-Recommendation4.3PrevMeasuresIINonPharmacologicalInterventions.html" title="Citation/Recommendation4.3PrevMeasuresIINonPharmacologicalInterventions">Recommendation 4.3: Preventive Measures II (Non Pharmacological Interventions) - Multi-component non-pharmacological interventions in all patients at risk for POD</a>
+               </td>
+               <td>
+<p>Recommendation number 4.3 from Guideline ‘Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients’</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Citation-Recommendation5.1Neuromonitoring.html" title="Citation/Recommendation5.1Neuromonitoring">Recommendation 5.1: Neuromonitoring - EEG monitoring depth of anesthesia guidance</a>
+               </td>
+               <td>
+<p>Recommendation number 5.1 from Guideline ‘Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients’</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Citation-Recommendation5.2Neuromonitoring.html" title="Citation/Recommendation5.2Neuromonitoring">Recommendation 5.2: Neuromonitoring - Multi-parameter, intraoperative EEG monitoring during anesthesia</a>
+               </td>
+               <td>
+<p>Recommendation number 5.2 from Guideline ‘Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients’</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Citation-Recommendation6.1PharmacologicalTreatmentOfPODAndPODOutcomes.html" title="Citation/Recommendation6.1PharmacologicalTreatmentOfPODAndPODOutcomes">Recommendation 6.1: Pharmacological Treatment of POD and POD Outcomes - Low-dose haloperidol as treatment</a>
+               </td>
+               <td>
+<p>Recommendation number 6.1 from Guideline ‘Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients’</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Citation-Recommendation6.2PharmacologicalTreatmentOfPODAndPODOutcomes.html" title="Citation/Recommendation6.2PharmacologicalTreatmentOfPODAndPODOutcomes">Recommendation 6.2: Pharmacological Treatment of POD and POD Outcomes - Benzodiazepines as treatment</a>
+               </td>
+               <td>
+<p>Recommendation number 6.2 from Guideline ‘Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients’</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Citation-Recommendation6.3PharmacologicalTreatmentOfPODAndPODOutcomes.html" title="Citation/Recommendation6.3PharmacologicalTreatmentOfPODAndPODOutcomes">Recommendation 6.3: Pharmacological Treatment of POD and POD Outcomes - Dexmedetomidine as treatment in patients with cardiac surgery</a>
+               </td>
+               <td>
+<p>Recommendation number 6.3 from Guideline ‘Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients’</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Citation-ClinicalPracticeGuidelineESAICOnPostOpDeliriumInAdultPatients.html" title="Citation/ClinicalPracticeGuidelineESAICOnPostOpDeliriumInAdultPatients">Update of the European Society of Anaesthesiology and Intensive Care Medicine evidence-based and consensus-based guideline on postoperative delirium in adult patients</a>
+               </td>
+               <td>
+<p>Evidence-based and consensus-based guideline on postoperative delirium in adult patients, updated by the European Society of Anaesthesiology and Intensive Care Medicine (ESAIC) in 2021</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="5"> </a>
+   <h3>Other </h3>
+   <p>
+    <p>These are resources that are used within this implementation guide that do not fit into one of the other categories.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-AlasdairMacLullich.html" title="Practitioner/AlasdairMacLullich">AlasdairMacLullich</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-AliForookhi.html" title="Practitioner/AliForookhi">AliForookhi</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-AnikaMueller.html" title="Practitioner/AnikaMueller">AnikaMueller</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-AnnikaReintamBlaser.html" title="Practitioner/AnnikaReintamBlaser">AnnikaReintamBlaser</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-AntonioCherubini.html" title="Practitioner/AntonioCherubini">AntonioCherubini</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-ArjenSlooter.html" title="Practitioner/ArjenSlooter">ArjenSlooter</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-BjoernWeiss.html" title="Practitioner/BjoernWeiss">BjoernWeiss</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-BrunoNeuner.html" title="Practitioner/BrunoNeuner">BrunoNeuner</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-CesarAldecoa.html" title="Practitioner/CesarAldecoa">CesarAldecoa</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-ClaudiaSpies.html" title="Practitioner/ClaudiaSpies">ClaudiaSpies</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-ColmCunningham.html" title="Practitioner/ColmCunningham">ColmCunningham</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-ConcezioneTommasino.html" title="Practitioner/ConcezioneTommasino">ConcezioneTommasino</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-FatimaYuerek.html" title="Practitioner/FatimaYuerek">FatimaYuerek</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-FedericoBilotta.html" title="Practitioner/FedericoBilotta">FedericoBilotta</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-FinnRadtke.html" title="Practitioner/FinnRadtke">FinnRadtke</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-GabriellaBettelli.html" title="Practitioner/GabriellaBettelli">GabriellaBettelli</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-HenrikKehlet.html" title="Practitioner/HenrikKehlet">HenrikKehlet</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-KatarzynaKotfis.html" title="Practitioner/KatarzynaKotfis">KatarzynaKotfis</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-KatiImmonen.html" title="Practitioner/KatiImmonen">KatiImmonen</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-LiorMevorach.html" title="Practitioner/LiorMevorach">LiorMevorach</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-LisaVasiljewa.html" title="Practitioner/LisaVasiljewa">LisaVasiljewa</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-MariaSchubert.html" title="Practitioner/MariaSchubert">MariaSchubert</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-NicolaGitti.html" title="Practitioner/NicolaGitti">NicolaGitti</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-NicolaLatronico.html" title="Practitioner/NicolaLatronico">NicolaLatronico</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-OrganizationCharite.html" title="Organization/OrganizationCharite">OrganizationCharite</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-PaolaAceto.html" title="Practitioner/PaolaAceto">PaolaAceto</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="EvidenceVariable-PopAdultPatientsAtRiskForPOD.html" title="EvidenceVariable/PopAdultPatientsAtRiskForPOD">Population: Adult Surgical Patients Preoperative at Risk for POD</a>
+               </td>
+               <td>
+<p>Adult patients before undergoing an elective surgical intervention of any type independently of the type of anesthesia and being at risk for postoperative delirium</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="EvidenceVariable-PopAdultSurgicalPatientsPreoperativelyWithPositiveMiniCog.html" title="EvidenceVariable/PopAdultSurgicalPatientsPreoperativelyWithPositiveMiniCog">Population: Adult Surgical Patients Preoperatively with Positive Mini-cog Test Score</a>
+               </td>
+               <td>
+<p>Adult patients with a positive Mini-cog test score before undergoing an elective surgical intervention of any type independently of the type of anesthesia</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="EvidenceVariable-PopAdultSurgicalPatPreoperativelyWithPositiveMiniCogNeedMMSE.html" title="EvidenceVariable/PopAdultSurgicalPatPreoperativelyWithPositiveMiniCogNeedMMSE">Population: Adult Surgical Patients Preoperatively with Positive Mini-cog Test Score that need a Mini-Mental State Examination</a>
+               </td>
+               <td>
+<p>Adult patients with a positive Mini-cog test score that need a Mini-Mental State Examination before undergoing an elective surgical intervention of any type independently of the type of anesthesia</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="EvidenceVariable-PopAdultPatientsIntraoperativelyGeneral.html" title="EvidenceVariable/PopAdultPatientsIntraoperativelyGeneral">Population: General Adult Surgical Patients Intraoperatively</a>
+               </td>
+               <td>
+<p>Adult patients during an elective surgical intervention of any type independently of the type of anesthesia</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="EvidenceVariable-PopAdultPatientsPostoperativelyOnNormalWardWithRASSEqualLower-3.html" title="EvidenceVariable/PopAdultPatientsPostoperativelyOnNormalWardWithRASSEqualLower-3">Population: General Adult Surgical Patients Postoperatively On Normal Ward, With a RASS Equal Or Lower Than -3</a>
+               </td>
+               <td>
+<p>Adult patients after undergoing an elective surgical intervention of any type independently of the type of anesthesia, on normal ward, with a RASS of -3 or less.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="EvidenceVariable-PopAdultPatientsPostoperativelyGeneralOnSurgeryDayNormalWard.html" title="EvidenceVariable/PopAdultPatientsPostoperativelyGeneralOnSurgeryDayNormalWard">Population: General Adult Surgical Patients Postoperatively on the Surgery Day on Normal Ward or in the Recovery Room</a>
+               </td>
+               <td>
+<p>Adult patients after undergoing an elective surgical intervention of any type independently of the type of anesthesia, on the day of the surgical intervention (from the time of completion of the procedure to midnight), in the recovery room or on normal ward.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="EvidenceVariable-PopAdultPatientsPostoperativelyGeneralOnSurgeryDayICU.html" title="EvidenceVariable/PopAdultPatientsPostoperativelyGeneralOnSurgeryDayICU">Population: General Adult Surgical Patients Postoperatively on the Surgery Day on an Intensive Care Unit</a>
+               </td>
+               <td>
+<p>Adult patients after undergoing an elective surgical intervention of any type independently of the type of anesthesia, on the day of the surgical intervention (from the time of completion of the procedure to midnight), on an intensive care unit.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="EvidenceVariable-PopAdultPatientsPreAndIntraoperativelyGeneral.html" title="EvidenceVariable/PopAdultPatientsPreAndIntraoperativelyGeneral">Population: General Adult Surgical Patients Pre- and Intraoperatively</a>
+               </td>
+               <td>
+<p>Adult patients before and/or during an elective surgical intervention of any type independently of the type of anesthesia</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="EvidenceVariable-PopAdultSurgicalPatientsPreoperativelyGeneral.html" title="EvidenceVariable/PopAdultSurgicalPatientsPreoperativelyGeneral">Population: General Adult Surgical Patients Preoperatively</a>
+               </td>
+               <td>
+<p>Adult patients before undergoing an elective surgical intervention of any type independently of the type of anesthesia</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="EvidenceVariable-PopAdultPatientsPreoperativelyGeneralOnSurgeryDayAndBefore.html" title="EvidenceVariable/PopAdultPatientsPreoperativelyGeneralOnSurgeryDayAndBefore">Population: General Adult Surgical Patients Preoperatively on Surgery Day and Before</a>
+               </td>
+               <td>
+<p>Adult patients before undergoing an elective surgical intervention of any type independently of the type of anesthesia, on the day of the surgical intervention or maximum 42 days before.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="EvidenceVariable-PopOlderAdultPatientsPreoperatively.html" title="EvidenceVariable/PopOlderAdultPatientsPreoperatively">Population: Older Adult Surgical Patients Preoperatively</a>
+               </td>
+               <td>
+<p>Adult patients being 70 years old or older, before undergoing a surgical intervention of any type</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PractitionerRole-PractitionerRoleClaudiaSpies.html" title="PractitionerRole/PractitionerRoleClaudiaSpies">PractitionerRoleClaudiaSpies</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-RiccardoAudisio.html" title="Practitioner/RiccardoAudisio">RiccardoAudisio</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-RobertSanders.html" title="Practitioner/RobertSanders">RobertSanders</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-SimonePiva.html" title="Practitioner/SimonePiva">SimonePiva</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-StefaniaRenzi.html" title="Practitioner/StefaniaRenzi">StefaniaRenzi</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-StefanoRomagnoli.html" title="Practitioner/StefanoRomagnoli">StefanoRomagnoli</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-SusanneKoch.html" title="Practitioner/SusanneKoch">SusanneKoch</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-WojciechDabrowski.html" title="Practitioner/WojciechDabrowski">WojciechDabrowski</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+</div>
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2023+ <a href="https://www.example.com">Example</a>.  Package template.cpg-on-ebmonfhir.netzwerk-universitaetsmedizin.de#0.0.1-snapshot based on <a href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, May 14, 2024 12:39+0000">2024-05-14</span>
+          <br/>
+          <span style="color: #FFFF77">
+            <p style="color: white"><a name="l2640">​</a>
+       Links: <a href="toc.html">Table of Contents</a> |
+       <a href="qa.html">QA Report</a> |
+       <a href="https://github.com/CODEX-CELIDA/template.cpg-on-ebmonfhir.netzwerk-universitaetsmedizin.de/issues/" target="_blank">Issues</a> |
+       <a href="https://github.com/CODEX-CELIDA/template.cpg-on-ebmonfhir.netzwerk-universitaetsmedizin.de/issues/new" target="_blank">Submit an issue</a> |
+       <a href="http://hl7.org/fhir/R5//history.html" target="_blank">Version History</a> |
+       <a rel="license" href="http://hl7.org/fhir/R5/license.html"><img src="assets/images/cc-by.svg" alt="CC-BY" style="border-style: none;" height="17"/></a> |
+</p>
+
+<script src="assets/js/imageMapResizer.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+       imageMapResize();
+</script>
+
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript -->
+
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+
+    <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
